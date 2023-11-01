@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GymSysyemWpf.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,6 +12,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using static Microsoft.EntityFrameworkCore.DbLoggerCategory;
 
 namespace GymSysyemWpf
 {
@@ -20,7 +22,7 @@ namespace GymSysyemWpf
 	public partial class ProtienAdd : Window
 	{
 
-		public delegate void ProtienData(object sender, ProtienProduct obj);
+		public delegate void ProtienData(object sender, BuyProducts obj);
 
 		public event ProtienData protienhDataChanged;
 
@@ -56,9 +58,9 @@ namespace GymSysyemWpf
 		private void btnLogin_Click(object sender, RoutedEventArgs e)
 		{
             bool flag = true;
-            ProtienProduct protien = new ProtienProduct();
+            BuyProducts protien = new BuyProducts();
+
 			protien.Name = TextName.Text;
-			protien.Total=protien.Quantaty * protien.Price;
 
             if (textQuantaty.Text.Length == 0)
             {
@@ -66,7 +68,17 @@ namespace GymSysyemWpf
             }
             else
             {
-                protien.Quantaty = int.Parse(textQuantaty.Text);
+                if (int.TryParse(textQuantaty.Text, out int Quantity))
+                {
+                    protien.Quantaty = Quantity;
+                    ProCount.Visibility = Visibility.Hidden;
+
+                }
+                else
+                {
+                    ProCount.Visibility = Visibility.Visible;
+                }
+
             }
 
             if(textPrice.Text.Length == 0)
@@ -75,11 +87,35 @@ namespace GymSysyemWpf
             }
             else
             {
-                protien.Price = int.Parse(textPrice.Text);
-            }
-            protien.Total = protien.Quantaty * protien.Price;
+                if (int.TryParse(textPrice.Text, out int Price))
+                {
+                    protien.Price = Price;
+                    ProPrice.Visibility = Visibility.Hidden;
 
-            if (TextName.Text == "" || textQuantaty.Text == "" || textPrice.Text == "" )
+                }
+                else
+                {
+                    ProPrice.Visibility = Visibility.Visible;
+                }
+            }
+
+
+            if (int.TryParse(textSale.Text, out int SelledPrice))
+            {
+                protien.SaledPrice = SelledPrice;
+                ProSelledPrice.Visibility = Visibility.Hidden;
+
+            }
+            else
+            {
+                ProSelledPrice.Visibility = Visibility.Visible;
+            }
+			protien.QrCode = textQrCode.Text;
+			protien.PurchaseDate = DateTime.Now;
+
+            if (TextName.Text == "" || textQuantaty.Text == ""||ProSelledPrice.IsVisible||ProPrice.IsVisible
+                ||ProCount.IsVisible
+                || textPrice.Text == "" || textSale.Text == "" || textQrCode.Text == "")
             {
 
                 flag = false;
@@ -96,18 +132,19 @@ namespace GymSysyemWpf
             }
             else
             {
-                errorTextblock.Text = "You must enter all data";
+                errorTextblock.Text = "برجاء ادخال جميع البيانات";
             }
 
 
             
 
-			if (TextName.Text != "" && textQuantaty.Text != "" && textPrice.Text != "")
+			if (TextName.Text != "" && textQuantaty.Text != "" && textPrice.Text != "" && textSale.Text != "")
 			{
-				TextName.Text = "";
 				textQuantaty.Text = "";
 				textPrice.Text = "";
-			}
+				textSale.Text = "";
+
+            }
 		}
 	}
 }

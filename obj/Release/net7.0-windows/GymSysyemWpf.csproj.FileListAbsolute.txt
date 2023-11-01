@@ -1,0 +1,188 @@
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\bin\Release\net7.0-windows\GymSysyemWpf.exe
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\bin\Release\net7.0-windows\GymSysyemWpf.deps.json
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\bin\Release\net7.0-windows\GymSysyemWpf.runtimeconfig.json
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\bin\Release\net7.0-windows\GymSysyemWpf.dll
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\bin\Release\net7.0-windows\GymSysyemWpf.pdb
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\bin\Release\net7.0-windows\Azure.Core.dll
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\bin\Release\net7.0-windows\Azure.Identity.dll
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\bin\Release\net7.0-windows\GlobalLowLevelInputHooks.dll
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\bin\Release\net7.0-windows\Humanizer.dll
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\bin\Release\net7.0-windows\LiveCharts.dll
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\bin\Release\net7.0-windows\LiveCharts.Wpf.dll
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\bin\Release\net7.0-windows\MahApps.Metro.IconPacks.Core.dll
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\bin\Release\net7.0-windows\MahApps.Metro.IconPacks.Material.dll
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\bin\Release\net7.0-windows\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\bin\Release\net7.0-windows\Microsoft.Data.SqlClient.dll
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\bin\Release\net7.0-windows\Microsoft.EntityFrameworkCore.dll
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\bin\Release\net7.0-windows\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\bin\Release\net7.0-windows\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\bin\Release\net7.0-windows\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\bin\Release\net7.0-windows\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\bin\Release\net7.0-windows\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\bin\Release\net7.0-windows\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\bin\Release\net7.0-windows\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\bin\Release\net7.0-windows\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\bin\Release\net7.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\bin\Release\net7.0-windows\Microsoft.Extensions.DependencyModel.dll
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\bin\Release\net7.0-windows\Microsoft.Extensions.Logging.dll
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\bin\Release\net7.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\bin\Release\net7.0-windows\Microsoft.Extensions.Options.dll
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\bin\Release\net7.0-windows\Microsoft.Extensions.Primitives.dll
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\bin\Release\net7.0-windows\Microsoft.Identity.Client.dll
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\bin\Release\net7.0-windows\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\bin\Release\net7.0-windows\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\bin\Release\net7.0-windows\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\bin\Release\net7.0-windows\Microsoft.IdentityModel.Logging.dll
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\bin\Release\net7.0-windows\Microsoft.IdentityModel.Protocols.dll
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\bin\Release\net7.0-windows\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\bin\Release\net7.0-windows\Microsoft.IdentityModel.Tokens.dll
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\bin\Release\net7.0-windows\Microsoft.SqlServer.Server.dll
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\bin\Release\net7.0-windows\Mono.TextTemplating.dll
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\bin\Release\net7.0-windows\QRCoder.dll
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\bin\Release\net7.0-windows\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\bin\Release\net7.0-windows\System.Memory.Data.dll
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\bin\Release\net7.0-windows\System.Runtime.Caching.dll
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\bin\Release\net7.0-windows\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\bin\Release\net7.0-windows\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\bin\Release\net7.0-windows\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\bin\Release\net7.0-windows\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\bin\Release\net7.0-windows\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\bin\Release\net7.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\bin\Release\net7.0-windows\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\obj\Release\net7.0-windows\GymSysyemWpf.csproj.AssemblyReference.cache
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\obj\Release\net7.0-windows\AdminWindow.baml
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\obj\Release\net7.0-windows\Styles\ButtonStyles.baml
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\obj\Release\net7.0-windows\Styles\UIColors.baml
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\obj\Release\net7.0-windows\UserControls\Product.baml
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\obj\Release\net7.0-windows\AdminWindow.g.cs
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\obj\Release\net7.0-windows\ConfirmDeleting.g.cs
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\obj\Release\net7.0-windows\ConfirmFinancial.g.cs
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\obj\Release\net7.0-windows\MainWindow.g.cs
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\obj\Release\net7.0-windows\MonthlyProfit.g.cs
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\obj\Release\net7.0-windows\ProtienAdd.g.cs
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\obj\Release\net7.0-windows\ProtienUpdate.g.cs
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\obj\Release\net7.0-windows\SubscriptionAdd.g.cs
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\obj\Release\net7.0-windows\SubscriptionUpdate.g.cs
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\obj\Release\net7.0-windows\TraineeAdd.g.cs
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\obj\Release\net7.0-windows\TraineeUpdate.g.cs
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\obj\Release\net7.0-windows\UserControls\Product.g.cs
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\obj\Release\net7.0-windows\App.g.cs
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\obj\Release\net7.0-windows\GymSysyemWpf_MarkupCompile.cache
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\obj\Release\net7.0-windows\GymSysyemWpf_MarkupCompile.lref
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\obj\Release\net7.0-windows\App.baml
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\obj\Release\net7.0-windows\ConfirmDeleting.baml
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\obj\Release\net7.0-windows\ConfirmFinancial.baml
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\obj\Release\net7.0-windows\MainWindow.baml
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\obj\Release\net7.0-windows\MonthlyProfit.baml
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\obj\Release\net7.0-windows\ProtienAdd.baml
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\obj\Release\net7.0-windows\ProtienUpdate.baml
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\obj\Release\net7.0-windows\SubscriptionAdd.baml
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\obj\Release\net7.0-windows\SubscriptionUpdate.baml
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\obj\Release\net7.0-windows\TraineeAdd.baml
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\obj\Release\net7.0-windows\TraineeUpdate.baml
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\obj\Release\net7.0-windows\GymSysyemWpf.g.resources
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\obj\Release\net7.0-windows\GymSysyemWpf.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\obj\Release\net7.0-windows\GymSysyemWpf.AssemblyInfoInputs.cache
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\obj\Release\net7.0-windows\GymSysyemWpf.AssemblyInfo.cs
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\obj\Release\net7.0-windows\GymSysyemWpf.csproj.CoreCompileInputs.cache
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\obj\Release\net7.0-windows\GymSysyemWpf.csproj.CopyComplete
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\obj\Release\net7.0-windows\GymSysyemWpf.dll
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\obj\Release\net7.0-windows\refint\GymSysyemWpf.dll
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\obj\Release\net7.0-windows\GymSysyemWpf.pdb
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\obj\Release\net7.0-windows\GymSysyemWpf.genruntimeconfig.cache
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\obj\Release\net7.0-windows\ref\GymSysyemWpf.dll
+E:\New folder\Telegram Desktop\GymSysyemWpf\bin\Release\net7.0-windows\GymSysyemWpf.exe
+E:\New folder\Telegram Desktop\GymSysyemWpf\bin\Release\net7.0-windows\GymSysyemWpf.deps.json
+E:\New folder\Telegram Desktop\GymSysyemWpf\bin\Release\net7.0-windows\GymSysyemWpf.runtimeconfig.json
+E:\New folder\Telegram Desktop\GymSysyemWpf\bin\Release\net7.0-windows\GymSysyemWpf.dll
+E:\New folder\Telegram Desktop\GymSysyemWpf\bin\Release\net7.0-windows\GymSysyemWpf.pdb
+E:\New folder\Telegram Desktop\GymSysyemWpf\bin\Release\net7.0-windows\Azure.Core.dll
+E:\New folder\Telegram Desktop\GymSysyemWpf\bin\Release\net7.0-windows\Azure.Identity.dll
+E:\New folder\Telegram Desktop\GymSysyemWpf\bin\Release\net7.0-windows\GlobalLowLevelInputHooks.dll
+E:\New folder\Telegram Desktop\GymSysyemWpf\bin\Release\net7.0-windows\Humanizer.dll
+E:\New folder\Telegram Desktop\GymSysyemWpf\bin\Release\net7.0-windows\LiveCharts.dll
+E:\New folder\Telegram Desktop\GymSysyemWpf\bin\Release\net7.0-windows\LiveCharts.Wpf.dll
+E:\New folder\Telegram Desktop\GymSysyemWpf\bin\Release\net7.0-windows\MahApps.Metro.IconPacks.Core.dll
+E:\New folder\Telegram Desktop\GymSysyemWpf\bin\Release\net7.0-windows\MahApps.Metro.IconPacks.Material.dll
+E:\New folder\Telegram Desktop\GymSysyemWpf\bin\Release\net7.0-windows\Microsoft.Bcl.AsyncInterfaces.dll
+E:\New folder\Telegram Desktop\GymSysyemWpf\bin\Release\net7.0-windows\Microsoft.Data.SqlClient.dll
+E:\New folder\Telegram Desktop\GymSysyemWpf\bin\Release\net7.0-windows\Microsoft.EntityFrameworkCore.dll
+E:\New folder\Telegram Desktop\GymSysyemWpf\bin\Release\net7.0-windows\Microsoft.EntityFrameworkCore.Abstractions.dll
+E:\New folder\Telegram Desktop\GymSysyemWpf\bin\Release\net7.0-windows\Microsoft.EntityFrameworkCore.Design.dll
+E:\New folder\Telegram Desktop\GymSysyemWpf\bin\Release\net7.0-windows\Microsoft.EntityFrameworkCore.Relational.dll
+E:\New folder\Telegram Desktop\GymSysyemWpf\bin\Release\net7.0-windows\Microsoft.EntityFrameworkCore.SqlServer.dll
+E:\New folder\Telegram Desktop\GymSysyemWpf\bin\Release\net7.0-windows\Microsoft.Extensions.Caching.Abstractions.dll
+E:\New folder\Telegram Desktop\GymSysyemWpf\bin\Release\net7.0-windows\Microsoft.Extensions.Caching.Memory.dll
+E:\New folder\Telegram Desktop\GymSysyemWpf\bin\Release\net7.0-windows\Microsoft.Extensions.Configuration.Abstractions.dll
+E:\New folder\Telegram Desktop\GymSysyemWpf\bin\Release\net7.0-windows\Microsoft.Extensions.DependencyInjection.dll
+E:\New folder\Telegram Desktop\GymSysyemWpf\bin\Release\net7.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+E:\New folder\Telegram Desktop\GymSysyemWpf\bin\Release\net7.0-windows\Microsoft.Extensions.DependencyModel.dll
+E:\New folder\Telegram Desktop\GymSysyemWpf\bin\Release\net7.0-windows\Microsoft.Extensions.Logging.dll
+E:\New folder\Telegram Desktop\GymSysyemWpf\bin\Release\net7.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+E:\New folder\Telegram Desktop\GymSysyemWpf\bin\Release\net7.0-windows\Microsoft.Extensions.Options.dll
+E:\New folder\Telegram Desktop\GymSysyemWpf\bin\Release\net7.0-windows\Microsoft.Extensions.Primitives.dll
+E:\New folder\Telegram Desktop\GymSysyemWpf\bin\Release\net7.0-windows\Microsoft.Identity.Client.dll
+E:\New folder\Telegram Desktop\GymSysyemWpf\bin\Release\net7.0-windows\Microsoft.Identity.Client.Extensions.Msal.dll
+E:\New folder\Telegram Desktop\GymSysyemWpf\bin\Release\net7.0-windows\Microsoft.IdentityModel.Abstractions.dll
+E:\New folder\Telegram Desktop\GymSysyemWpf\bin\Release\net7.0-windows\Microsoft.IdentityModel.JsonWebTokens.dll
+E:\New folder\Telegram Desktop\GymSysyemWpf\bin\Release\net7.0-windows\Microsoft.IdentityModel.Logging.dll
+E:\New folder\Telegram Desktop\GymSysyemWpf\bin\Release\net7.0-windows\Microsoft.IdentityModel.Protocols.dll
+E:\New folder\Telegram Desktop\GymSysyemWpf\bin\Release\net7.0-windows\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+E:\New folder\Telegram Desktop\GymSysyemWpf\bin\Release\net7.0-windows\Microsoft.IdentityModel.Tokens.dll
+E:\New folder\Telegram Desktop\GymSysyemWpf\bin\Release\net7.0-windows\Microsoft.SqlServer.Server.dll
+E:\New folder\Telegram Desktop\GymSysyemWpf\bin\Release\net7.0-windows\Mono.TextTemplating.dll
+E:\New folder\Telegram Desktop\GymSysyemWpf\bin\Release\net7.0-windows\QRCoder.dll
+E:\New folder\Telegram Desktop\GymSysyemWpf\bin\Release\net7.0-windows\System.IdentityModel.Tokens.Jwt.dll
+E:\New folder\Telegram Desktop\GymSysyemWpf\bin\Release\net7.0-windows\System.Memory.Data.dll
+E:\New folder\Telegram Desktop\GymSysyemWpf\bin\Release\net7.0-windows\System.Runtime.Caching.dll
+E:\New folder\Telegram Desktop\GymSysyemWpf\bin\Release\net7.0-windows\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+E:\New folder\Telegram Desktop\GymSysyemWpf\bin\Release\net7.0-windows\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+E:\New folder\Telegram Desktop\GymSysyemWpf\bin\Release\net7.0-windows\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+E:\New folder\Telegram Desktop\GymSysyemWpf\bin\Release\net7.0-windows\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+E:\New folder\Telegram Desktop\GymSysyemWpf\bin\Release\net7.0-windows\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+E:\New folder\Telegram Desktop\GymSysyemWpf\bin\Release\net7.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+E:\New folder\Telegram Desktop\GymSysyemWpf\bin\Release\net7.0-windows\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+E:\New folder\Telegram Desktop\GymSysyemWpf\obj\Release\net7.0-windows\GymSysyemWpf.csproj.AssemblyReference.cache
+E:\New folder\Telegram Desktop\GymSysyemWpf\obj\Release\net7.0-windows\AdminWindow.baml
+E:\New folder\Telegram Desktop\GymSysyemWpf\obj\Release\net7.0-windows\Styles\ButtonStyles.baml
+E:\New folder\Telegram Desktop\GymSysyemWpf\obj\Release\net7.0-windows\Styles\UIColors.baml
+E:\New folder\Telegram Desktop\GymSysyemWpf\obj\Release\net7.0-windows\UserControls\Product.baml
+E:\New folder\Telegram Desktop\GymSysyemWpf\obj\Release\net7.0-windows\AdminWindow.g.cs
+E:\New folder\Telegram Desktop\GymSysyemWpf\obj\Release\net7.0-windows\ConfirmDeleting.g.cs
+E:\New folder\Telegram Desktop\GymSysyemWpf\obj\Release\net7.0-windows\ConfirmFinancial.g.cs
+E:\New folder\Telegram Desktop\GymSysyemWpf\obj\Release\net7.0-windows\MainWindow.g.cs
+E:\New folder\Telegram Desktop\GymSysyemWpf\obj\Release\net7.0-windows\MonthlyProfit.g.cs
+E:\New folder\Telegram Desktop\GymSysyemWpf\obj\Release\net7.0-windows\ProtienAdd.g.cs
+E:\New folder\Telegram Desktop\GymSysyemWpf\obj\Release\net7.0-windows\ProtienUpdate.g.cs
+E:\New folder\Telegram Desktop\GymSysyemWpf\obj\Release\net7.0-windows\SubscriptionAdd.g.cs
+E:\New folder\Telegram Desktop\GymSysyemWpf\obj\Release\net7.0-windows\SubscriptionUpdate.g.cs
+E:\New folder\Telegram Desktop\GymSysyemWpf\obj\Release\net7.0-windows\TraineeAdd.g.cs
+E:\New folder\Telegram Desktop\GymSysyemWpf\obj\Release\net7.0-windows\TraineeUpdate.g.cs
+E:\New folder\Telegram Desktop\GymSysyemWpf\obj\Release\net7.0-windows\UserControls\Product.g.cs
+E:\New folder\Telegram Desktop\GymSysyemWpf\obj\Release\net7.0-windows\App.g.cs
+E:\New folder\Telegram Desktop\GymSysyemWpf\obj\Release\net7.0-windows\GymSysyemWpf_MarkupCompile.cache
+E:\New folder\Telegram Desktop\GymSysyemWpf\obj\Release\net7.0-windows\GymSysyemWpf_MarkupCompile.lref
+E:\New folder\Telegram Desktop\GymSysyemWpf\obj\Release\net7.0-windows\App.baml
+E:\New folder\Telegram Desktop\GymSysyemWpf\obj\Release\net7.0-windows\ConfirmDeleting.baml
+E:\New folder\Telegram Desktop\GymSysyemWpf\obj\Release\net7.0-windows\ConfirmFinancial.baml
+E:\New folder\Telegram Desktop\GymSysyemWpf\obj\Release\net7.0-windows\MainWindow.baml
+E:\New folder\Telegram Desktop\GymSysyemWpf\obj\Release\net7.0-windows\MonthlyProfit.baml
+E:\New folder\Telegram Desktop\GymSysyemWpf\obj\Release\net7.0-windows\ProtienAdd.baml
+E:\New folder\Telegram Desktop\GymSysyemWpf\obj\Release\net7.0-windows\ProtienUpdate.baml
+E:\New folder\Telegram Desktop\GymSysyemWpf\obj\Release\net7.0-windows\SubscriptionAdd.baml
+E:\New folder\Telegram Desktop\GymSysyemWpf\obj\Release\net7.0-windows\SubscriptionUpdate.baml
+E:\New folder\Telegram Desktop\GymSysyemWpf\obj\Release\net7.0-windows\TraineeAdd.baml
+E:\New folder\Telegram Desktop\GymSysyemWpf\obj\Release\net7.0-windows\TraineeUpdate.baml
+E:\New folder\Telegram Desktop\GymSysyemWpf\obj\Release\net7.0-windows\GymSysyemWpf.g.resources
+E:\New folder\Telegram Desktop\GymSysyemWpf\obj\Release\net7.0-windows\GymSysyemWpf.GeneratedMSBuildEditorConfig.editorconfig
+E:\New folder\Telegram Desktop\GymSysyemWpf\obj\Release\net7.0-windows\GymSysyemWpf.AssemblyInfoInputs.cache
+E:\New folder\Telegram Desktop\GymSysyemWpf\obj\Release\net7.0-windows\GymSysyemWpf.AssemblyInfo.cs
+E:\New folder\Telegram Desktop\GymSysyemWpf\obj\Release\net7.0-windows\GymSysyemWpf.csproj.CoreCompileInputs.cache
+E:\New folder\Telegram Desktop\GymSysyemWpf\obj\Release\net7.0-windows\GymSysyemWpf.csproj.CopyComplete
+E:\New folder\Telegram Desktop\GymSysyemWpf\obj\Release\net7.0-windows\GymSysyemWpf.dll
+E:\New folder\Telegram Desktop\GymSysyemWpf\obj\Release\net7.0-windows\refint\GymSysyemWpf.dll
+E:\New folder\Telegram Desktop\GymSysyemWpf\obj\Release\net7.0-windows\GymSysyemWpf.pdb
+E:\New folder\Telegram Desktop\GymSysyemWpf\obj\Release\net7.0-windows\GymSysyemWpf.genruntimeconfig.cache
+E:\New folder\Telegram Desktop\GymSysyemWpf\obj\Release\net7.0-windows\ref\GymSysyemWpf.dll
+E:\New folder\Telegram Desktop\GymSysyemWpf\obj\Release\net7.0-windows\Bill.g.cs
+E:\New folder\Telegram Desktop\GymSysyemWpf\obj\Release\net7.0-windows\Bill.baml

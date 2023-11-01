@@ -1,7 +1,9 @@
-﻿using GymSysyemWpf.Classes;
+﻿
 using LiveCharts.Defaults;
 using LiveCharts.Wpf;
 using LiveCharts;
+using QRCoder;
+
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,774 +19,1563 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using System.Reflection.PortableExecutable;
+using GymSysyemWpf.Models;
+using System.Diagnostics;
+using Microsoft.Win32;
+using QRCoder;
+using System.Drawing;
+using System.Drawing.Imaging;
+using System.Windows;
+using Microsoft.EntityFrameworkCore;
+using System.Collections.ObjectModel;
+using static GymSysyemWpf.MonthlyProfit;
+using Microsoft.Identity.Client;
+using System.ComponentModel;
+using static System.Runtime.InteropServices.JavaScript.JSType;
+using System.Globalization;
+using GlobalLowLevelInputHooks;
+
 
 namespace GymSysyemWpf
 {
-	/// <summary>
-	/// Interaction logic for AdminWindow.xaml
-	/// </summary>
-	public partial class AdminWindow : Window
-	{
-		Context context;
+    /// <summary>
+    /// Interaction logic for AdminWindow.xaml
+    /// </summary>
+    public partial class AdminWindow : Window
+    {
+        Context context;
 
+        //private LowLevelKeyboardHook lowLevelKeyboardHook;
         public AdminWindow()
-		{
-			InitializeComponent();
-            context= new Context();
+        {
+            InitializeComponent();
+            context = new Context();
 
         }
+
         static public SeriesCollection SeriesCollection { get; set; }
+        private bool mEditPtnPressed = false;
 
-        private bool mDeletePtnPressed = false;
-		private bool mEditPtnPressed = false;
-
-
-		private void Window_MouseDown(Object sender, MouseButtonEventArgs e)
-		{
-			if (e.LeftButton == MouseButtonState.Pressed)
-			{
-				DragMove();
-			}
-		}
-		private void btnMinimize_Click(object sender, RoutedEventArgs e)
-		{
+        private void btnMinimize_Click(object sender, RoutedEventArgs e)
+        {
             WindowState = WindowState.Minimized;
-		}
-		private void btnClose_Click(object sender, RoutedEventArgs e)
-		{
-			Application.Current.Shutdown();
-		}
-		private void btnMaximize_Click(object sender, RoutedEventArgs e)
-		{
-			borderBudget.Width = 850;
-			borderIncome.Width = 850;
-
-            Thickness margin = biChart.Margin;
-            margin.Left = 60;
-            biChart.Margin = margin;
+        }
+        private void btnClose_Click(object sender, RoutedEventArgs e)
+        {
+            Application.Current.Shutdown();
+        }
+        private void btnMaximize_Click(object sender, RoutedEventArgs e)
+        {
+            
 
 
             if (this.WindowState == WindowState.Normal)
-				this.WindowState = WindowState.Maximized;
-			else
-			{
-				this.WindowState = WindowState.Normal;
+                this.WindowState = WindowState.Maximized;
+            else
+            {
+                this.WindowState = WindowState.Normal;
 
-                if (WindowState == WindowState.Normal)
-                {
-                    borderBudget.Width = 780;
-                    borderIncome.Width = 780;
-
-                    margin.Left = 20;
-                    biChart.Margin = margin;
-                }
+                
             }
-				
-				
-		}
+
+
+        }
 
 
 
-        //Reciptionist 
-        private void receptionist_Click(object sender, RoutedEventArgs e)
-		{
-			headerText.Text = "RECEPTIONISTS";
-			receptionistGrid.Visibility = Visibility.Visible;
-			traineeGrid.Visibility = Visibility.Hidden;
-			coachGrid.Visibility = Visibility.Hidden;
-			protienGrid.Visibility = Visibility.Hidden;
-			machineGrid.Visibility = Visibility.Hidden;
+
+        // Trainee
+        public bool IsOpen = true;
+        Bitmap qrCodeBitmap;
+        int NumOfTrai;
+        double Price;
+        SaveFileDialog SaveFile = new SaveFileDialog();
+        QRCodeGenerator qrGenerator = new QRCodeGenerator();
+        private void traniee_Click(object sender, RoutedEventArgs e)
+        {
+            headerText.Text = "المتدربين";
+            traineeGrid.Visibility = Visibility.Visible;
+            SubscripeGrid.Visibility = Visibility.Hidden;
+            attendanceGrid.Visibility = Visibility.Hidden;
+            changePasswordGrid.Visibility = Visibility.Hidden;
+            dataGrideBill.Visibility = Visibility.Hidden;
+            BillGrid.Visibility = Visibility.Hidden;
+
+            protienGrid.Visibility = Visibility.Hidden;
             BuyprotienGrid.Visibility = Visibility.Hidden;
-			financialGrid.Visibility = Visibility.Hidden;
-            vendorGrid.Visibility = Visibility.Hidden;
-            financialIncome.Visibility = Visibility.Hidden;
+            deletedTab.Visibility = Visibility.Hidden;
+
+            subdeletedGrid.Visibility = Visibility.Hidden;
+            proddeletedGrid.Visibility = Visibility.Hidden;
+            traineedeletedGrid.Visibility = Visibility.Hidden;
+
+
+            DailyTrainee.Visibility = Visibility.Visible;
             texttotal.Visibility = Visibility.Hidden;
 
-            RAdd.Visibility = Visibility.Visible;
-			TAdd.Visibility = Visibility.Hidden;
-			CAdd.Visibility = Visibility.Hidden;
-			PAdd.Visibility = Visibility.Hidden;
-			MAdd.Visibility = Visibility.Hidden;
-            VAdd.Visibility = Visibility.Hidden;
-			//dataGrideReceptionist.ItemsSource = null;
+            Search.Visibility = Visibility.Visible;
+            searsh.Visibility = Visibility.Visible;
+            SerchAdd.Visibility = Visibility.Visible;
 
-			dataGrideReceptionist.ItemsSource = null;
-			var query = context.Receptionists.Select(R => R).ToList();
-			dataGrideReceptionist.ItemsSource = query;
+            btnSub.Visibility = Visibility.Hidden;
+            btnSpcail.Visibility = Visibility.Hidden;
+            financialGrid.Visibility = Visibility.Hidden;
+            TraineeAttendeFeature.Visibility = Visibility.Hidden;
 
 
-		}
-		private void RecEdit_Click(object sender, RoutedEventArgs e)
-		{
-            receptionistUpdated receptionistUpdated = new receptionistUpdated();
+            TAdd.Visibility = Visibility.Visible;
+            PAdd.Visibility = Visibility.Hidden;
+            bAdd.Visibility = Visibility.Hidden;
+            SAdd.Visibility = Visibility.Hidden;
+            billAdd.Visibility = Visibility.Hidden;
 
-            receptionistUpdated.recephDataUpdated += Receptionistupdated_receptionistupdate;
+            if (context.DailyTrainees.FirstOrDefault(e => !e.Done) != null)
+            {
+                NumOfTrai = context.DailyTrainees.FirstOrDefault(e => !e.Done).NumberOfTrainee;
+            }
+            else
+            {
+                NumOfTrai = 0;
+            }
 
-            mEditPtnPressed = true;
-			if (mEditPtnPressed)
-			{
-				Receptionist currentReceptionist;
-				currentReceptionist = dataGrideReceptionist.SelectedItem as Receptionist;
-				receptionistUpdated.currentReciptionist = currentReceptionist;
-				receptionistUpdated.Show();
+            Price = context.Subscriptions.FirstOrDefault(m => m.Name == "يومي").Price;
 
-				dataGrideReceptionist.SelectedItem = null;
-				mEditPtnPressed = false;
+            NumOfTrainee.Content = NumOfTrai.ToString();
+            constDailyText.Content = Price.ToString();
 
-				dataGrideReceptionist.ItemsSource = null;
-				dataGrideReceptionist.ItemsSource = context.Receptionists.ToList();
-			}
-		}
-		private void Rec_Delete_Click(object sender, RoutedEventArgs e)
-		{
-			mDeletePtnPressed = true;
-
-			Receptionist item = dataGrideReceptionist.SelectedItem as Receptionist;
-			int Id = int.Parse(item.ID.ToString());
-			var query = context.Receptionists.FirstOrDefault(p => p.ID == Id);
-			context.Receptionists.Remove(query);
-			context.SaveChanges();
-			mDeletePtnPressed = false;
-			dataGrideReceptionist.ItemsSource = context.Receptionists.ToList();
-			mDeletePtnPressed = false;
-
-		}
-		private void R_MouseDown(object sender, MouseButtonEventArgs e)
-		{
-            ReciptionistAdd reciption = new ReciptionistAdd();
-            reciption.receptionDataChanged += Reciption_receptionDataChanged;
-            reciption.Show();
-		}
-		private void Reciption_receptionDataChanged(object sender, Receptionist obj)
-		{
-			Receptionist rec = new Receptionist();
-			rec = obj;
-			rec.AdminID = 1;
-
-			context.Receptionists.Add(rec);
-			context.SaveChanges();
-			GetReceptionists();
-			dataGrideReceptionist.DataContext = rec;
-		}
-		private void GetReceptionists()
-		{
-			dataGrideReceptionist.ItemsSource = context.Receptionists.ToList();
-
-		}
-		private void Receptionistupdated_receptionistupdate(object sender, Receptionist e)
-		{
-			dataGrideReceptionist.ItemsSource = null;
-            context = new Context();
-            var query = context.Receptionists.Select(R => R).ToList();
-			dataGrideReceptionist.ItemsSource = query;
-		}
+            Profit.Content = (NumOfTrai * Price).ToString();
 
 
+            dataGrideTrainee.DataContext = null;
 
+            var tran = context.Trainees.Where(x => x.IsDeleted == false).Select(v => new
+            {
+                Id = v.Id,
+                Name = v.Name,
+                Phone = v.Phone,
+                Age = v.Age,
+                Gender = v.Gender,
+                Price = v.Paid,
+                NumberOfAttendance = v.NumberOfAttendance,
+                SubsName = v.Subscription.Name,
+                SubscriptionID = v.SubscriptionID,
+                IsDeleted = v.IsDeleted,
+                startdate = v.StartDate,
+                EndDate = v.EndDate,
+                order= context.Trainees.ToList().IndexOf(v) + 1
+            }).ToList();
+            dataGrideTrainee.ItemsSource = tran;
+        }
+        private void TrEdit_Click(object sender, RoutedEventArgs e)
+        {
+            if (Search.Text != "")
+            {
 
-		//Trainee
-		private void traniee_Click(object sender, RoutedEventArgs e)
-		{
-			headerText.Text = "TRAINEES";
-			receptionistGrid.Visibility = Visibility.Hidden;
-			traineeGrid.Visibility = Visibility.Visible;
-			coachGrid.Visibility = Visibility.Hidden;
-			protienGrid.Visibility = Visibility.Hidden;
-			machineGrid.Visibility = Visibility.Hidden;
-            vendorGrid.Visibility = Visibility.Hidden;
-            BuyprotienGrid.Visibility = Visibility.Hidden;
-			financialGrid.Visibility = Visibility.Hidden;
-            financialIncome.Visibility = Visibility.Hidden;
-            texttotal.Visibility = Visibility.Hidden;
-
-
-            RAdd.Visibility = Visibility.Hidden;
-			TAdd.Visibility = Visibility.Visible;
-			CAdd.Visibility = Visibility.Hidden;
-			PAdd.Visibility = Visibility.Hidden;
-			MAdd.Visibility = Visibility.Hidden;
-            VAdd.Visibility = Visibility.Hidden;
-
-			dataGrideTrainee.DataContext = null;
-			var query = context.Trainees.Select(R => R).ToList();
-			dataGrideTrainee.DataContext = query;
-		}
-		private void TrEdit_Click(object sender, RoutedEventArgs e)
-		{
+            }
             TraineeUpdate TrainUpdate = new TraineeUpdate();
             TrainUpdate.TaineeDataUpdated += TrainUpdate_TaineeDataUpdated;
-			
+            Trainee trainee = new Trainee();
             mEditPtnPressed = true;
-			if (mEditPtnPressed)
-			{
-				Trainee currentTrainee;
-				currentTrainee = dataGrideTrainee.SelectedItem as Trainee;
-				TraineeUpdate.currentTrainee = currentTrainee;
-				TrainUpdate.Show();
-				dataGrideTrainee.SelectedItem = null;
-				mEditPtnPressed = false;
-				dataGrideTrainee.ItemsSource = null;
-				dataGrideTrainee.ItemsSource = context.Trainees.ToList();
-			}
-		}
-		private void TrDelete_Click(object sender, RoutedEventArgs e)
-		{
-			mDeletePtnPressed = true;
+            if (mEditPtnPressed)
+            {
+                if (dataGrideTrainee.SelectedItem != null)
+                {
+                    dynamic selectedItem = dataGrideTrainee.SelectedItem;
 
-			Trainee item = dataGrideTrainee.SelectedItem as Trainee;
-			int Id = int.Parse(item.ID.ToString());
-			var query = context.Trainees.FirstOrDefault(p => p.ID == Id);
-			context.Trainees.Remove(query);
-			context.SaveChanges();
-			mDeletePtnPressed = false;
-			dataGrideTrainee.ItemsSource = context.Trainees.ToList();
-			mDeletePtnPressed = false;
-		}
-		private void T_MouseDown(object sender, MouseButtonEventArgs e)
-		{
+                    // Now you can access the properties of the anonymous object directly
+                    trainee.Name = selectedItem.Name;
+                    trainee.Phone = selectedItem.Phone;
+                    trainee.NumberOfAttendance = selectedItem.NumberOfAttendance;
+                    trainee.Paid = selectedItem.Price;
+                    trainee.Price = selectedItem.Price;
+                    trainee.Age = selectedItem.Age;
+                    trainee.Gender = selectedItem.Gender;
+                    trainee.Id = selectedItem.Id;
+                    trainee.SubscriptionID = selectedItem.SubscriptionID;
+                    //trainee.Subscription.Name = selectedItem.Subscription.Name;
+
+                TraineeUpdate.currentTrainee = trainee;
+                TrainUpdate.Show();
+
+                dataGrideTrainee.SelectedItem = null;
+                mEditPtnPressed = false;
+                }
+
+            }
+        }
+        private void TrDelete_Click(object sender, RoutedEventArgs e)
+        {
+
+            ConfirmDeleting confirm = new ConfirmDeleting();
+            confirm.confirmDeleteData += ConfirmDeleting_confirmDeleteData;
+            Trainee trainee = new Trainee();
+            if (dataGrideTrainee.SelectedItem != null)
+            {
+                dynamic selectedItem = dataGrideTrainee.SelectedItem;
+
+                var TraineeId = (int)selectedItem.Id;
+                ConfirmDeleting.deletedId = TraineeId;
+                ConfirmDeleting.Type = "Trainee";
+            }
+            confirm.Show();
+
+
+        }
+        private void ConfirmDeleting_confirmDeleteData(object sender, object obj)
+        {
+            dataGrideTrainee.DataContext = null;
+            var tran = context.Trainees.Where(x => x.IsDeleted == false).Select(v => new
+            {
+                Id = v.Id,
+                Name = v.Name,
+                Phone = v.Phone,
+                Age = v.Age,
+                Gender = v.Gender,
+                Price = v.Paid,
+                NumberOfAttendance = v.NumberOfAttendance,
+                SubsName = v.Subscription.Name,
+                SubscriptionID = v.SubscriptionID,
+                IsDeleted = v.IsDeleted,
+                startdate = v.StartDate,
+                EndDate = v.EndDate,
+                order = context.Trainees.ToList().IndexOf(v) + 1
+            }).ToList();
+
+            dataGrideTrainee.ItemsSource = tran;
+        }
+        private void T_MouseDown(object sender, MouseButtonEventArgs e)
+        {
             TraineeAdd trainee = new TraineeAdd();
             trainee.traineeDataChanged += Trainee_TraineeDataChanged;
             trainee.Show();
-		}
-		private void Trainee_TraineeDataChanged(object sender, Trainee obj)
-		{
-			Trainee trainee = new Trainee();
-			trainee = obj;
-			trainee.AdminID = 1;
-			trainee.ReceptionistID = 1;
-			
-			context.Trainees.Add(trainee);
-			context.SaveChanges();
-			GetTrainee(trainee);
-			dataGrideTrainee.DataContext = trainee;
-		}
-		private void GetTrainee(Trainee trainee)
-		{
-			dataGrideTrainee.ItemsSource = context.Trainees.ToList();
+        }
+        private void Trainee_TraineeDataChanged(object sender, Trainee obj)
+        {
+            Trainee trainee = new Trainee();
+            trainee = obj;
+
+            Trainee trainLast = context.Trainees.OrderBy(v => v.Id).LastOrDefault();
+
+            if (trainLast == null)
+            {
+                trainee.DisplayOrderID = 1;
+            }
+            else
+            {
+                trainee.DisplayOrderID = trainLast.DisplayOrderID + 1;
+            }
+
+            trainee.QrCode = trainee.DisplayOrderID + "---" + trainee.Name;
+            context.Trainees.Add(trainee);
+            context.SaveChanges();
+
+            string QrCode = trainee.DisplayOrderID + "---" + trainee.Name;
+            QRCodeData qrCodeData = qrGenerator.CreateQrCode(QrCode, QRCodeGenerator.ECCLevel.Q);
+            QRCode qrCode = new QRCode(qrCodeData);
+
+            qrCodeBitmap = qrCode.GetGraphic(20);
+
+            SaveFile.Filter = "PNG|*.png";
+            SaveFile.FileName = QrCode;
+            if (SaveFile.ShowDialog() == true)
+            {
+                if (qrCodeBitmap != null)
+                    qrCodeBitmap.Save(SaveFile.FileName, ImageFormat.Png);
+            }
+
+            GetTrainee(trainee);
+            dataGrideTrainee.DataContext = trainee;
+        }
+        private void GetTrainee(Trainee trainee)
+        {
+            dataGrideTrainee.DataContext = null;
+            var tran = context.Trainees.Where(x => x.IsDeleted == false).Select(v => new
+            {
+                Id = v.Id,
+                Name = v.Name,
+                Phone = v.Phone,
+                Age = v.Age,
+                Gender = v.Gender,
+                Price = v.Paid,
+                NumberOfAttendance = v.NumberOfAttendance,
+                SubsName = v.Subscription.Name,
+                SubscriptionID = v.SubscriptionID,
+                IsDeleted = v.IsDeleted,
+                startdate = v.StartDate,
+                EndDate = v.EndDate,
+                order = context.Trainees.ToList().IndexOf(v)+1
+            }).ToList();
+
+            dataGrideTrainee.ItemsSource = tran;
         }
         private void TrainUpdate_TaineeDataUpdated(object sender, Trainee obj)
-		{
-			dataGrideTrainee.DataContext = null;
-            context = new Context();
-            var query = context.Trainees.ToList();
-			dataGrideTrainee.ItemsSource = query;
-		}
-
-		
-
-
-		//Coach
-		private void coach_Click(object sender, RoutedEventArgs e)
-		{
-			headerText.Text = "COACHES";
-			receptionistGrid.Visibility = Visibility.Hidden;
-			traineeGrid.Visibility = Visibility.Hidden;
-			coachGrid.Visibility = Visibility.Visible;
-			protienGrid.Visibility = Visibility.Hidden;
-			machineGrid.Visibility = Visibility.Hidden;
-            vendorGrid.Visibility = Visibility.Hidden;
-            BuyprotienGrid.Visibility = Visibility.Hidden;
-			financialGrid.Visibility = Visibility.Hidden;
-            financialIncome.Visibility = Visibility.Hidden;
-            texttotal.Visibility = Visibility.Hidden;
-
-
-
-            RAdd.Visibility = Visibility.Hidden;
-			TAdd.Visibility = Visibility.Hidden;
-			CAdd.Visibility = Visibility.Visible;
-			PAdd.Visibility = Visibility.Hidden;
-			MAdd.Visibility = Visibility.Hidden;
-            VAdd.Visibility = Visibility.Hidden;
-
-
-			dataGrideCoach.DataContext = null;
-			var query = context.Coaches.Select(R => R).ToList();
-			dataGrideCoach.ItemsSource = query;
-		}
-		private void CEdit_Click(object sender, RoutedEventArgs e)
-		{
-            UpdateCoach Popup = new UpdateCoach();
-            Popup.coachDataUpdated += Cu_coachDataUpdated;
-
-            mEditPtnPressed = true;
-			if (mEditPtnPressed)
-			{
-				Coach currentCoach;
-				currentCoach = dataGrideCoach.SelectedItem as Coach;
-				UpdateCoach.currentCoach = currentCoach;
-				Popup.Show();
-				dataGrideCoach.SelectedItem = null;
-				//currentProtien = null;
-				mEditPtnPressed = false;
-				dataGrideCoach.ItemsSource = null;
-				dataGrideCoach.ItemsSource = context.Coaches.ToList();
-			}
-		}
-		private void CDelete_Click(object sender, RoutedEventArgs e)
-		{
-			mDeletePtnPressed = true;
-
-			Coach item = dataGrideCoach.SelectedItem as Coach;
-			int Id = int.Parse(item.ID.ToString());
-			var query = context.Coaches.FirstOrDefault(p => p.ID == Id);
-			context.Coaches.Remove(query);
-			context.SaveChanges();
-			mDeletePtnPressed = false;
-			dataGrideCoach.ItemsSource = context.Coaches.ToList();
-			mDeletePtnPressed = false;
-		}
-		private void CAdd_MouseDown(object sender, MouseButtonEventArgs e)
-		{
-            CoachAdd co = new CoachAdd();
-            co.coachDataChanged += Co_coachDataChanged;
-            co.Show();
-		}
-		private void Co_coachDataChanged(object sender, Coach obj)
-		{
-			Coach co = new Coach();
-			co = obj;
-			co.AdminID = 1;
-			co.ReceptionistID=1;
-
-			context.Coaches.Add(co);
-			context.SaveChanges();
-			GetCoaches();
-			dataGrideCoach.DataContext = co;
-		}
-		private void GetCoaches()
-		{
-			dataGrideCoach.ItemsSource = context.Coaches.ToList();
-        }
-		private void Cu_coachDataUpdated(object sender, Coach obj)
-		{
-			dataGrideCoach.ItemsSource = null;
-            context = new Context();
-            dataGrideCoach.ItemsSource = context.Coaches.ToList();
-		}
-
-
-
-		// Protien Product
-		private void protien_Click(object sender, RoutedEventArgs e)
-		{
-			headerText.Text = "PROTIEN PRODUCTS";
-			receptionistGrid.Visibility = Visibility.Hidden;
-			traineeGrid.Visibility = Visibility.Hidden;
-			coachGrid.Visibility = Visibility.Hidden;
-			protienGrid.Visibility = Visibility.Visible;
-			machineGrid.Visibility = Visibility.Hidden;
-            vendorGrid.Visibility = Visibility.Hidden;
-            BuyprotienGrid.Visibility = Visibility.Hidden;
-			financialGrid.Visibility = Visibility.Hidden;
-            financialIncome.Visibility = Visibility.Hidden;
-            texttotal.Visibility = Visibility.Hidden;
-
-
-
-            RAdd.Visibility = Visibility.Hidden;
-			TAdd.Visibility = Visibility.Hidden;
-			CAdd.Visibility = Visibility.Hidden;
-			PAdd.Visibility = Visibility.Visible;
-			MAdd.Visibility = Visibility.Hidden;
-            VAdd.Visibility = Visibility.Hidden;
-			
-			var query = context.ProtienProducts.Select(R => R).ToList();
-			dataGrideProtien.DataContext = query;
-		}
-		private void Button_Click(object sender, RoutedEventArgs e)
-		{
-            ProtienUpdate prot = new ProtienUpdate();
-            prot.ProtienDataUpdated += Prot_ProtienDataUpdated;
-
-            mEditPtnPressed = true;
-			if (mEditPtnPressed)
-			{
-				ProtienProduct currentProtien;
-				currentProtien = dataGrideProtien.SelectedItem as ProtienProduct;
-				ProtienUpdate.currentProtien = currentProtien;
-				prot.Show();
-				dataGrideProtien.SelectedItem = null;
-				//currentProtien = null;
-				mEditPtnPressed = false;
-				dataGrideProtien.ItemsSource = null;
-				dataGrideProtien.ItemsSource= context.ProtienProducts.ToList();	
-			}
-		
-		}
-		private void Button_Click_1(object sender, RoutedEventArgs e)
-		{
-			mDeletePtnPressed = true;
-			
-			ProtienProduct item = dataGrideProtien.SelectedItem as ProtienProduct;
-			int Id = int.Parse(item.ID.ToString());
-			var query = context.ProtienProducts.FirstOrDefault(p => p.ID == Id);
-			context.ProtienProducts.Remove(query);
-			context.SaveChanges();
-			mDeletePtnPressed = false;
-			dataGrideProtien.ItemsSource = context.ProtienProducts.ToList();
-			mDeletePtnPressed = false;
-		}	
-		private void P_MouseDown(object sender, MouseButtonEventArgs e)
-		{
-            ProtienAdd pr = new ProtienAdd();
-            pr.protienhDataChanged += pr_protienDataChanged;
-
-            pr.Show();
-		}
-		private void pr_protienDataChanged(object sender, ProtienProduct obj)
-		{
-			ProtienProduct pro = new ProtienProduct();
-			pro = obj;
-			pro.AdminID = 1;
-			pro.ReceptionistID = 1;
-			
-			context.ProtienProducts.Add(pro);
-			context.SaveChanges();
-
-			GetProtien();
-			dataGrideProtien.DataContext = pro;
-		}
-		private void GetProtien()
-		{
-			dataGrideProtien.ItemsSource = context.ProtienProducts.ToList();
-
-		}
-		private void Prot_ProtienDataUpdated(object sender, ProtienProduct prot)
-		{
-			dataGrideProtien.ItemsSource = null;
-            context = new Context();
-            dataGrideProtien.ItemsSource= context.ProtienProducts.ToList();
-
-        }
-
-
-
-		//Machine
-		private void machiene_Click(object sender, RoutedEventArgs e)
-		{
-			headerText.Text = "MACHINES";
-			receptionistGrid.Visibility = Visibility.Hidden;
-			traineeGrid.Visibility = Visibility.Hidden;
-			coachGrid.Visibility = Visibility.Hidden;
-			protienGrid.Visibility = Visibility.Hidden;
-			machineGrid.Visibility = Visibility.Visible;
-            vendorGrid.Visibility = Visibility.Hidden;
-            BuyprotienGrid.Visibility = Visibility.Hidden;
-			financialGrid.Visibility = Visibility.Hidden;
-            financialIncome.Visibility = Visibility.Hidden;
-            texttotal.Visibility = Visibility.Hidden;
-
-
-
-            RAdd.Visibility = Visibility.Hidden;
-			TAdd.Visibility = Visibility.Hidden;
-			CAdd.Visibility = Visibility.Hidden;
-			PAdd.Visibility = Visibility.Hidden;
-			MAdd.Visibility = Visibility.Visible;
-            VAdd.Visibility = Visibility.Hidden;
-
-			var query = context.GymMachines.Select(R => R).ToList();
-			dataGrideMachien.DataContext = query;
-		}
-		private void MaEdit_Click(object sender, RoutedEventArgs e)
-		{
-            machineUpdated machineUpdated = new machineUpdated();
-            machineUpdated.machineDataUpdated += MachineUpdated_machineDataUpdated;
-            mEditPtnPressed = true;
-			if (mEditPtnPressed)
-			{
-				GymMachine currentMachine;
-				currentMachine = dataGrideMachien.SelectedItem as GymMachine;
-				machineUpdated.currentMachine = currentMachine;
-				machineUpdated.Show();
-
-				dataGrideMachien.SelectedItem = null;
-				mEditPtnPressed = false;
-
-				dataGrideMachien.ItemsSource = null;
-				dataGrideMachien.ItemsSource = context.GymMachines.ToList();
-			}
-		}
-		private void MaDelete_Click(object sender, RoutedEventArgs e)
-		{
-			mDeletePtnPressed = true;
-
-			GymMachine item = dataGrideMachien.SelectedItem as GymMachine;
-			int Id = int.Parse(item.ID.ToString());
-			var query = context.GymMachines.FirstOrDefault(p => p.ID == Id);
-			context.GymMachines.Remove(query);
-			context.SaveChanges();
-			mDeletePtnPressed = false;
-			dataGrideMachien.ItemsSource = context.GymMachines.ToList();
-			mDeletePtnPressed = false;
-		}
-		private void M_MouseDowen(object sender, MouseButtonEventArgs e)
-		{
-            MachineAdd machineAdd = new MachineAdd();
-            machineAdd.machienDataChanged += MachineAdd_machienDataChanged;
-            machineAdd.Show();
-		}
-		private void MachineAdd_machienDataChanged(object sender, GymMachine obj)
-		{
-			GymMachine machine = new GymMachine();
-			machine = obj;
-			machine.AdminID = 1;
-
-			context.GymMachines.Add(machine);
-			context.SaveChanges();
-
-			GetMachien();
-			dataGrideMachien.DataContext = machine;
-		}
-		private void GetMachien()
-		{
-			dataGrideMachien.ItemsSource = context.GymMachines.ToList();
-
-		}
-		private void MachineUpdated_machineDataUpdated(object sender, GymMachine obj)
-		{
-			dataGrideMachien.ItemsSource = null;
-			context = new Context();
-			var query = context.GymMachines.ToList();
-			dataGrideMachien.ItemsSource = query;
-		}
-
-
-        //Vendors
-        private void Vendor_Click(object sender, RoutedEventArgs e)
         {
-            headerText.Text = "Vendors";
-            receptionistGrid.Visibility = Visibility.Hidden;
+            if (Search.Text != "")
+            {
+                 dataGrideTrainee.DataContext = null;
+            var tran = context.Trainees.Where(x => x.IsDeleted == false).Select(v => new
+            {
+                Id = v.Id,
+                Name = v.Name,
+                Phone = v.Phone,
+                Age = v.Age,
+                Gender = v.Gender,
+                Price = v.Paid,
+                NumberOfAttendance = v.NumberOfAttendance,
+                SubsName = v.Subscription.Name,
+                SubscriptionID = v.SubscriptionID,
+                IsDeleted = v.IsDeleted,
+                startdate = v.StartDate,
+                EndDate = v.EndDate,
+                order = context.Trainees.ToList().IndexOf(v) + 1
+            }).ToList();
+
+            dataGrideTrainee.ItemsSource = tran;
+            }
+            else
+            {
+                dataGrideTrainee.DataContext = null;
+                var tran = context.Trainees.Where(x => x.IsDeleted == false).Select(v => new
+                {
+                    Id = v.Id,
+                    Name = v.Name,
+                    Phone = v.Phone,
+                    Age = v.Age,
+                    Gender = v.Gender,
+                    Price = v.Paid,
+                    NumberOfAttendance = v.NumberOfAttendance,
+                    SubsName = v.Subscription.Name,
+                    SubscriptionID = v.SubscriptionID,
+                    IsDeleted = v.IsDeleted,
+                    startdate = v.StartDate,
+                    EndDate = v.EndDate,
+                    order = context.Trainees.ToList().IndexOf(v) + 1
+                }).ToList();
+
+                dataGrideTrainee.ItemsSource = tran;
+            }
+        }
+        private void searsh_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            dataGrideTrainee.DataContext = null;
+            var tran = context.Trainees.Where(x => x.IsDeleted == false && (x.QrCode.Contains(Search.Text) || x.Name.Contains(Search.Text) || x.Phone.Contains(Search.Text))).Select(v => new
+            {
+                Id = v.Id,
+                Name = v.Name,
+                Phone = v.Phone,
+                Age = v.Age,
+                Gender = v.Gender,
+                Price = v.Price,
+                NumberOfAttendance = v.NumberOfAttendance,
+                SubsName = v.Subscription.Name,
+                SubscriptionID = v.SubscriptionID,
+                IsDeleted = v.IsDeleted,
+                startdate = v.StartDate,
+                EndDate = v.EndDate
+            }).ToList();
+
+            dataGrideTrainee.ItemsSource = tran;
+        }
+        private void Search_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            dataGrideTrainee.DataContext = null;
+            var tran = context.Trainees.Where(x => x.IsDeleted == false && (x.QrCode.Contains(Search.Text) || x.Name.Contains(Search.Text) || x.Phone.Contains(Search.Text))).Select(v => new
+            {
+                Id = v.Id,
+                Name = v.Name,
+                Phone = v.Phone,
+                Age = v.Age,
+                Gender = v.Gender,
+                Price = v.Price,
+                NumberOfAttendance = v.NumberOfAttendance,
+                SubsName = v.Subscription.Name,
+                SubscriptionID = v.SubscriptionID,
+                IsDeleted = v.IsDeleted,
+                startdate = v.StartDate,
+                EndDate = v.EndDate
+            }).ToList();
+
+            dataGrideTrainee.ItemsSource = tran;
+
+        }
+        private void btnAddTrainee_Click(object sender, RoutedEventArgs e)
+        {
+            ConfirmDeleting confirm = new ConfirmDeleting();
+            confirm.confirmDeleteData += Confirm_confirmDeleteData2;
+            confirm.Show();
+
+        }
+        private void Confirm_confirmDeleteData2(object sender, object obj)
+        {
+            context = new Context();
+            var currentDate = DateTime.Now.Date;
+
+
+            DailyTrainee dailyTrainee = context.DailyTrainees
+                                                .FirstOrDefault(e=>e.Done == false);
+
+
+            double Price = context.Subscriptions.FirstOrDefault(m => m.Name == "يومي").Price;
+            if (dailyTrainee != null)
+            {
+                dailyTrainee.NumberOfTrainee++;
+                int train = dailyTrainee.NumberOfTrainee;
+                dailyTrainee.TotalIncome += Price;
+                double totalInc = dailyTrainee.TotalIncome;
+                NumOfTrainee.Content = (train).ToString();
+                Profit.Content = totalInc.ToString();
+            }
+            else
+            {
+                DailyTrainee DailyTrainee = new DailyTrainee();
+
+
+                DailyTrainee.NumberOfTrainee = 1;
+                DailyTrainee.TotalIncome = Price;
+                DailyTrainee.Date = DateTime.Now;
+
+
+                NumOfTrainee.Content = "1";
+                Profit.Content = Price.ToString();
+                context.DailyTrainees.Add(DailyTrainee);
+            }
+
+            context.SaveChanges();
+        }
+        private void dataGrideTrainee_LoadingRow(object sender, DataGridRowEventArgs e)
+        {
+            dynamic rowData = e.Row.DataContext;
+
+            if (rowData != null)
+            {
+                var currentDate = DateTime.Now.Date;
+
+
+                int subId = Convert.ToInt32(rowData.SubscriptionID);
+                DateTime EndDate = Convert.ToDateTime(rowData.EndDate);
+                int NomOfAtt = Convert.ToInt32(rowData.NumberOfAttendance);
+                Subscription sub = context.Subscriptions.FirstOrDefault(s => s.Id == subId);
+                if (NomOfAtt >= sub.NumbersOfSessions
+                    || currentDate > EndDate)
+                {
+                    e.Row.Background = System.Windows.Media.Brushes.Black;
+                    e.Row.Foreground = System.Windows.Media.Brushes.White;
+                }
+                else
+                {
+                    e.Row.Background = System.Windows.Media.Brushes.White;
+                }
+            }
+        }
+
+
+
+        // Attendance
+        private void attendance_Click(object sender, RoutedEventArgs e)
+        {
+            headerText.Text = "الحضور";
             traineeGrid.Visibility = Visibility.Hidden;
-            coachGrid.Visibility = Visibility.Hidden;
+            SubscripeGrid.Visibility = Visibility.Hidden;
+            attendanceGrid.Visibility = Visibility.Visible;
+            dataGrideBill.Visibility = Visibility.Hidden;
+            BillGrid.Visibility = Visibility.Hidden;
+
             protienGrid.Visibility = Visibility.Hidden;
-            machineGrid.Visibility = Visibility.Hidden;
-            financialGrid.Visibility = Visibility.Hidden;
-            vendorGrid.Visibility = Visibility.Visible;
             BuyprotienGrid.Visibility = Visibility.Hidden;
-            financialIncome.Visibility = Visibility.Hidden;
+            deletedTab.Visibility = Visibility.Hidden;
+
+            subdeletedGrid.Visibility = Visibility.Hidden;
+            proddeletedGrid.Visibility = Visibility.Hidden;
+            traineedeletedGrid.Visibility = Visibility.Hidden;
+            changePasswordGrid.Visibility = Visibility.Hidden;
+
+            DailyTrainee.Visibility = Visibility.Hidden;
+            texttotal.Visibility = Visibility.Hidden;
+
+            Search.Visibility = Visibility.Hidden;
+            searsh.Visibility = Visibility.Hidden;
+            SerchAdd.Visibility = Visibility.Hidden;
+            financialGrid.Visibility = Visibility.Hidden;
+
+            btnSub.Visibility = Visibility.Hidden;
+            btnSpcail.Visibility = Visibility.Hidden;
+            TraineeAttendeFeature.Visibility = Visibility.Visible;
+
+            TAdd.Visibility = Visibility.Hidden;
+            PAdd.Visibility = Visibility.Hidden;
+            bAdd.Visibility = Visibility.Hidden;
+            SAdd.Visibility = Visibility.Hidden;
+            billAdd.Visibility = Visibility.Hidden;
+
+
+
+            dataGrideAttendance.ItemsSource = null;
+            var currentDate = DateTime.Now.Date;
+             
+            var traineesWithMatchingDate = context.Trainees.Where(t => !t.Seen)
+                .Select(v => new
+            {
+                Id = v.Id,
+                Name = v.Name,
+                Phone = v.Phone,
+                Age = v.Age,
+                Gender = v.Gender,
+                Price = v.Paid,
+                NumberOfAttendance = v.NumberOfAttendance,
+                SubsName = v.Subscription.Name,
+                SubscriptionID = v.SubscriptionID,
+                IsDeleted = v.IsDeleted,
+                startdate = v.StartDate,
+                EndDate = v.EndDate,
+                order = context.Trainees.ToList().IndexOf(v) + 1
+                }).ToList();
+
+            dataGrideAttendance.ItemsSource = traineesWithMatchingDate;
+        }
+        private void ToggleCalendarButtonClick(object sender, RoutedEventArgs e)
+        {
+            CalendarPopup.IsOpen = !CalendarPopup.IsOpen;
+        }
+        private void TraineeAttend_SelectedDatesChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (TraineeAttend.SelectedDate.HasValue)
+            {
+
+                DateTime selectedDate = TraineeAttend.SelectedDate.Value;
+                context = new Context();
+                List<Trainee> traineeDateAttends = context.TraineeDateAttend
+                                                                    .Where(r => r.Attend.Date == selectedDate.Date)
+                                                                    .Include(n=>n.Trainee)
+                                                                    .ThenInclude(n=>n.Subscription)
+                                                                    .Select(m=>m.Trainee)
+                                                                    .Distinct()
+                                                                    .ToList();
+
+                var trainees = traineeDateAttends.Select(v => new
+                {
+                    Id = v.Id,
+                    Name = v.Name,
+                    Phone = v.Phone,
+                    Age = v.Age,
+                    Gender = v.Gender,
+                    Price = v.Price,
+                    NumberOfAttendance = v.NumberOfAttendance,
+                    SubsName = v.Subscription.Name,
+                    SubscriptionID = v.SubscriptionID,
+                    IsDeleted = v.IsDeleted,
+                    startdate = v.StartDate,
+                    EndDate = v.EndDate,
+                    order = traineeDateAttends.IndexOf(v) + 1
+                }).ToList();
+
+
+                dataGrideAttendance.ItemsSource = trainees;
+
+
+            }
+        }
+        
+
+
+
+        // Subscription
+        static bool flag = true;
+        private void Subscripe_Click(object sender, RoutedEventArgs e)
+        {
+            headerText.Text = "الاشتراكات ";
+            traineeGrid.Visibility = Visibility.Hidden;
+            SubscripeGrid.Visibility = Visibility.Visible;
+            attendanceGrid.Visibility = Visibility.Hidden;
+            dataGrideBill.Visibility = Visibility.Hidden;
+            BillGrid.Visibility = Visibility.Hidden;
+
+            protienGrid.Visibility = Visibility.Hidden;
+            BuyprotienGrid.Visibility = Visibility.Hidden;
+
+            subdeletedGrid.Visibility = Visibility.Hidden;
+            proddeletedGrid.Visibility = Visibility.Hidden;
+            traineedeletedGrid.Visibility = Visibility.Hidden;
+            deletedTab.Visibility = Visibility.Hidden;
+            changePasswordGrid.Visibility = Visibility.Hidden;
+
+
+            DailyTrainee.Visibility = Visibility.Hidden;
             texttotal.Visibility = Visibility.Hidden;
 
 
+            Search.Visibility = Visibility.Hidden;
+            searsh.Visibility = Visibility.Hidden;
+            SerchAdd.Visibility = Visibility.Hidden;
+            financialGrid.Visibility = Visibility.Hidden;
+            TraineeAttendeFeature.Visibility = Visibility.Hidden;
 
-            VAdd.Visibility = Visibility.Visible;
-            RAdd.Visibility = Visibility.Hidden;
+
+            btnSub.Visibility = Visibility.Visible;
+            btnSpcail.Visibility = Visibility.Visible;
+
             TAdd.Visibility = Visibility.Hidden;
-            CAdd.Visibility = Visibility.Hidden;
             PAdd.Visibility = Visibility.Hidden;
-            MAdd.Visibility = Visibility.Hidden;
-            financialIncome.Visibility = Visibility.Hidden;
+            bAdd.Visibility = Visibility.Hidden;
+            SAdd.Visibility = Visibility.Visible;
+            billAdd.Visibility = Visibility.Hidden;
 
-            // dataGrideReceptionist.ItemsSource = null;
 
+            var query = context.Subscriptions.Where(m => m.IsDeleted == false).ToList();
+            dataGrideSubscripe.DataContext = query;
 
-            var query = context.Vendors.ToList();
-            dataGrideVendor.DataContext = query;
         }
-        private void updateVendor_Click(object sender, RoutedEventArgs e)
+        private void S_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            VendorUpdate vendor = new VendorUpdate();
-            vendor.VendorDataUpdated += Vendor_VendorDataUpdated;
+            SubscriptionAdd Sb = new SubscriptionAdd();
+            Sb.SubscriptionDataChanged += Sb_SubscriptionDataChanged;
+            Sb.Show();
+        }
+        private void Sb_SubscriptionDataChanged(object sender, Subscription obj)
+        {
+            Subscription subscription = new Subscription();
+            subscription = obj;
+
+
+            context.Subscriptions.Add(subscription);
+            context.SaveChanges();
+            Getsubscription(subscription);
+            dataGrideSubscripe.DataContext = subscription;
+        }
+        private void Getsubscription(Subscription subscription)
+        {
+            if (flag == false)
+            {
+                dataGrideSubscripe.ItemsSource = null;
+                dataGrideSubscripe.ItemsSource = context.Subscriptions.Where(m => m.IsDeleted == false && m.Special == true).ToList();
+            }
+            else
+            {
+                dataGrideSubscripe.ItemsSource = null;
+                dataGrideSubscripe.ItemsSource = context.Subscriptions.Where(m => m.IsDeleted == false).ToList();
+
+            }
+        }
+        private void SbEdit_Click(object sender, RoutedEventArgs e)
+        {
+            SubscriptionUpdate subscription = new SubscriptionUpdate();
+            subscription.SubscriptionDataUpdated += Subscription_SubscriptionDataUpdated;
 
             mEditPtnPressed = true;
             if (mEditPtnPressed)
             {
-                Vendor currentVendor;
-                currentVendor = dataGrideVendor.SelectedItem as Vendor;
-                VendorUpdate.currentVendor = currentVendor;
-                vendor.Show();
-                dataGrideVendor.SelectedItem = null;
-                //currentProtien = null;
+                Subscription currentSubscription;
+                currentSubscription = dataGrideSubscripe.SelectedItem as Subscription;
+                SubscriptionUpdate.currentSubscription = currentSubscription;
+                subscription.Show();
+                dataGrideSubscripe.SelectedItem = null;
+
                 mEditPtnPressed = false;
-                dataGrideVendor.ItemsSource = null;
-                dataGrideVendor.ItemsSource = context.Vendors.ToList();
+
             }
         }
-        private void Vendor_VendorDataUpdated(object sender, Vendor prot)
+        private void Subscription_SubscriptionDataUpdated(object sender, Subscription obj)
         {
-            dataGrideVendor.ItemsSource = null;
+            dataGrideSubscripe.ItemsSource = null;
             context = new Context();
-            dataGrideVendor.ItemsSource = context.Vendors.ToList();
-        }
-        private void vendorDelete_Click(object sender, RoutedEventArgs e)
-        {
-            mDeletePtnPressed = true;
+            dataGrideSubscripe.ItemsSource = context.Subscriptions.Where(m => m.IsDeleted == false).ToList();
 
-            Vendor item = dataGrideVendor.SelectedItem as Vendor;
-            int Id = int.Parse(item.ID.ToString());
-            var query = context.Vendors.FirstOrDefault(p => p.ID == Id);
-            context.Vendors.Remove(query);
+
+            if (flag == false)
+            {
+                dataGrideSubscripe.ItemsSource = null;
+                dataGrideSubscripe.ItemsSource = context.Subscriptions.Where(m => m.IsDeleted == false && m.Special == true).ToList();
+            }
+            else
+            {
+                dataGrideSubscripe.ItemsSource = null;
+                dataGrideSubscripe.ItemsSource = context.Subscriptions.Where(m => m.IsDeleted == false).ToList();
+
+            }
+        }
+        private void SbDelete_Click(object sender, RoutedEventArgs e)
+        {
+            ConfirmDeleting confirm = new ConfirmDeleting();
+            confirm.confirmDeleteData += Confirm_confirmDeleteData;
+            if (dataGrideSubscripe.SelectedItem != null)
+            {
+                dynamic selectedItem = dataGrideSubscripe.SelectedItem;
+
+                var SubId = (int)selectedItem.Id;
+                ConfirmDeleting.deletedId = SubId;
+                ConfirmDeleting.Type = "Subscription";
+            }
+            confirm.Show();
+
+
+
+        }
+        private void Confirm_confirmDeleteData(object sender, object obj)
+        {
+            if (flag == false)
+            {
+                dataGrideSubscripe.ItemsSource = null;
+                dataGrideSubscripe.ItemsSource = context.Subscriptions.Where(m => m.IsDeleted == false && m.Special == true).ToList();
+            }
+            else
+            {
+                dataGrideSubscripe.ItemsSource = null;
+                dataGrideSubscripe.ItemsSource = context.Subscriptions.Where(m => m.IsDeleted == false).ToList();
+
+            }
+        }
+        private void btnLogin_Click(object sender, RoutedEventArgs e)
+        {
+            flag = false;
+            dataGrideSubscripe.ItemsSource = null;
+            dataGrideSubscripe.ItemsSource = context.Subscriptions.Where(m => m.Special == true && m.IsDeleted == false).ToList();
+        }
+        private void btnSub_Click(object sender, RoutedEventArgs e)
+        {
+            flag = true;
+            dataGrideSubscripe.ItemsSource = null;
+            dataGrideSubscripe.ItemsSource = context.Subscriptions.Where(m => m.IsDeleted == false).ToList();
+        }
+
+
+
+        // Protien Product
+        private void protien_Click(object sender, RoutedEventArgs e)
+        {
+            headerText.Text = "إضافة منتج";
+            traineeGrid.Visibility = Visibility.Hidden;
+            SubscripeGrid.Visibility = Visibility.Hidden;
+            attendanceGrid.Visibility = Visibility.Hidden;
+
+            protienGrid.Visibility = Visibility.Visible;
+            BuyprotienGrid.Visibility = Visibility.Hidden;
+            changePasswordGrid.Visibility = Visibility.Hidden;
+            dataGrideBill.Visibility = Visibility.Hidden;
+            BillGrid.Visibility = Visibility.Hidden;
+
+            subdeletedGrid.Visibility = Visibility.Hidden;
+            proddeletedGrid.Visibility = Visibility.Hidden;
+            traineedeletedGrid.Visibility = Visibility.Hidden;
+            deletedTab.Visibility = Visibility.Hidden;
+
+
+            DailyTrainee.Visibility = Visibility.Hidden;
+            texttotal.Visibility = Visibility.Hidden;
+
+            Search.Visibility = Visibility.Hidden;
+            searsh.Visibility = Visibility.Hidden;
+            SerchAdd.Visibility = Visibility.Hidden;
+            financialGrid.Visibility = Visibility.Hidden;
+            TraineeAttendeFeature.Visibility = Visibility.Hidden;
+
+
+            btnSub.Visibility = Visibility.Hidden;
+            btnSpcail.Visibility = Visibility.Hidden;
+
+
+            TAdd.Visibility = Visibility.Hidden;
+            PAdd.Visibility = Visibility.Visible;
+            bAdd.Visibility = Visibility.Hidden;
+            SAdd.Visibility = Visibility.Hidden;
+            billAdd.Visibility = Visibility.Hidden;
+
+
+
+            dataGrideProtien.ItemsSource = null;
+            var query = context.BuyProducts.Where(x => x.IsDeleted == false).Select(R => R).ToList();
+            dataGrideProtien.ItemsSource = query;
+        }
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            ProtienUpdate prot = new ProtienUpdate();
+            prot.ProtienDataUpdated += Prot_ProtienDataUpdated;
+
+            mEditPtnPressed = true;
+            if (mEditPtnPressed)
+            {
+                BuyProducts currentProtien;
+                currentProtien = dataGrideProtien.SelectedItem as BuyProducts;
+                ProtienUpdate.currentProtien = currentProtien;
+                prot.Show();
+                dataGrideProtien.SelectedItem = null;
+                //currentProtien = null;
+                mEditPtnPressed = false;
+                dataGrideProtien.ItemsSource = null;
+                dataGrideProtien.ItemsSource = context.BuyProducts.Where(x => x.IsDeleted == false).ToList();
+            }
+
+        }
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            ConfirmDeleting confirm = new ConfirmDeleting();
+            confirm.confirmDeleteData += Confirm_confirmDeleteData1;
+            BuyProducts trainee = new BuyProducts();
+            if (dataGrideProtien.SelectedItem != null)
+            {
+                BuyProducts selectedItem = dataGrideProtien.SelectedItem as BuyProducts;
+
+                var ProductId = selectedItem.ID;
+                ConfirmDeleting.deletedId = ProductId;
+                ConfirmDeleting.Type = "BuyProducts";
+            }
+            confirm.Show();
+        }
+        private void Confirm_confirmDeleteData1(object sender, object obj)
+        {
+            dataGrideProtien.ItemsSource = null;
+            dataGrideProtien.ItemsSource = context.BuyProducts.Where(x => x.IsDeleted == false).ToList();
+        }
+        private void P_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            ProtienAdd pr = new ProtienAdd();
+            pr.protienhDataChanged += pr_protienDataChanged;
+
+            pr.Show();
+        }
+        private void pr_protienDataChanged(object sender, BuyProducts obj)
+        {
+            BuyProducts pro = new BuyProducts();
+            pro = obj;
+
+            context.BuyProducts.Add(pro);
             context.SaveChanges();
-            mDeletePtnPressed = false;
-            dataGrideVendor.ItemsSource = context.Vendors.ToList();
-            mDeletePtnPressed = false;
+
+            GetProtien();
         }
-        private void V_MouseDown(object sender, MouseButtonEventArgs e)
+        private void GetProtien()
         {
-            VendorAdd vendor = new VendorAdd();
-            vendor.vendorDataChanged += V_VendorDataChanged;
+            dataGrideProtien.ItemsSource = null;
+            context = new Context();
+            dataGrideProtien.ItemsSource = context.BuyProducts.Where(x => x.IsDeleted == false).ToList();
 
-            vendor.Show();
         }
-        private void V_VendorDataChanged(object sender, Vendor obj)
+        private void Prot_ProtienDataUpdated(object sender, BuyProducts prot)
         {
-            Vendor vendor = new Vendor();
-            vendor = obj;
-            vendor.AdminID = 1;
-
-            context.Vendors.Add(vendor);
-            context.SaveChanges();
-
-            GetVendor();
-            dataGrideProtien.DataContext = vendor;
-        }
-        private void GetVendor()
-        {
-            dataGrideVendor.ItemsSource = context.Vendors.ToList();
+            dataGrideProtien.ItemsSource = null;
+            context = new Context();
+            dataGrideProtien.ItemsSource = context.BuyProducts.Where(x => x.IsDeleted == false).ToList();
 
         }
+
+
 
 
         // Selling Protein 
         private void BUYProtein_Click(object sender, RoutedEventArgs e)
         {
-            headerText.Text = "Selling Protein";
-            receptionistGrid.Visibility = Visibility.Hidden;
+            textTotal.Text = context.OrderItem.Sum(o => o.Price).ToString();
+            headerText.Text = "المبيعات";
             traineeGrid.Visibility = Visibility.Hidden;
-            coachGrid.Visibility = Visibility.Hidden;
+            SubscripeGrid.Visibility = Visibility.Hidden;
+            attendanceGrid.Visibility = Visibility.Hidden;
+            changePasswordGrid.Visibility = Visibility.Hidden;
+            dataGrideBill.Visibility = Visibility.Hidden;
+            BillGrid.Visibility = Visibility.Hidden;
+
             protienGrid.Visibility = Visibility.Hidden;
-            machineGrid.Visibility = Visibility.Hidden;
-            vendorGrid.Visibility = Visibility.Hidden;
             BuyprotienGrid.Visibility = Visibility.Visible;
+
+            subdeletedGrid.Visibility = Visibility.Hidden;
+            proddeletedGrid.Visibility = Visibility.Hidden;
+            traineedeletedGrid.Visibility = Visibility.Hidden;
+
+            deletedTab.Visibility = Visibility.Hidden;
             financialGrid.Visibility = Visibility.Hidden;
+            TraineeAttendeFeature.Visibility = Visibility.Hidden;
+
+
             texttotal.Visibility = Visibility.Visible;
-            financialIncome.Visibility = Visibility.Hidden;
+            DailyTrainee.Visibility = Visibility.Hidden;
+
+            Search.Visibility = Visibility.Hidden;
+            searsh.Visibility = Visibility.Hidden;
+            SerchAdd.Visibility = Visibility.Hidden;
 
 
-            RAdd.Visibility = Visibility.Hidden;
+            btnSub.Visibility = Visibility.Hidden;
+            btnSpcail.Visibility = Visibility.Hidden;
+
+
             TAdd.Visibility = Visibility.Hidden;
-            CAdd.Visibility = Visibility.Hidden;
             PAdd.Visibility = Visibility.Hidden;
-            MAdd.Visibility = Visibility.Hidden;
-            VAdd.Visibility = Visibility.Hidden;
+            bAdd.Visibility = Visibility.Visible;
+            SAdd.Visibility = Visibility.Hidden;
+            billAdd.Visibility = Visibility.Hidden;
 
-			var sellProtien = context.Buyprotiens.ToList();
-            dataGridBuyProtien.ItemsSource = sellProtien;
+
+
+            textTotal.Text = context.OrderItem.Sum(m => m.Price).ToString();
+            dataGridBuyProtien.ItemsSource = null;
+
+            dataGridBuyProtien.ItemsSource = context.OrderItem.Where(c=>!c.Done).Select(x => new
+            {
+                Name = x.BuyProducts.Name,
+                SaledQuantaty = x.Quantity,
+                Price = x.Price,
+                orderTime = x.orderdateTime,
+            }).ToList();
+
+            textTotal.Text = context.OrderItem.Where(c => !c.Done).Sum(tp => tp.Price).ToString();
 
         }
-        private void dataGridBuyProtien_LayoutUpdated(object sender, EventArgs e)
+      
+
+
+
+        // Deleted
+        private void delete_Click(object sender, RoutedEventArgs e)
         {
-            int sum = context.Buyprotiens.Sum(x => x.Total);
-			textTotal.Text = sum.ToString();
+            LoadTraineeData();
+            LoadSubscriptionData();
+            LoadProductData();
+
+            headerText.Text = "المحذوفات";
+            traineeGrid.Visibility = Visibility.Hidden;
+            SubscripeGrid.Visibility = Visibility.Hidden;
+            attendanceGrid.Visibility = Visibility.Hidden;
+            changePasswordGrid.Visibility = Visibility.Hidden;
+
+            protienGrid.Visibility = Visibility.Hidden;
+            BuyprotienGrid.Visibility = Visibility.Hidden;
+
+            deletedTab.Visibility = Visibility.Visible;
+
+
+            subdeletedGrid.Visibility = Visibility.Visible;
+            proddeletedGrid.Visibility = Visibility.Visible;
+            traineedeletedGrid.Visibility = Visibility.Visible;
+            dataGrideBill.Visibility = Visibility.Hidden;
+            BillGrid.Visibility = Visibility.Hidden;
+
+
+            DailyTrainee.Visibility = Visibility.Hidden;
+            texttotal.Visibility = Visibility.Hidden;
+            financialGrid.Visibility = Visibility.Hidden;
+            TraineeAttendeFeature.Visibility = Visibility.Hidden;
+
+
+            Search.Visibility = Visibility.Hidden;
+            searsh.Visibility = Visibility.Hidden;
+            SerchAdd.Visibility = Visibility.Hidden;
+
+            btnSub.Visibility = Visibility.Hidden;
+            btnSpcail.Visibility = Visibility.Hidden;
+
+            TAdd.Visibility = Visibility.Hidden;
+            PAdd.Visibility = Visibility.Hidden;
+            bAdd.Visibility = Visibility.Hidden;
+            SAdd.Visibility = Visibility.Hidden;
+            billAdd.Visibility = Visibility.Hidden;
+
+
+        }
+        private void TabControl_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (e.AddedItems.Count > 0)
+            {
+                TabItem selectedTab = e.AddedItems[0] as TabItem;
+
+                if (selectedTab != null)
+                {
+                    switch (selectedTab.Header.ToString())
+                    {
+                        case "المتدربين":
+                            LoadTraineeData();
+                            break;
+                        case "المنتجات":
+                            LoadProductData();
+                            break;
+                        case "الاشتراكات":
+                            LoadSubscriptionData();
+                            break;
+                    }
+                }
+            }
+        }
+        private void LoadTraineeData()
+        {
+            TraineeGrideDeleted.ItemsSource = null;
+            TraineeGrideDeleted.ItemsSource =
+                  context.Trainees.Where(x => x.IsDeleted == true).Select(v => new
+                    {
+                        Id = v.Id,
+                        Name = v.Name,
+                        Phone = v.Phone,
+                        Age = v.Age,
+                        Gender = v.Gender,
+                        Price = v.Price,
+                        NumberOfAttendance = v.NumberOfAttendance,
+                        SubsName = v.Subscription.Name,
+                        SubscriptionID = v.SubscriptionID,
+                        IsDeleted = v.IsDeleted,
+                        startdate = v.StartDate,
+                        EndDate = v.EndDate
+                    }).ToList();
+
+
+        }
+        private void LoadProductData()
+        {
+
+            ProductGrideDeleted.DataContext = null;
+            ProductGrideDeleted.ItemsSource = context.BuyProducts.Where(p => p.IsDeleted == true).ToList();
+        }
+        private void LoadSubscriptionData()
+        {
+            SubGrideDeleted.ItemsSource = null;
+            SubGrideDeleted.ItemsSource = context.Subscriptions.Where(s => s.IsDeleted).ToList();
+            ;
+        }
+        private void TrReturn_Click(object sender, RoutedEventArgs e)
+        {
+           dynamic selectedItem = TraineeGrideDeleted.SelectedItem ;
+            if (selectedItem != null)
+            {
+                int TrineeId = Convert.ToInt32(selectedItem.Id);
+                Trainee trainee = context.Trainees.FirstOrDefault(b => b.Id == TrineeId);
+                trainee.IsDeleted = true;
+                context.SaveChanges();
+                trainee.IsDeleted = false;
+                context.SaveChanges();
+
+                LoadTraineeData();
+            }
+        }
+        private void ProReturn_Click(object sender, RoutedEventArgs e)
+        {
+            BuyProducts buyProd = new BuyProducts();
+            buyProd = ProductGrideDeleted.SelectedItem as BuyProducts;
+            buyProd.IsDeleted = true;
+            if (buyProd != null)
+            {
+                BuyProducts b = context.BuyProducts.FirstOrDefault(b => b.ID == buyProd.ID);
+                b.IsDeleted = true;
+                context.SaveChanges();
+                b.IsDeleted = false;
+                context.SaveChanges();
+
+                LoadProductData();
+            }
+        }
+        private void SbReturn_Click(object sender, RoutedEventArgs e)
+        {
+            Subscription Sub = new Subscription();
+            Sub = SubGrideDeleted.SelectedItem as Subscription;
+            Sub.IsDeleted = true;
+            if (Sub != null)
+            {
+                Subscription b = context.Subscriptions.FirstOrDefault(b => b.Id == Sub.Id);
+                b.IsDeleted = true;
+                context.SaveChanges();
+                b.IsDeleted = false;
+                context.SaveChanges();
+
+                LoadSubscriptionData();
+            }
+
+        }
+
+
+        //Bill
+        private void bill_Click(object sender, RoutedEventArgs e)
+        {
+            headerText.Text = "الفواتير";
+            traineeGrid.Visibility = Visibility.Hidden;
+            SubscripeGrid.Visibility = Visibility.Hidden;
+            attendanceGrid.Visibility = Visibility.Hidden;
+            dataGrideBill.Visibility = Visibility.Visible;
+
+            protienGrid.Visibility = Visibility.Hidden;
+            BuyprotienGrid.Visibility = Visibility.Hidden;
+            deletedTab.Visibility = Visibility.Hidden;
+
+            subdeletedGrid.Visibility = Visibility.Hidden;
+            proddeletedGrid.Visibility = Visibility.Hidden;
+            traineedeletedGrid.Visibility = Visibility.Hidden;
+            changePasswordGrid.Visibility = Visibility.Hidden;
+
+            DailyTrainee.Visibility = Visibility.Hidden;
+            texttotal.Visibility = Visibility.Hidden;
+
+            Search.Visibility = Visibility.Hidden;
+            searsh.Visibility = Visibility.Hidden;
+            SerchAdd.Visibility = Visibility.Hidden;
+            financialGrid.Visibility = Visibility.Hidden;
+
+            btnSub.Visibility = Visibility.Hidden;
+            btnSpcail.Visibility = Visibility.Hidden;
+            TraineeAttendeFeature.Visibility = Visibility.Hidden;
+            BillGrid.Visibility = Visibility.Visible;
+
+            TAdd.Visibility = Visibility.Hidden;
+            PAdd.Visibility = Visibility.Hidden;
+            bAdd.Visibility = Visibility.Hidden;
+            SAdd.Visibility = Visibility.Hidden;
+            billAdd.Visibility = Visibility.Visible;
+
+            var bill = context.AddintionalBills.Where(e => !e.IsDeleted).Select(v => new
+            {
+                Id = v.Id,
+                Name = v.Name,
+                Price = v.Price,
+                Date = v.Date,
+            }).ToList();
+            dataGrideBill.ItemsSource = bill;
+        }
+        private void bill_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            Bill bill = new Bill();
+            bill.AddintionalBillData += Bill_AddintionalBillData;
+            bill.Show();
+        }
+        private void Bill_AddintionalBillData(object sender, AddintionalBill obj)
+        {
+            AddintionalBill addintionalBill = new AddintionalBill();
+            addintionalBill = obj;
+
+            context.AddintionalBills.Add(addintionalBill);
+            context.SaveChanges();
+
+            var bill = context.AddintionalBills.Where(e => !e.IsDeleted).Select(v => new
+            {
+                Id = v.Id,
+                Name = v.Name,
+                Price = v.Price,
+                Date = v.Date,
+            }).ToList();
+            dataGrideBill.ItemsSource = bill;
         }
 
 
 
 
         // Financial
-		int totalIncome;
+        int totalIncome;
         int totalOut;
         private void financial_Click(object sender, RoutedEventArgs e)
         {
-            headerText.Text = "FINANCIAL REPORT";
-            receptionistGrid.Visibility = Visibility.Hidden;
+            ConfirmFinancial confirm = new ConfirmFinancial();
+            confirm.ChangePass += Confirm_ChangePass; ;
+            ConfirmDeleting.Type = "financial";
+            confirm.Show();
+        }
+
+        private void Confirm_ChangePass(object sender, object obj)
+        {
+            headerText.Text = "تقرير مالي";
             traineeGrid.Visibility = Visibility.Hidden;
-            coachGrid.Visibility = Visibility.Hidden;
+            SubscripeGrid.Visibility = Visibility.Hidden;
+            attendanceGrid.Visibility = Visibility.Hidden;
+
             protienGrid.Visibility = Visibility.Hidden;
-            machineGrid.Visibility = Visibility.Hidden;
-            vendorGrid.Visibility = Visibility.Hidden;
             BuyprotienGrid.Visibility = Visibility.Hidden;
+            deletedTab.Visibility = Visibility.Hidden;
+
+            TraineeAttendeFeature.Visibility = Visibility.Hidden;
             financialGrid.Visibility = Visibility.Visible;
-            financialIncome.Visibility = Visibility.Visible;
+            DailyTrainee.Visibility = Visibility.Hidden;
             texttotal.Visibility = Visibility.Hidden;
+            BillGrid.Visibility = Visibility.Hidden;
+            dataGrideBill.Visibility = Visibility.Hidden;
 
+            Search.Visibility = Visibility.Hidden;
+            searsh.Visibility = Visibility.Hidden;
 
-            RAdd.Visibility = Visibility.Hidden;
+            btnSub.Visibility = Visibility.Hidden;
+            btnSpcail.Visibility = Visibility.Hidden;
+
             TAdd.Visibility = Visibility.Hidden;
-            CAdd.Visibility = Visibility.Hidden;
             PAdd.Visibility = Visibility.Hidden;
-            MAdd.Visibility = Visibility.Hidden;
-            VAdd.Visibility = Visibility.Hidden;
+            bAdd.Visibility = Visibility.Hidden;
+            SAdd.Visibility = Visibility.Hidden;
+            billAdd.Visibility = Visibility.Hidden;
 
 
-            int TotalOfReceptionist = context.Receptionists.Sum(r => r.Salary);
-            int TotalOfCoaches = context.Coaches.Sum(c => c.Salary);
-            int TotalOfTrainee = context.Trainees.Sum(t => t.price);
-            int TotalOfMachines = context.GymMachines.Sum(m => m.Price);
-            int TotalOfProtein = context.ProtienProducts.Sum(p => p.Price);
-            int TotalOfBuyProtein = context.Buyprotiens.Sum(p => p.Total);
-
-            totalRece.Content = TotalOfReceptionist.ToString();
-            totalTraineeIncome.Content = TotalOfTrainee.ToString();
-            toatalCoach.Content = TotalOfCoaches.ToString();
-            totalMach.Content = TotalOfMachines.ToString();
-            totalProt.Content = TotalOfProtein.ToString();
-            totalProtienIncome.Content = TotalOfBuyProtein.ToString();
+            changePasswordGrid.Visibility = Visibility.Hidden;
+            BillGrid.Visibility = Visibility.Hidden;
 
 
-            int budget = TotalOfReceptionist + TotalOfCoaches + TotalOfProtein + TotalOfMachines;
-            int income = TotalOfTrainee + TotalOfBuyProtein;
 
-            Budget.Content = budget.ToString();
-            GymIncome.Content = income.ToString();
+            DailyProfit dailyProfit = context.DailyProfits.FirstOrDefault(e => !e.Done);
+                double IncomeFromTraineeDialy = context.Trainees
+                                                   .Where(t => !t.Seen)
+                                                   .Sum(m => m.Price);
 
-            int profite;
-            if (income > budget)
+                double IncomeFromDailyTraineeDialy = context.DailyTrainees
+                                                            .Where(m => !m.Done)
+                                                            .Sum(m => m.TotalIncome);
+
+                double IncomeFromSellingProduct = context.OrderItem
+                                                         .Where(m => !m.Done)
+                                                         .Sum(m => m.Price);
+
+                double OutComeFromBuyProduct = context.BuyProducts
+                                                      .Where(op => !op.Done)
+                                                      .Sum(m => m.Price);
+
+                double OutComeFromBills = context.AddintionalBills
+                                                 .Where(ob=>!ob.IsOnDay)
+                                                 .Sum (m => m.Price);
+
+                double totalTrain = IncomeFromTraineeDialy + IncomeFromDailyTraineeDialy;
+                double totalProduct = IncomeFromSellingProduct - OutComeFromBuyProduct;
+                double totalBill = OutComeFromBills;
+
+            if (dailyProfit != null)
             {
-                profite = income - budget;
-                Profit.Content = "You earned " + profite.ToString();
-                Profit.Foreground = Brushes.Green;
+                dailyProfit.TraineePrice = totalTrain;
+                dailyProfit.ProductPrice = totalProduct;
+                dailyProfit.BillPrice = totalBill;
 
+                dailyProfit.Price = totalTrain + totalProduct - totalBill;
+                context.SaveChanges();
+
+                totalTrainee.Content = totalTrain.ToString();
+                totalProd.Content = totalProduct.ToString();
+                totalDailyIncome.Content = dailyProfit.Price.ToString();
             }
             else
             {
-                profite = budget - income;
-                Profit.Content = "You lost " + profite.ToString();
-                Profit.Foreground = Brushes.Red;
+                totalDailyIncome.Content = 0;
+
+                dailyProfit = new DailyProfit();
+                dailyProfit.ProfitDate = DateTime.Today;
+                dailyProfit.TraineePrice = totalTrain;
+                dailyProfit.ProductPrice = totalProduct;
+                dailyProfit.BillPrice += totalBill;
+                dailyProfit.Price = totalTrain + totalProduct - totalBill;
+
+                context.DailyProfits.Add(dailyProfit);
+                context.SaveChanges();
+
+                totalTrainee.Content = totalTrain.ToString();
+                totalProd.Content = totalProduct.ToString();
+                totalDailyIncome.Content = dailyProfit.Price.ToString();
             }
 
-             totalIncome = TotalOfBuyProtein + TotalOfTrainee;
-             totalOut    = TotalOfProtein + TotalOfMachines + TotalOfCoaches + TotalOfReceptionist;
 
-			if (SeriesCollection != null)
-			{
-				SeriesCollection.Clear();
-				SeriesCollection.Add(new PieSeries
-				{
-					Title = "totalIncome",
-					Values = new ChartValues<ObservableValue> { new ObservableValue(totalIncome) },
-					DataLabels = true
-				});
-				SeriesCollection.Add(new PieSeries
-                {
-                    Title = "Cost",
-                    Values = new ChartValues<ObservableValue> { new ObservableValue(totalOut) },
-                    DataLabels = true
-                });
+            var currentDate = DateTime.Today;
+            var firstDayOfMonth = new DateTime(currentDate.Year, currentDate.Month, 1);
+            var lastDayOfMonth = firstDayOfMonth.AddMonths(1).AddDays(-1);
+
+            MonthlyIncome monthlyProfit = context.MonthlyProfits.FirstOrDefault(t => !t.Refresh);
+            if (monthlyProfit != null)
+            {
+                var totalIncome = context.DailyProfits
+                                     .Where(t => t.ProfitDate >= firstDayOfMonth && t.ProfitDate <= lastDayOfMonth)
+                                     .Sum(m => m.Price);
+
+                monthlyProfit.MonthlyPrice = totalIncome;
+                totalMonthlyIncome.Content = totalIncome.ToString();
             }
-			else
-			{
-				SeriesCollection = new SeriesCollection
-				{
-					new PieSeries
-					{
-						Title = "totalIncome",
-						Values = new ChartValues<ObservableValue> { new ObservableValue(totalIncome)},
-						DataLabels = true
-					},
-					new PieSeries
-					{
-						Title = "Cost",
-						Values = new ChartValues<ObservableValue> { new ObservableValue(totalOut)},
-						DataLabels = true
-					}
-				};
+            else
+            {
+                totalMonthlyIncome.Content = 0;
+                monthlyProfit = new MonthlyIncome();
+                monthlyProfit.ProfitMonthDate = currentDate;
+                context.MonthlyProfits.Add(monthlyProfit);
+            }
 
-				DataContext = this;
-			}
+            context.SaveChanges();
         }
-        
+
+        private void btnRestartDay_Click(object sender, RoutedEventArgs e)
+        {
+            context.Trainees.ExecuteUpdate(t=>t.SetProperty(m=>m.Price, 0.0));
+
+            var addintionalBill = context.AddintionalBills.Where(e => !e.IsOnDay).ToList();
+            if (addintionalBill != null)
+            {
+                context.AddintionalBills.Where(e => !e.IsOnDay).ExecuteUpdate(p => p.SetProperty(y => y.IsOnDay, true));
+            }
+
+            // DailyTrainee
+            DailyTrainee dailyTrainee = context.DailyTrainees.FirstOrDefault(e => !e.Done);
+            if (dailyTrainee != null)
+            {
+                dailyTrainee.Done = true;
+                context.SaveChanges();
+
+                NumOfTrainee.Content = "0";
+                constDailyText.Content = Price.ToString();
+
+                Profit.Content = (0 * Price).ToString();
+            }
+
+            // Trainees Attendance
+            foreach (dynamic trainee in dataGrideAttendance.Items)
+            {
+                int traineeID = Convert.ToInt32(trainee.Id);
+                Trainee train = context.Trainees.FirstOrDefault(n => n.Id == traineeID);
+                train.Price = 0.0;
+                train.Seen = true;
+                context.SaveChanges();
+            }
+            dataGrideAttendance.ItemsSource = null;
+
+            // OrderItem
+            context.OrderItem.Where(oi => !oi.Done)
+                             .ExecuteUpdate(x => x.SetProperty(y => y.Done, true));
+
+            context.BuyProducts.Where(oi => !oi.Done)
+                               .ExecuteUpdate(x => x.SetProperty(y => y.Done, true));
+            textTotal.Text = "0";
+
+            // DailyProfit
+            DailyProfit dailyProfit = context.DailyProfits
+                                             .FirstOrDefault(e => !e.Done);
+            if (dailyProfit != null)
+            {
+                dailyProfit.Done = true;
+                context.SaveChanges();
+
+                totalDailyIncome.Content = "0";
+            }
+
+            // Daily Product and trainee
+            totalProd.Content = "0";
+            totalTrainee.Content = "0";
+        }
+        private void btnRestartMonth_Click(object sender, RoutedEventArgs e)
+        {
+            var addintionalBill = context.AddintionalBills.Where(e => !e.IsDeleted).ToList();
+            if(addintionalBill != null)
+            {
+                context.AddintionalBills.Where(e => !e.IsDeleted).ExecuteUpdate(p=>p.SetProperty(y => y.IsDeleted, true));
+            }
+
+            MonthlyIncome monthlyProfit = context.MonthlyProfits.FirstOrDefault(e => !e.Refresh);
+            if (monthlyProfit != null)
+            {
+                monthlyProfit.Refresh = true;
+                context.SaveChanges();
+
+                totalMonthlyIncome.Content = "0";
+            }
+        }
+        private void MonthlyProfit_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            MonthlyProfit bPAdd = new MonthlyProfit();
+            bPAdd.Show();
+        }
+        private void btnLastSixMonth_Click(object sender, RoutedEventArgs e)
+        {
+            if(ProfitGrid.Visibility == Visibility.Visible)
+            {
+                ProfitGrid.Visibility = Visibility.Hidden;
+            }
+            else
+            {
+                ProfitGrid.Visibility = Visibility.Visible;
+                var currentDate = DateTime.Now.Month; 
+                var sixMonthsAgo = DateTime.Now.AddMonths(-6).Month;
+
+                List<object> EachMonthProfit = new List<object>();
+                string[] monthName = new string[] { "يناير", "فبراير", "مارس", "ابريل","مايو","يونيو","يوليو","اغسطس","سبتمبر","اكتوبر","نوفمبر","ديسمبر" };
+                for (int i = sixMonthsAgo; i <= currentDate; i++)
+                {
+                    var x = new
+                    {
+                        Months = monthName[i-1],
+                        MonthlyPrice = context.DailyProfits
+                            .Where(t => t.ProfitDate.Month == i)
+                            .Sum(dp => dp.Price),
+                    };
+
+                    EachMonthProfit.Add(x);
+                }
+
+                dataGridLastSixMonthesProfit.ItemsSource = EachMonthProfit;
+
+            }
+
+
+        }
+
+
+
+
+        //ChangePasswords
+        public static string CurrentPassword;
+        private void changePass_Click(object sender, RoutedEventArgs e)
+        {
+            headerText.Text = "تغير الارقام السريه";
+            traineeGrid.Visibility = Visibility.Hidden;
+            SubscripeGrid.Visibility = Visibility.Hidden;
+            attendanceGrid.Visibility = Visibility.Hidden;
+
+            protienGrid.Visibility = Visibility.Hidden;
+            BuyprotienGrid.Visibility = Visibility.Hidden;
+            deletedTab.Visibility = Visibility.Hidden;
+
+            TraineeAttendeFeature.Visibility = Visibility.Hidden;
+            financialGrid.Visibility = Visibility.Hidden;
+
+            DailyTrainee.Visibility = Visibility.Hidden;
+            texttotal.Visibility = Visibility.Hidden;
+
+            Search.Visibility = Visibility.Hidden;
+            searsh.Visibility = Visibility.Hidden;
+
+            btnSub.Visibility = Visibility.Hidden;
+            btnSpcail.Visibility = Visibility.Hidden;
+
+            TAdd.Visibility = Visibility.Hidden;
+            PAdd.Visibility = Visibility.Hidden;
+            bAdd.Visibility = Visibility.Hidden;
+            SAdd.Visibility = Visibility.Hidden;
+            changePasswordGrid.Visibility = Visibility.Visible;
+
+        }
+        private void btnUpdataPass_ClickToChangeDelPass(object sender, RoutedEventArgs e)
+        {
+            string oldPassword = textOldPass.Password;
+            string newPassword = textNewPass.Password;
+            string confirmPassword = textConfirmPass.Password;
+            CurrentPassword = oldPassword;
+
+            // Perform validation checks
+            if (string.IsNullOrEmpty(oldPassword) || string.IsNullOrEmpty(newPassword) || string.IsNullOrEmpty(confirmPassword))
+            {
+                MessageBox.Show("Please fill in all the fields.");
+                return;
+            }
+
+            if (newPassword != confirmPassword)
+            {
+                MessageBox.Show("New password and confirm password fields do not match.");
+                return;
+            }
+
+            var user = context.Admins.FirstOrDefault(x => x.Password == CurrentPassword);
+
+            if (user == null)
+            {
+                MessageBox.Show("هذا المستخدم غير موجود");
+                return;
+            }
+
+
+            else if (oldPassword != user.Password)
+            {
+                MessageBox.Show("الرقم الذي ادخلته غير صحيح.");
+                return;
+            }
+
+            else
+            {
+                user.Password = newPassword;
+            };
+
+
+            context.Admins.Update(user);
+            context.SaveChanges();
+            MessageBox.Show("تم تتغير الرقم السري بنجاح.");
+
+            if(textOldPass.Password != "" && textNewPass.Password != "" && textConfirmPass.Password != "")
+            {
+                textOldPass.Password = "";
+                textNewPass.Password = "";
+                textConfirmPass.Password = "";
+            }
+
+        }
+        private void btnUpdataPass_ClickToChangePassForDeleting(object sender, RoutedEventArgs e)
+        {
+            string oldPassword = textOldPassForDeleting.Password;
+            string newPassword = textNewPassForDeleting.Password;
+            string confirmPassword = textConfirmPassForDeleting.Password;
+            CurrentPassword = oldPassword;
+
+            // Perform validation checks
+            if (string.IsNullOrEmpty(oldPassword) || string.IsNullOrEmpty(newPassword) || string.IsNullOrEmpty(confirmPassword))
+            {
+                MessageBox.Show("Please fill in all the fields.");
+                return;
+            }
+
+            if (newPassword != confirmPassword)
+            {
+                MessageBox.Show("New password and confirm password fields do not match.");
+                return;
+            }
+
+            var user = context.Admins.FirstOrDefault(x => x.EDitAndDeletPassword == CurrentPassword);
+            if (user == null)
+            {
+                MessageBox.Show("هذا المستخدم غير موجود");
+                return;
+            }
+
+            else if (oldPassword != user.EDitAndDeletPassword)
+            {
+                MessageBox.Show("الرقم الذي ادخلته غير صحيح.");
+                return;
+            }
+            else
+            {
+                user.EDitAndDeletPassword = newPassword;
+            };
+
+            context.Admins.Update(user);
+            context.SaveChanges();
+            MessageBox.Show("تم تتغير الرقم السري بنجاح.");
+            if (textOldPassForDeleting.Password != "" && textNewPassForDeleting.Password != "" && textConfirmPassForDeleting.Password != "")
+            {
+                textOldPassForDeleting.Password = "";
+                textNewPassForDeleting.Password = "";
+                textConfirmPassForDeleting.Password = "";
+            }
+        }
+        private void btnUpdataPass_ClickToChangePassForFinancal(object sender, RoutedEventArgs e)
+        {
+            string oldPassword = textOldPassForFinancial.Password;
+            string newPassword = textNewPassForFinancial.Password;
+            string confirmPassword = textConfirmPassForFinancial.Password;
+            CurrentPassword = oldPassword;
+
+            // Perform validation checks
+            if (string.IsNullOrEmpty(oldPassword) || string.IsNullOrEmpty(newPassword) || string.IsNullOrEmpty(confirmPassword))
+            {
+                MessageBox.Show("Please fill in all the fields.");
+                return;
+            }
+
+            if (newPassword != confirmPassword)
+            {
+                MessageBox.Show("New password and confirm password fields do not match.");
+                return;
+            }
+
+            var user = context.Admins.FirstOrDefault(x => x.FinancialPassword == CurrentPassword);
+
+            if (user == null)
+            {
+                MessageBox.Show("هذا المستخدم غير موجود");
+                return;
+            }
+
+            else if (oldPassword != user.FinancialPassword)
+            {
+                MessageBox.Show("الرقم الذي ادخلته غير صحيح");
+                return;
+            }
+            else
+            {
+                user.FinancialPassword = newPassword;
+            };
+
+            context.Admins.Update(user);
+            context.SaveChanges();
+            MessageBox.Show("تم تتغير الرقم السري بنجاج");
+            if (textOldPassForFinancial.Password != "" && textNewPassForFinancial.Password != "" && textConfirmPassForFinancial.Password != "")
+            {
+                textOldPassForFinancial.Password = "";
+                textNewPassForFinancial.Password = "";
+                textConfirmPassForFinancial.Password = "";
+            }
+        }
+       
+
 
 
         //logout
@@ -795,6 +1586,149 @@ namespace GymSysyemWpf
             this.Close();
         }
 
-       
+
+        StringBuilder specialCharacterBuffer = new StringBuilder();
+        private void Window_PreviewKeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key != Key.Return)
+            {
+                char character = ConvertKeyToCharacter(e.Key);
+                if (character != '\0')
+                {
+                    specialCharacterBuffer.Append(character);
+                }
+            }
+            else
+            {
+                string specialCharacterData = specialCharacterBuffer.ToString();
+
+
+                Trainee trainee = context.Trainees.FirstOrDefault(e => e.QrCode == specialCharacterData);
+                if (trainee != null)
+                {
+                    trainee.NumberOfAttendance++;
+                    trainee.LastAttendDate = DateTime.Today;
+                    trainee.Seen = false;
+                    context.SaveChanges();
+
+                    dataGrideTrainee.DataContext = null;
+
+                    var tran = context.Trainees.Where(x => x.IsDeleted == false).Select(v => new
+                    {
+                        Id = v.Id,
+                        Name = v.Name,
+                        Phone = v.Phone,
+                        Age = v.Age,
+                        Gender = v.Gender,
+                        Price = v.Paid,
+                        NumberOfAttendance = v.NumberOfAttendance,
+                        SubsName = v.Subscription.Name,
+                        SubscriptionID = v.SubscriptionID,
+                        IsDeleted = v.IsDeleted,
+                        startdate = v.StartDate,
+                        EndDate = v.EndDate,
+                        order = context.Trainees.ToList().IndexOf(v) + 1
+                    }).ToList();
+                    dataGrideTrainee.ItemsSource = tran;
+                }
+                else
+                {
+                    ProcessInput(specialCharacterData);
+                }
+                
+                specialCharacterBuffer.Clear();
+            }
+        }
+        private char ConvertKeyToCharacter(Key key)
+        {
+            Dictionary<Key, char> specialCharacters = new Dictionary<Key, char>
+                {
+                    { Key.OemTilde, '~' },
+                    { Key.OemPlus, '+' },
+                    { Key.OemMinus, '-' },
+                    { Key.OemComma, ',' },
+                    { Key.OemPeriod, '.' },
+                    { Key.OemQuestion, '?' },
+                
+                    { Key.OemQuotes, '"' },
+                    { Key.OemOpenBrackets, '{' },
+                    { Key.OemCloseBrackets, '}' },
+                    { Key.OemSemicolon, ':' },
+                     { Key.D0, '0' },
+                    { Key.D1, '1' },
+                    { Key.D2, '2' },
+                    { Key.D3, '3' },
+                    { Key.D4, '4' },
+                    { Key.D5, '5' },
+                    { Key.D6, '6' },
+                    { Key.D7, '7' },
+                    { Key.D8, '8' },
+                    { Key.D9, '9' },
+                };
+            if (specialCharacters.ContainsKey(key))
+            {
+                return specialCharacters[key];
+            }
+
+            KeyConverter keyConverter = new KeyConverter();
+            string keyString = keyConverter.ConvertToString(key);
+
+            if (!string.IsNullOrEmpty(keyString) && keyString.Length == 1)
+            {
+                return keyString[0];
+            }
+            return '\0';
+        }
+
+        private void ProcessInput(string data)
+        {
+            BuyProducts buyProducts = context.BuyProducts.FirstOrDefault(bp=>bp.QrCode == data);
+
+            OrderItems orderItem = context.OrderItem.FirstOrDefault(ot=>ot.BuyProducts.QrCode == data && !ot.Done);
+            if (orderItem != null)
+            {
+                if(buyProducts.Quantaty == 0)
+                {
+                    MessageBox.Show("نفذت الكمية ");
+                }
+                else
+                {
+                    orderItem.Quantity += 1;
+                    buyProducts.Quantaty--;
+                    orderItem.Price += buyProducts.SaledPrice;
+                }
+            }
+            else 
+            {
+                if(buyProducts != null)
+                {
+                    OrderItems orderItems = new OrderItems();
+                    buyProducts.Quantaty--;
+                    orderItems.Quantity = 1;
+                    orderItems.ProductId = buyProducts.ID;
+                    orderItems.Price = buyProducts.SaledPrice;
+                    orderItems.orderdateTime = DateTime.Now.Date;
+                    context.OrderItem.Add(orderItems);
+
+                }
+
+
+            }
+            context.SaveChanges();
+
+            dataGridBuyProtien.ItemsSource = null;
+            context = new Context();
+            dataGridBuyProtien.ItemsSource = context.OrderItem.Where(c=>!c.Done)
+                .Select(x=> new
+            {
+                Name = x.BuyProducts.Name,
+                SaledQuantaty = x.Quantity,
+                Price = x.Price,
+                orderTime= x.orderdateTime,
+            }).ToList();
+            textTotal.Text = context.OrderItem.Where(c => !c.Done).Sum(tp => tp.Price).ToString();
+        }
+
+
     }
 }

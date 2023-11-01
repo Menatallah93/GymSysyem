@@ -1,4 +1,4 @@
-﻿using GymSysyemWpf.Classes;
+﻿using GymSysyemWpf.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -20,13 +20,17 @@ namespace GymSysyemWpf
 	/// </summary>
 	public partial class ProtienUpdate : Window
 	{
-		public static ProtienProduct currentProtien;
+		public static BuyProducts currentProtien;
 
-		ProtienProduct ProtienAfterUpdate = new ProtienProduct();
+		BuyProducts ProtienAfterUpdate = new BuyProducts();
 
-		public delegate void ProtienData(object sender, ProtienProduct prot);
+
+
+		public delegate void ProtienData(object sender, BuyProducts prot);
 
 		public event ProtienData ProtienDataUpdated;
+
+
 
 		Context context = new Context();
 		public ProtienUpdate()
@@ -63,59 +67,125 @@ namespace GymSysyemWpf
 			textName.Text = currentProtien.Name;
 			txtQuantaty.Text = currentProtien.Quantaty.ToString();
 			txtPrice.Text = currentProtien.Price.ToString();
-		}
+            textSale.Text= currentProtien.SaledPrice.ToString();
+			textQRcode.Text = currentProtien.QrCode;
+        }
 
 		private void btnUpdate_Click(object sender, RoutedEventArgs e)
 		{
             bool flag = true;
 
-            ProtienProduct protien = new ProtienProduct();
+            BuyProducts protien = new BuyProducts();
 			if (ProtienDataUpdated != null)
 			{
-				var query = context.ProtienProducts.Where(p => p.ID == int.Parse(textId.Text)).Select(p => p);
+				var query = context.BuyProducts.Where(p => p.ID == int.Parse(textId.Text)).Select(p => p);
 				foreach (var p in query)
 				{
+					p.PurchaseDate = DateTime.Now.Date;
+					p.Done = false;
+
 					p.Name = textName.Text;
+					p.QrCode = textQRcode.Text;
 
-                    if (txtQuantaty.Text.Length == 0)
-                    {
-                        p.Quantaty = 0;
+					if (txtQuantaty.Text.Length == 0)
+					{
+						p.Quantaty = 0;
+					}
+					else
+					{
+                        if (int.TryParse(txtQuantaty.Text, out int Quantity))
+                        {
+                            p.Quantaty += Quantity;
+                            ProCount.Visibility = Visibility.Hidden;
+
+                        }
+                        else
+                        {
+                            ProCount.Visibility = Visibility.Visible;
+                        }
                     }
-                    else
-                    {
-                        p.Quantaty = int.Parse(txtQuantaty.Text);
-                    }
-					
+
 					if (txtPrice.Text.Length == 0)
+					{
+						p.Price = 0;
+					}
+					else
+					{
+                        if (int.TryParse(txtPrice.Text, out int Price))
+                        {
+                            p.Price = Price;
+                            ProPrice.Visibility = Visibility.Hidden;
+
+                        }
+                        else
+                        {
+                            ProPrice.Visibility = Visibility.Visible;
+                        }
+                    }
+
+                    if (int.TryParse(textSale.Text, out int SelledPrice))
                     {
-                        p.Price = 0;
+                        p.SaledPrice = SelledPrice;
+                        ProSelledPrice.Visibility = Visibility.Hidden;
+
                     }
                     else
                     {
-                        p.Price = int.Parse(txtPrice.Text);
+                        ProSelledPrice.Visibility = Visibility.Visible;
                     }
-
-                    p.Total = p.Quantaty * p.Price;
-					protien = p;
+                    //p.Total = p.Quantaty * p.Price;
+                    protien = p;
 				}
-				if (textName.Text == "" || txtQuantaty.Text == "" || txtPrice.Text == "" )
+				if (textName.Text == "" || txtQuantaty.Text == "" || txtPrice.Text == ""
+					||ProCount.IsVisible||ProPrice.IsVisible||ProSelledPrice.IsVisible
+					)
 				{ flag = false; }
 			}
 
-            if (flag)
-            {
-                context.SaveChanges();
-                ProtienDataUpdated(this, protien);
+			if (flag)
+			{
+				context.SaveChanges();
+				ProtienDataUpdated(this, protien);
 
-                this.Close();
-            }
-            else
-            {
-                errorTextblock.Text = "You must enter all data";
-            }
-           
+				this.Close();
+			}
+			else
+			{
+				errorTextblock.Text = "برجاء ادخال جميع البيانات";
+			}
+
 		}
-			
-	}
+
+
+        private void textPass_PreviewKeyDownProduct(object sender, KeyEventArgs e)
+        {
+            string EdAndDelPass = context.Admins.FirstOrDefault(ed => ed.ID == 1).EDitAndDeletPassword;
+            if (e.Key == Key.Enter)
+            {
+                if (textPass.Password == EdAndDelPass)
+                {
+                    AllProducts.Visibility = Visibility.Visible;
+                }
+                else
+                {
+                    MessageBox.Show("الرقم الذي ادخلته غير صحيح!", "قم بادخال الرقم السري", MessageBoxButton.OK, MessageBoxImage.Information);
+                    MessageBoxResult result = MessageBox.Show("هل تريد اعاده المحاوله", "تأكيد", MessageBoxButton.YesNo, MessageBoxImage.Question);
+
+
+                    if (result == MessageBoxResult.No)
+                    {
+                        this.Close();
+
+                    }
+                    else
+                    {
+                        textPass.Password = "";
+                    }
+
+                }
+            }
+        }
+
+    }
 }
 

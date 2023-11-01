@@ -1,25 +1,27 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <PropertyGroup />
+  <PropertyGroup>
+    <_LastSelectedProfileId>E:\New folder\Telegram Desktop\GymSysyemWpf\Properties\PublishProfiles\FolderProfile.pubxml</_LastSelectedProfileId>
+  </PropertyGroup>
   <ItemGroup>
     <ApplicationDefinition Update="App.xaml">
       <SubType>Designer</SubType>
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
-    <Compile Update="AdminLogin.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Update="AdminWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="CoachAdd.xaml.cs">
+    <Compile Update="Bill.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="MachineAdd.xaml.cs">
+    <Compile Update="ConfirmFinancial.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="machineUpdated.xaml.cs">
+    <Compile Update="MonthlyProfit.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ConfirmDeleting.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="MainWindow.xaml.cs">
@@ -31,13 +33,10 @@
     <Compile Update="ProtienUpdate.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="receptionistUpdated.xaml.cs">
+    <Compile Update="SubscriptionAdd.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="ReciptionistAdd.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Update="ReciptionistWindow.xaml.cs">
+    <Compile Update="SubscriptionUpdate.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="TraineeAdd.xaml.cs">
@@ -46,30 +45,21 @@
     <Compile Update="TraineeUpdate.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="UpdateCoach.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Update="VendorAdd.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Update="VendorUpdate.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Page Update="AdminLogin.xaml">
-      <SubType>Designer</SubType>
-    </Page>
     <Page Update="AdminWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="CoachAdd.xaml">
+    <Page Update="Bill.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="MachineAdd.xaml">
+    <Page Update="ConfirmFinancial.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="machineUpdated.xaml">
+    <Page Update="MonthlyProfit.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ConfirmDeleting.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="MainWindow.xaml">
@@ -81,34 +71,22 @@
     <Page Update="ProtienUpdate.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="receptionistUpdated.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Update="ReciptionistAdd.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Update="ReciptionistWindow.xaml">
-      <SubType>Designer</SubType>
-    </Page>
     <Page Update="Styles\ButtonStyles.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Styles\UIColors.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="SubscriptionAdd.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="SubscriptionUpdate.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="TraineeAdd.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="TraineeUpdate.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Update="UpdateCoach.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Update="VendorAdd.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Update="VendorUpdate.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

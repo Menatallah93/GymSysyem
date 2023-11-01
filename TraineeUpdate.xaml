@@ -3,9 +3,9 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:GymSysyemWpf"
+        xmlns:local="clr-namespace:GymSysyemWpf" xmlns:Icon="http://metro.mahapps.com/winfx/xaml/iconpacks"
         mc:Ignorable="d"
-        Title="Login" Height="750" Width="490"
+        Title="Login" Height="710" Width="490"
         WindowStyle="None"
         ResizeMode="NoResize"
         WindowStartupLocation="CenterScreen"
@@ -110,15 +110,16 @@
                     </Button>
                 </Grid>
 
-                <StackPanel Width="460"
+                <StackPanel Width="430"
                             Grid.Row="1"
                             Orientation="Vertical"
-                            Margin="30,0,0,0">
+                            Margin="0,0,0,0">
 
-                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                    <StackPanel Orientation="Horizontal" 
+                                HorizontalAlignment="Center">
                         <Image  Source="/gymLog.png"
                            Width="70" Height="40"/>
-                        <TextBlock Text="Heroes Gym"
+                        <TextBlock Text="Gym"
                                Foreground="White"
                                FontSize="20"
                                FontWeight="Medium"
@@ -126,15 +127,47 @@
                                HorizontalAlignment="Center"
                                    Margin="0,10,0,0"/>
                     </StackPanel >
-
-                    <TextBlock Text="ID"
+                    <StackPanel VerticalAlignment="Center" 
+                                HorizontalAlignment="Center">
+                        <TextBlock Text="الرقم السري"
                     Foreground="DarkGray"
                     FontSize="20"
                     FontWeight="Medium"
                     FontFamily="Montserrat"
-                    
-                               Margin="0,1,0,0" Grid.Row="1"/>
-                    <TextBox x:Name="textId"
+                    HorizontalAlignment="Center"
+                    Margin="0,0,10,5"
+                                Grid.Row="1"/>
+                        <PasswordBox x:Name="textPass"
+                                 
+                             FontSize="15"
+                             FontWeight="Medium"
+                             FontFamily="Montserrat"                            
+                             Foreground="Black"
+                             BorderBrush="DarkGray"
+                             BorderThickness="0,0,0,2"
+                             Height="32"
+                             HorizontalAlignment="Right"
+                             Width="290"
+                             Margin="0,5,0,0"
+                             Padding="10,4,0,0"
+                             Background="White"
+                             FlowDirection="RightToLeft"
+                             PreviewKeyDown="textPass_PreviewKeyDown"                                 
+                                 >
+
+                        </PasswordBox>
+                    </StackPanel>
+                    <StackPanel Visibility="Hidden"
+                        Name="AllDataTrinee">
+                        <TextBlock Text="ID"
+                    Foreground="DarkGray"
+                    FontSize="20"
+                    FontWeight="Medium"
+                    FontFamily="Montserrat"
+                    HorizontalAlignment="Right"
+                    Margin="0,0,10,5"
+                                Grid.Row="1"/>
+                        <TextBox x:Name="textId"
                              FontSize="15"
                              FontWeight="Medium"
                              FontFamily="Montserrat"                            
@@ -142,22 +175,24 @@
                              BorderBrush="DarkGray"
                              BorderThickness="0,0,0,2"
                              Height="30"
-                             HorizontalAlignment="Left"
+                             HorizontalAlignment="Right"
                              Width="250"
                              IsReadOnly="True"
                              Margin="0,5,0,0"
                              Padding="10,4,0,0"
-                             Background="White">
+                             Background="White"
+                             FlowDirection="RightToLeft">
 
-                    </TextBox>
+                        </TextBox>
 
-                    <TextBlock Text="Name"
+                        <TextBlock Text="الاسم"
                                Foreground="DarkGray"
                                FontSize="20"
                                FontWeight="Medium"
                                FontFamily="Montserrat"                             
-                               Margin="0,9,0,0"/>
-                    <TextBox x:Name="textName" 
+                               HorizontalAlignment="Right"
+                               Margin="0,0,10,5"/>
+                        <TextBox x:Name="textName" 
                              FontSize="15"
                              FontWeight="Medium"
                              FontFamily="Montserrat"                            
@@ -165,21 +200,26 @@
                              BorderBrush="DarkGray"
                              BorderThickness="0,0,0,2"
                              Height="30"
-                             HorizontalAlignment="Left"
+                             HorizontalAlignment="Right"
                              Width="250"
                              Margin="0,5,0,0"
                              Padding="10,4,0,0"
-                             Background="White">
+                             Background="White"
+                             FlowDirection="RightToLeft">
 
-                    </TextBox>
-
-                    <TextBlock Text="phone"
+                        </TextBox>
+                      
+                        <TextBlock Text="رقم التلفون"
                                Foreground="DarkGray"
                                FontSize="20"
                                FontWeight="Medium"
                                FontFamily="Montserrat"                             
-                               Margin="0,9,0,0"/>
-                    <TextBox x:Name="textPhone"
+                               HorizontalAlignment="Right"
+                               Margin="0,0,10,5"/>
+                        
+                        <StackPanel Orientation="Horizontal" 
+                                    FlowDirection="RightToLeft">
+                        <TextBox x:Name="textPhone"
                              FontSize="15"
                              FontWeight="Medium"
                              FontFamily="Montserrat"                            
@@ -187,21 +227,39 @@
                              BorderBrush="DarkGray"
                              BorderThickness="0,0,0,2"
                              Height="30"
-                             HorizontalAlignment="Left"
+                             HorizontalAlignment="Right"
                              Width="250"
                              Margin="0,5,0,0"
                              Padding="10,4,0,0"
-                             Background="White">
+                             Background="White"
+                             FlowDirection="RightToLeft">
 
-                    </TextBox>
+                        </TextBox>
+                        <TextBlock Text="قم بادخال رقم الهاتف " Name="TrPhone"
+                               FontSize="13"
+                                Visibility="Hidden"
+                               Foreground="Red"
+                               FontWeight="Medium"
+                               FontFamily="Montserrat"                             
+                               HorizontalAlignment="Right"
+                               Margin="20,10,0,0"/>
+                        
+                        </StackPanel>
+                        
+                        
+                       
 
-                    <TextBlock Text="Adress"
+                        <TextBlock Text="العمر"
                                Foreground="DarkGray"
                                FontSize="20"
                                FontWeight="Medium"
                                FontFamily="Montserrat"                             
-                               Margin="0,9,0,0"/>
-                    <TextBox x:Name="textAdress"
+                               HorizontalAlignment="Right"
+                               Margin="0,0,10,5"/>
+                        
+                        <StackPanel Orientation="Horizontal" 
+                                    FlowDirection="RightToLeft">
+                        <TextBox x:Name="textAge"
                              FontSize="15"
                              FontWeight="Medium"
                              FontFamily="Montserrat"                            
@@ -209,21 +267,87 @@
                              BorderBrush="DarkGray"
                              BorderThickness="0,0,0,2"
                              Height="30"
-                             HorizontalAlignment="Left"
+                             HorizontalAlignment="Right"
                              Width="250"
                              Margin="0,5,0,0"
                              Padding="10,4,0,0"
-                             Background="White">
+                             Background="White"
+                             FlowDirection="RightToLeft">
 
-                    </TextBox>
-
-                    <TextBlock Text="Age"
+                        </TextBox>
+                        <TextBlock Text="قم بادخال العمر " Name="TrAge"
+                               FontSize="13"
+                                Visibility="Hidden"
+                               Foreground="Red"
+                               FontWeight="Medium"
+                               FontFamily="Montserrat"                             
+                               HorizontalAlignment="Right"
+                               Margin="20,10,0,0"/>
+                        </StackPanel>
+                        
+                       
+                        
+                        <TextBlock Text="الاشتراك"
                                Foreground="DarkGray"
                                FontSize="20"
                                FontWeight="Medium"
                                FontFamily="Montserrat"                             
-                               Margin="0,9,0,0"/>
-                    <TextBox x:Name="textAge"
+                               HorizontalAlignment="Right"
+                               Margin="0,0,10,5"/>
+
+
+
+                        <StackPanel Orientation="Horizontal"
+                                FlowDirection="RightToLeft">
+
+                            <ComboBox x:Name="combBoxTrainee"
+                                      SelectionChanged="combBoxTrainee_SelectionChanged"
+                                      FontSize="15"
+                                      
+                                      FontWeight="Medium"
+                                      FontFamily="Montserrat"                            
+                                      Foreground="Black"
+                                      BorderBrush="DarkGray"
+                                      BorderThickness="0,0,0,2"
+                                      Height="30"
+                                      HorizontalAlignment="Right"
+                                      Width="250"
+                                      Margin="0,0,0,0"
+                                      Padding="10,4,0,0"
+                                      Background="White"
+                                      FlowDirection="RightToLeft">
+                            </ComboBox>
+
+                            <Label FontSize="20"
+                               Name="SubPricLabel"
+                             FontWeight="Medium"
+                             FontFamily="Montserrat"                            
+                             Foreground="White"
+                             BorderBrush="White"
+                             BorderThickness="0,0,0,2"
+                             Height="30"
+                             HorizontalAlignment="Right"
+                             Width="100"
+                             Margin="20,0,0,0"
+                             Padding="10,4,0,0"
+                             >
+
+                            </Label>
+                        </StackPanel>
+
+
+                        <TextBlock Text="السعر"
+                               Foreground="DarkGray"
+                               FontSize="20"
+                               FontWeight="Medium"
+                               FontFamily="Montserrat"                             
+                               HorizontalAlignment="Right"
+                               Margin="0,0,0,5"/>
+
+                        <StackPanel Orientation="Horizontal" 
+                                    FlowDirection="RightToLeft">
+
+                            <TextBox x:Name="textPrice"
                              FontSize="15"
                              FontWeight="Medium"
                              FontFamily="Montserrat"                            
@@ -231,109 +355,184 @@
                              BorderBrush="DarkGray"
                              BorderThickness="0,0,0,2"
                              Height="30"
-                             HorizontalAlignment="Left"
+                             HorizontalAlignment="Right"
                              Width="250"
                              Margin="0,5,0,0"
                              Padding="10,4,0,0"
-                             Background="White">
+                             Background="White"
+                             FlowDirection="RightToLeft">
 
-                    </TextBox>
+                            </TextBox>
 
-                    <TextBlock Text="Gender"
-                               Foreground="DarkGray"
-                               FontSize="20"
-                               FontWeight="Medium"
-                               FontFamily="Montserrat"                             
-                               Margin="0,15,0,0"/>
-
-                    <StackPanel Orientation="Horizontal">
-                        <RadioButton Foreground="White" FontSize="18" Width="90" Content="Female" Name="female"></RadioButton>
-                        <RadioButton Foreground="White" FontSize="18" Width="90" Content="Male" Name="male"></RadioButton>
-
-                    </StackPanel>
-                    <TextBlock Text="Subscription"
-                               Foreground="DarkGray"
-                               FontSize="20"
-                               FontWeight="Medium"
-                               FontFamily="Montserrat"                             
-                               Margin="0,9,0,0"/>
-                    <ComboBox x:Name="combBoxTrainee"
-                             FontSize="15"
+                            <Label FontSize="20"
+                               Name="TraineePricLabel"
                              FontWeight="Medium"
                              FontFamily="Montserrat"                            
-                             Foreground="Black"
-                             BorderBrush="DarkGray"
+                             Foreground="White"
+                             BorderBrush="White"
                              BorderThickness="0,0,0,2"
                              Height="30"
-                             HorizontalAlignment="Left"
-                             Width="250"
-                             Margin="0,5,0,0"
+                             HorizontalAlignment="Right"
+                             Width="75"
+                             Margin="5,0,0,0"
                              Padding="10,4,0,0"
-                             Background="White">
+                             >
+
+                            </Label>
 
 
-                    </ComboBox>
-
-
-                   
-
-                    <!--<TextBlock Text="Coach"
-                               Foreground="DarkGray"
-                               FontSize="20"
+                            <TextBlock Text="قم بادخال السعر " Name="TrPrice"
+                               FontSize="13"
+                                Visibility="Hidden"
+                               Foreground="Red"
                                FontWeight="Medium"
                                FontFamily="Montserrat"                             
-                               Margin="0,9,0,0"/>
-                    <ComboBox x:Name="combBoxCoach"
-                             FontSize="15"
-                             FontWeight="Medium"
-                             FontFamily="Montserrat"                            
-                             Foreground="Black"
-                             BorderBrush="DarkGray"
-                             BorderThickness="0,0,0,2"
-                             Height="30"
-                             HorizontalAlignment="Left"
-                             Width="250"
-                             Margin="0,5,0,0"
-                             Padding="10,4,0,0"
-                             Background="White">
+                               HorizontalAlignment="Right"
+                               Margin="5,10,0,0"/>
+
+                           
+                        </StackPanel>
 
 
-                    </ComboBox>-->
+                        <TextBlock Text="السيشن"
+                                   Foreground="DarkGray"
+                                   FontSize="20"
+                                         FontWeight="Medium"
+                                   FontFamily="Montserrat"                             
+                                   HorizontalAlignment="Right"
+                                   Margin="0,5,0,5"/>
 
-                    <Button x:Name="btnLogin"                          
+                        <StackPanel FlowDirection="RightToLeft">
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="40"/>
+                                </Grid.RowDefinitions   >
+
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="170"/>
+                                    <ColumnDefinition Width="90"/>
+                                    <ColumnDefinition Width="90"/>
+                                </Grid.ColumnDefinitions>
+
+                                <Grid Grid.Column="0" HorizontalAlignment="Left">
+                                    <TextBox x:Name="textsession"
+                                 Grid.Column="0"
+                                 FontSize="15"
+                                 FontWeight="Medium"
+                                 FontFamily="Montserrat"                            
+                                 Foreground="Black"
+                                 BorderBrush="DarkGray"
+                                 BorderThickness="0,0,0,2"
+                                 Height="30"
+                                 IsReadOnly="True"
+                                 HorizontalAlignment="Right"
+                                 Width="120"
+                                 Margin="0,0,0,0"
+                                 Padding="10,4,0,0"
+                                 Background="White"
+                                 FlowDirection="RightToLeft">
+
+                                    </TextBox>
+                                </Grid>
+
+                                <Grid Grid.Column="1" HorizontalAlignment="Center">
+                                    <Border Visibility="Visible" Name="Add">
+                                        <Canvas Height="40" HorizontalAlignment="Right" 
+                                        Name="add" MouseDown="Increase_attandance">
+                                            <Ellipse
+                                        Width="50"
+                                        Height="50"
+                                        Fill="#1C0E49"
+                                        Canvas.Right="0"
+                                        Canvas.Bottom="0"
+                                        Name="Plus"
+                                       />
+                                            <Icon:PackIconMaterial Kind="Plus"
+                                                           Foreground="Wheat" 
+                                                           Canvas.Right="14"
+                                                           Width="22"
+                                                           Height="22"
+                                                           Canvas.Bottom="14"
+                                                           >
+
+                                            </Icon:PackIconMaterial>
+                                        </Canvas>
+                                    </Border>
+
+                                </Grid>
+
+
+
+                                <Grid Grid.Column="2" HorizontalAlignment="Center" >
+                                    <Border Visibility="Visible" Name="sub">
+                                        <Canvas MouseDown="DecreaseAttandance"
+                                    Height="40" HorizontalAlignment="Right" Name="min" >
+                                            <Ellipse
+                                        Width="50"
+                                        Height="50"
+                                        Fill="#1C0E49"
+                                        Canvas.Right="0"
+                                        Canvas.Bottom="0"
+                                       />
+                                            <Icon:PackIconMaterial Kind="Minus" 
+                                                           Foreground="Wheat" 
+                                                           Canvas.Right="14"
+                                                           Width="22"
+                                                           Height="22"
+                                                           Canvas.Bottom="14"
+                                                           >
+
+                                            </Icon:PackIconMaterial>
+                                        </Canvas>
+
+                                    </Border>
+
+                                </Grid>
+
+                            </Grid>
+                        </StackPanel>
+
+                        <StackPanel Margin="0,5" Orientation="Horizontal" HorizontalAlignment="Right">
+                            <Label FlowDirection="RightToLeft" Foreground="White" FontSize="19" Width="130">اعاده الاشتراك</Label>
+                            <CheckBox Margin="0,12,0,0"  Name="special" ></CheckBox>
+                        </StackPanel>
+
+
+
+                        <Button x:Name="btnLogin"                          
                             BorderThickness="0"
-                            Content="ok"
+                            Content="تعديل"
                             Foreground="White"
                             FontSize="20"
                             FontFamily="Montserrat"
                             Cursor="Hand"                           
-                            Margin="0,15,0,0" Click="btnLogin_Click"
+                            Margin="0,0,0,0" Click="btnLogin_Click"
                             >
-                        <Button.Style>
-                            <Style TargetType="Button">
-                                <Setter Property="Background" Value="#462AD8"/>
-                                <Style.Triggers>
-                                    <Trigger Property="IsMouseOver" Value="True">
-                                        <Setter Property="Background" Value="#28AEED"/>
-                                    </Trigger>
-                                </Style.Triggers>
-                            </Style>
-                        </Button.Style>
-                        <Button.Template>
-                            <ControlTemplate TargetType="Button">
-                                <Border Width="150" Height="40"
+                            <Button.Style>
+                                <Style TargetType="Button">
+                                    <Setter Property="Background" Value="#462AD8"/>
+                                    <Style.Triggers>
+                                        <Trigger Property="IsMouseOver" Value="True">
+                                            <Setter Property="Background" Value="#28AEED"/>
+                                        </Trigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </Button.Style>
+                            <Button.Template>
+                                <ControlTemplate TargetType="Button">
+                                    <Border Width="150" Height="40"
                                         CornerRadius="20"
                                         Background="{TemplateBinding Background}">
-                                    <ContentPresenter VerticalAlignment="Center"
+                                        <ContentPresenter VerticalAlignment="Center"
                                                       HorizontalAlignment="Center"/>
-                                </Border>
-                            </ControlTemplate>
-                        </Button.Template>
+                                    </Border>
+                                </ControlTemplate>
+                            </Button.Template>
 
 
-                    </Button>
-                   
-                    <TextBlock Text="" Name="errorTextblock"
+                        </Button>
+
+                        <TextBlock Text="" Name="errorTextblock"
                                HorizontalAlignment="Center"
                                Foreground="red"
                                FontSize="12"
@@ -343,11 +542,12 @@
                                    Cursor="Hand"
                                   />
 
-                    <StackPanel Orientation="Horizontal"
+                        <StackPanel Orientation="Horizontal"
                                 HorizontalAlignment="Center"
                                 Margin="0,15,0,0">
 
 
+                        </StackPanel>
                     </StackPanel>
                 </StackPanel>
             </Grid>

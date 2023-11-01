@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:GymSysyemWpf"
         mc:Ignorable="d"
-        Title="Login" Height="700" Width="480"
+        Title="Login" Height="650" Width="480"
         WindowStyle="None"
         ResizeMode="NoResize"
         WindowStartupLocation="CenterScreen"
@@ -40,6 +40,7 @@
                     <RowDefinition Height="30"/>
                     <RowDefinition/>
                 </Grid.RowDefinitions   >
+                
                 <Grid Grid.Row="0">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition/>
@@ -110,15 +111,15 @@
                     </Button>
                 </Grid>
 
-                <StackPanel Width="460"
+                <StackPanel Width="420"
                             Grid.Row="1"
                             Orientation="Vertical"
-                            Margin="30,0,0,0">
+                            Margin="0,0,0,0">
 
                     <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
                         <Image  Source="/gymLog.png"
                            Width="70" Height="40"/>
-                        <TextBlock Text="Heroes Gym"
+                        <TextBlock Text="Gym"
                                Foreground="White"
                                FontSize="20"
                                FontWeight="Medium"
@@ -127,12 +128,14 @@
                                    Margin="0,10,0,0"/>
                     </StackPanel >
 
-                    <TextBlock Text="Name"
+                    <TextBlock Text="الاسم"
                                Foreground="DarkGray"
                                FontSize="20"
                                FontWeight="Medium"
-                               FontFamily="Montserrat"                             
-                               Margin="0,9,0,0"/>
+                               FontFamily="Montserrat"
+                               HorizontalAlignment="Right"
+                               Margin="0,10,10,5"
+                               />
                     <TextBox x:Name="textName" 
                              FontSize="15"
                              FontWeight="Medium"
@@ -141,20 +144,24 @@
                              BorderBrush="DarkGray"
                              BorderThickness="0,0,0,2"
                              Height="30"
-                             HorizontalAlignment="Left"
-                             Width="250"
+                             HorizontalAlignment="Right"
                              Margin="0,5,0,0"
+                             Width="250"
                              Padding="10,4,0,0"
-                             Background="White">
+                             Background="White"
+                             FlowDirection="RightToLeft">
 
                     </TextBox>
 
-                    <TextBlock Text="phone"
+                    <TextBlock Text="رقم التلفون"
                                Foreground="DarkGray"
                                FontSize="20"
                                FontWeight="Medium"
                                FontFamily="Montserrat"                             
-                               Margin="0,9,0,0"/>
+                               HorizontalAlignment="Right"
+                               Margin="0,10,0,5"/>
+                    <StackPanel Orientation="Horizontal" 
+                                    FlowDirection="RightToLeft">
                     <TextBox x:Name="textPhone"
                              FontSize="15"
                              FontWeight="Medium"
@@ -163,42 +170,34 @@
                              BorderBrush="DarkGray"
                              BorderThickness="0,0,0,2"
                              Height="30"
-                             HorizontalAlignment="Left"
+                             HorizontalAlignment="Right"
                              Width="250"
                              Margin="0,5,0,0"
                              Padding="10,4,0,0"
-                             Background="White">
+                             Background="White"
+                             FlowDirection="RightToLeft">
 
                     </TextBox>
+                    <TextBlock Text="قم بادخال رقم الهاتف " Name="TrPhone"
+                               FontSize="13"
+                                Visibility="Hidden"
+                               Foreground="Red"
+                               FontWeight="Medium"
+                               FontFamily="Montserrat"                             
+                               HorizontalAlignment="Right"
+                               Margin="10,5,0,0"/>
+                    </StackPanel>
+                   
 
-                    <TextBlock Text="Adress"
+                    <TextBlock Text="العمر"
                                Foreground="DarkGray"
                                FontSize="20"
                                FontWeight="Medium"
                                FontFamily="Montserrat"                             
-                               Margin="0,9,0,0"/>
-                    <TextBox x:Name="textAdress"
-                             FontSize="15"
-                             FontWeight="Medium"
-                             FontFamily="Montserrat"                            
-                             Foreground="Black"
-                             BorderBrush="DarkGray"
-                             BorderThickness="0,0,0,2"
-                             Height="30"
-                             HorizontalAlignment="Left"
-                             Width="250"
-                             Margin="0,5,0,0"
-                             Padding="10,4,0,0"
-                             Background="White">
-
-                    </TextBox>
-
-                    <TextBlock Text="Age"
-                               Foreground="DarkGray"
-                               FontSize="20"
-                               FontWeight="Medium"
-                               FontFamily="Montserrat"                             
-                               Margin="0,9,0,0"/>
+                               HorizontalAlignment="Right"
+                               Margin="0,10,0,5"/>
+                    <StackPanel Orientation="Horizontal" 
+                                    FlowDirection="RightToLeft">
                     <TextBox x:Name="textAge"
                              FontSize="15"
                              FontWeight="Medium"
@@ -207,33 +206,50 @@
                              BorderBrush="DarkGray"
                              BorderThickness="0,0,0,2"
                              Height="30"
-                             HorizontalAlignment="Left"
+                             HorizontalAlignment="Right"
                              Width="250"
                              Margin="0,5,0,0"
                              Padding="10,4,0,0"
-                             Background="White">
+                             Background="White"
+                             FlowDirection="RightToLeft">
 
                     </TextBox>
 
-                    <TextBlock Text="Gender"
+                    <TextBlock Text="قم بادخال العمر " Name="TrAge"
+                               FontSize="13"
+                                Visibility="Hidden"
+                               Foreground="Red"
+                               FontWeight="Medium"
+                               FontFamily="Montserrat"                             
+                               HorizontalAlignment="Right"
+                               Margin="10,5,0,0"/>
+                    </StackPanel>
+
+                    <TextBlock Text="النوع"
                                Foreground="DarkGray"
                                FontSize="20"
                                FontWeight="Medium"
                                FontFamily="Montserrat"                             
-                               Margin="0,15,0,0"/>
+                               HorizontalAlignment="Right"
+                               Margin="0,10,0,15"/>
 
-                    <StackPanel Orientation="Horizontal">
-                        <RadioButton Foreground="White" FontSize="18" Width="90" Content="Female" Name="female"></RadioButton>
-                        <RadioButton Foreground="White" FontSize="18" Width="90" Content="Male" Name="male"></RadioButton>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                        <RadioButton FlowDirection="RightToLeft" Foreground="White" FontSize="18" Width="90" Content="أنثي" Name="female"></RadioButton>
+                        <RadioButton FlowDirection="RightToLeft" Foreground="White" FontSize="18" Width="90" Content="رجل" Name="male"></RadioButton>
 
                     </StackPanel>
-                    <TextBlock Text="Subscription"
+                    <TextBlock Text="الاشتراك"
                                Foreground="DarkGray"
                                FontSize="20"
                                FontWeight="Medium"
                                FontFamily="Montserrat"                             
-                               Margin="0,9,0,0"/>
-                    <ComboBox x:Name="combBoxTrainee"
+                               HorizontalAlignment="Right"
+                               Margin="0,10,0,5"/>
+                    <StackPanel Orientation="Horizontal"
+                                FlowDirection="RightToLeft">
+                        
+                        <ComboBox x:Name="combBoxTrainee"
+                                  SelectionChanged="combBoxTrainee_SelectionChanged"
                              FontSize="15"
                              FontWeight="Medium"
                              FontFamily="Montserrat"                            
@@ -241,19 +257,67 @@
                              BorderBrush="DarkGray"
                              BorderThickness="0,0,0,2"
                              Height="30"
-                             HorizontalAlignment="Left"
                              Width="250"
                              Margin="0,5,0,0"
                              Padding="10,4,0,0"
-                             Background="White">
+                             Background="White"
+                             >
+                        </ComboBox>
+
+                        <Label FontSize="20"
+                               Name="SubPricLabel"
+                             FontWeight="Medium"
+                             FontFamily="Montserrat"                            
+                             Foreground="White"
+                             BorderBrush="White"
+                             BorderThickness="0,0,0,2"
+                             Height="30"
+                             HorizontalAlignment="Right"
+                             Width="100"
+                             Margin="20,5,0,0"
+                             Padding="10,4,0,0"
+                             >
+                            
+                        </Label>
                         
 
-                    </ComboBox>
+                    </StackPanel>
+                    <TextBlock Text="السعر"
+                               Foreground="DarkGray"
+                               FontSize="20"
+                               FontWeight="Medium"
+                               FontFamily="Montserrat"                             
+                               HorizontalAlignment="Right"
+                               Margin="0,10,0,5"/>
+                    <TextBox x:Name="textPrice"
+                             FontSize="15"
+                             FontWeight="Medium"
+                             FontFamily="Montserrat"                            
+                             Foreground="Black"
+                             BorderBrush="DarkGray"
+                             BorderThickness="0,0,0,2"
+                             Height="30"
+                             HorizontalAlignment="Right"
+                             Width="250"
+                             Margin="0,5,0,0"
+                             Padding="10,4,0,0"
+                             Background="White"
+                             FlowDirection="RightToLeft">
+
+                    </TextBox>
 
 
+                    <TextBlock Text="قم بادخال السعر  " Name="TrPrice"
+                               FontSize="13"
+                                Visibility="Hidden"
+                               Foreground="Red"
+                               FontWeight="Medium"
+                               FontFamily="Montserrat"                             
+                               HorizontalAlignment="Right"
+                               Margin="0,0,10,5"/>
                     <Button x:Name="btnLogin"                          
                             BorderThickness="0"
-                            Content="ok"
+                            Content="إضافة"
                             Foreground="White"
                             FontSize="20"
                             FontFamily="Montserrat"

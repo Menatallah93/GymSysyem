@@ -196,3 +196,1001 @@ E:\ITI\ITI 9 month courses\C#\GymSysyemWpf\obj\Debug\net7.0-windows\refint\GymSy
 E:\ITI\ITI 9 month courses\C#\GymSysyemWpf\obj\Debug\net7.0-windows\GymSysyemWpf.pdb
 E:\ITI\ITI 9 month courses\C#\GymSysyemWpf\obj\Debug\net7.0-windows\GymSysyemWpf.genruntimeconfig.cache
 E:\ITI\ITI 9 month courses\C#\GymSysyemWpf\obj\Debug\net7.0-windows\ref\GymSysyemWpf.dll
+E:\Job\GymSysyemWpf\bin\Debug\net7.0-windows\GymSysyemWpf.exe
+E:\Job\GymSysyemWpf\bin\Debug\net7.0-windows\GymSysyemWpf.deps.json
+E:\Job\GymSysyemWpf\bin\Debug\net7.0-windows\GymSysyemWpf.runtimeconfig.json
+E:\Job\GymSysyemWpf\bin\Debug\net7.0-windows\GymSysyemWpf.dll
+E:\Job\GymSysyemWpf\bin\Debug\net7.0-windows\GymSysyemWpf.pdb
+E:\Job\GymSysyemWpf\bin\Debug\net7.0-windows\Azure.Core.dll
+E:\Job\GymSysyemWpf\bin\Debug\net7.0-windows\Azure.Identity.dll
+E:\Job\GymSysyemWpf\bin\Debug\net7.0-windows\Humanizer.dll
+E:\Job\GymSysyemWpf\bin\Debug\net7.0-windows\LiveCharts.dll
+E:\Job\GymSysyemWpf\bin\Debug\net7.0-windows\LiveCharts.Wpf.dll
+E:\Job\GymSysyemWpf\bin\Debug\net7.0-windows\MahApps.Metro.IconPacks.Core.dll
+E:\Job\GymSysyemWpf\bin\Debug\net7.0-windows\MahApps.Metro.IconPacks.Material.dll
+E:\Job\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.Bcl.AsyncInterfaces.dll
+E:\Job\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.Data.SqlClient.dll
+E:\Job\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.EntityFrameworkCore.dll
+E:\Job\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.EntityFrameworkCore.Abstractions.dll
+E:\Job\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.EntityFrameworkCore.Design.dll
+E:\Job\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.EntityFrameworkCore.Relational.dll
+E:\Job\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.EntityFrameworkCore.SqlServer.dll
+E:\Job\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.Extensions.Caching.Abstractions.dll
+E:\Job\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.Extensions.Caching.Memory.dll
+E:\Job\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.Extensions.Configuration.Abstractions.dll
+E:\Job\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.Extensions.DependencyInjection.dll
+E:\Job\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+E:\Job\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.Extensions.DependencyModel.dll
+E:\Job\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.Extensions.Logging.dll
+E:\Job\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+E:\Job\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.Extensions.Options.dll
+E:\Job\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.Extensions.Primitives.dll
+E:\Job\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.Identity.Client.dll
+E:\Job\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.Identity.Client.Extensions.Msal.dll
+E:\Job\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.IdentityModel.Abstractions.dll
+E:\Job\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.IdentityModel.JsonWebTokens.dll
+E:\Job\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.IdentityModel.Logging.dll
+E:\Job\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.IdentityModel.Protocols.dll
+E:\Job\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+E:\Job\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.IdentityModel.Tokens.dll
+E:\Job\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.SqlServer.Server.dll
+E:\Job\GymSysyemWpf\bin\Debug\net7.0-windows\Mono.TextTemplating.dll
+E:\Job\GymSysyemWpf\bin\Debug\net7.0-windows\System.IdentityModel.Tokens.Jwt.dll
+E:\Job\GymSysyemWpf\bin\Debug\net7.0-windows\System.Memory.Data.dll
+E:\Job\GymSysyemWpf\bin\Debug\net7.0-windows\System.Runtime.Caching.dll
+E:\Job\GymSysyemWpf\bin\Debug\net7.0-windows\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+E:\Job\GymSysyemWpf\bin\Debug\net7.0-windows\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+E:\Job\GymSysyemWpf\bin\Debug\net7.0-windows\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+E:\Job\GymSysyemWpf\bin\Debug\net7.0-windows\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+E:\Job\GymSysyemWpf\bin\Debug\net7.0-windows\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+E:\Job\GymSysyemWpf\bin\Debug\net7.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+E:\Job\GymSysyemWpf\bin\Debug\net7.0-windows\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+E:\Job\GymSysyemWpf\obj\Debug\net7.0-windows\GymSysyemWpf.csproj.AssemblyReference.cache
+E:\Job\GymSysyemWpf\obj\Debug\net7.0-windows\Styles\ButtonStyles.baml
+E:\Job\GymSysyemWpf\obj\Debug\net7.0-windows\Styles\UIColors.baml
+E:\Job\GymSysyemWpf\obj\Debug\net7.0-windows\AdminLogin.g.cs
+E:\Job\GymSysyemWpf\obj\Debug\net7.0-windows\AdminWindow.g.cs
+E:\Job\GymSysyemWpf\obj\Debug\net7.0-windows\CoachAdd.g.cs
+E:\Job\GymSysyemWpf\obj\Debug\net7.0-windows\MachineAdd.g.cs
+E:\Job\GymSysyemWpf\obj\Debug\net7.0-windows\machineUpdated.g.cs
+E:\Job\GymSysyemWpf\obj\Debug\net7.0-windows\MainWindow.g.cs
+E:\Job\GymSysyemWpf\obj\Debug\net7.0-windows\ProtienAdd.g.cs
+E:\Job\GymSysyemWpf\obj\Debug\net7.0-windows\ProtienUpdate.g.cs
+E:\Job\GymSysyemWpf\obj\Debug\net7.0-windows\receptionistUpdated.g.cs
+E:\Job\GymSysyemWpf\obj\Debug\net7.0-windows\ReciptionistAdd.g.cs
+E:\Job\GymSysyemWpf\obj\Debug\net7.0-windows\ReciptionistWindow.g.cs
+E:\Job\GymSysyemWpf\obj\Debug\net7.0-windows\TraineeAdd.g.cs
+E:\Job\GymSysyemWpf\obj\Debug\net7.0-windows\TraineeUpdate.g.cs
+E:\Job\GymSysyemWpf\obj\Debug\net7.0-windows\UpdateCoach.g.cs
+E:\Job\GymSysyemWpf\obj\Debug\net7.0-windows\VendorAdd.g.cs
+E:\Job\GymSysyemWpf\obj\Debug\net7.0-windows\VendorUpdate.g.cs
+E:\Job\GymSysyemWpf\obj\Debug\net7.0-windows\App.g.cs
+E:\Job\GymSysyemWpf\obj\Debug\net7.0-windows\GymSysyemWpf_MarkupCompile.cache
+E:\Job\GymSysyemWpf\obj\Debug\net7.0-windows\GymSysyemWpf_MarkupCompile.lref
+E:\Job\GymSysyemWpf\obj\Debug\net7.0-windows\App.baml
+E:\Job\GymSysyemWpf\obj\Debug\net7.0-windows\AdminLogin.baml
+E:\Job\GymSysyemWpf\obj\Debug\net7.0-windows\AdminWindow.baml
+E:\Job\GymSysyemWpf\obj\Debug\net7.0-windows\CoachAdd.baml
+E:\Job\GymSysyemWpf\obj\Debug\net7.0-windows\MachineAdd.baml
+E:\Job\GymSysyemWpf\obj\Debug\net7.0-windows\machineUpdated.baml
+E:\Job\GymSysyemWpf\obj\Debug\net7.0-windows\MainWindow.baml
+E:\Job\GymSysyemWpf\obj\Debug\net7.0-windows\ProtienAdd.baml
+E:\Job\GymSysyemWpf\obj\Debug\net7.0-windows\ProtienUpdate.baml
+E:\Job\GymSysyemWpf\obj\Debug\net7.0-windows\receptionistUpdated.baml
+E:\Job\GymSysyemWpf\obj\Debug\net7.0-windows\ReciptionistAdd.baml
+E:\Job\GymSysyemWpf\obj\Debug\net7.0-windows\ReciptionistWindow.baml
+E:\Job\GymSysyemWpf\obj\Debug\net7.0-windows\TraineeAdd.baml
+E:\Job\GymSysyemWpf\obj\Debug\net7.0-windows\TraineeUpdate.baml
+E:\Job\GymSysyemWpf\obj\Debug\net7.0-windows\UpdateCoach.baml
+E:\Job\GymSysyemWpf\obj\Debug\net7.0-windows\VendorAdd.baml
+E:\Job\GymSysyemWpf\obj\Debug\net7.0-windows\VendorUpdate.baml
+E:\Job\GymSysyemWpf\obj\Debug\net7.0-windows\GymSysyemWpf.g.resources
+E:\Job\GymSysyemWpf\obj\Debug\net7.0-windows\GymSysyemWpf.GeneratedMSBuildEditorConfig.editorconfig
+E:\Job\GymSysyemWpf\obj\Debug\net7.0-windows\GymSysyemWpf.AssemblyInfoInputs.cache
+E:\Job\GymSysyemWpf\obj\Debug\net7.0-windows\GymSysyemWpf.AssemblyInfo.cs
+E:\Job\GymSysyemWpf\obj\Debug\net7.0-windows\GymSysyemWpf.csproj.CoreCompileInputs.cache
+E:\Job\GymSysyemWpf\obj\Debug\net7.0-windows\GymSysyemWpf.csproj.CopyComplete
+E:\Job\GymSysyemWpf\obj\Debug\net7.0-windows\GymSysyemWpf.dll
+E:\Job\GymSysyemWpf\obj\Debug\net7.0-windows\refint\GymSysyemWpf.dll
+E:\Job\GymSysyemWpf\obj\Debug\net7.0-windows\GymSysyemWpf.pdb
+E:\Job\GymSysyemWpf\obj\Debug\net7.0-windows\GymSysyemWpf.genruntimeconfig.cache
+E:\Job\GymSysyemWpf\obj\Debug\net7.0-windows\ref\GymSysyemWpf.dll
+H:\Free\GymSysyemWpf\bin\Debug\net7.0-windows\GymSysyemWpf.exe
+H:\Free\GymSysyemWpf\bin\Debug\net7.0-windows\GymSysyemWpf.deps.json
+H:\Free\GymSysyemWpf\bin\Debug\net7.0-windows\GymSysyemWpf.runtimeconfig.json
+H:\Free\GymSysyemWpf\bin\Debug\net7.0-windows\GymSysyemWpf.dll
+H:\Free\GymSysyemWpf\bin\Debug\net7.0-windows\GymSysyemWpf.pdb
+H:\Free\GymSysyemWpf\bin\Debug\net7.0-windows\Azure.Core.dll
+H:\Free\GymSysyemWpf\bin\Debug\net7.0-windows\Azure.Identity.dll
+H:\Free\GymSysyemWpf\bin\Debug\net7.0-windows\Humanizer.dll
+H:\Free\GymSysyemWpf\bin\Debug\net7.0-windows\LiveCharts.dll
+H:\Free\GymSysyemWpf\bin\Debug\net7.0-windows\LiveCharts.Wpf.dll
+H:\Free\GymSysyemWpf\bin\Debug\net7.0-windows\MahApps.Metro.IconPacks.Core.dll
+H:\Free\GymSysyemWpf\bin\Debug\net7.0-windows\MahApps.Metro.IconPacks.Material.dll
+H:\Free\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.Bcl.AsyncInterfaces.dll
+H:\Free\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.Data.SqlClient.dll
+H:\Free\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.EntityFrameworkCore.dll
+H:\Free\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.EntityFrameworkCore.Abstractions.dll
+H:\Free\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.EntityFrameworkCore.Design.dll
+H:\Free\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.EntityFrameworkCore.Relational.dll
+H:\Free\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.EntityFrameworkCore.SqlServer.dll
+H:\Free\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.Extensions.Caching.Abstractions.dll
+H:\Free\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.Extensions.Caching.Memory.dll
+H:\Free\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.Extensions.Configuration.Abstractions.dll
+H:\Free\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.Extensions.DependencyInjection.dll
+H:\Free\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+H:\Free\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.Extensions.DependencyModel.dll
+H:\Free\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.Extensions.Logging.dll
+H:\Free\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+H:\Free\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.Extensions.Options.dll
+H:\Free\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.Extensions.Primitives.dll
+H:\Free\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.Identity.Client.dll
+H:\Free\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.Identity.Client.Extensions.Msal.dll
+H:\Free\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.IdentityModel.Abstractions.dll
+H:\Free\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.IdentityModel.JsonWebTokens.dll
+H:\Free\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.IdentityModel.Logging.dll
+H:\Free\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.IdentityModel.Protocols.dll
+H:\Free\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+H:\Free\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.IdentityModel.Tokens.dll
+H:\Free\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.SqlServer.Server.dll
+H:\Free\GymSysyemWpf\bin\Debug\net7.0-windows\Mono.TextTemplating.dll
+H:\Free\GymSysyemWpf\bin\Debug\net7.0-windows\System.IdentityModel.Tokens.Jwt.dll
+H:\Free\GymSysyemWpf\bin\Debug\net7.0-windows\System.Memory.Data.dll
+H:\Free\GymSysyemWpf\bin\Debug\net7.0-windows\System.Runtime.Caching.dll
+H:\Free\GymSysyemWpf\bin\Debug\net7.0-windows\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+H:\Free\GymSysyemWpf\bin\Debug\net7.0-windows\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+H:\Free\GymSysyemWpf\bin\Debug\net7.0-windows\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+H:\Free\GymSysyemWpf\bin\Debug\net7.0-windows\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+H:\Free\GymSysyemWpf\bin\Debug\net7.0-windows\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+H:\Free\GymSysyemWpf\bin\Debug\net7.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+H:\Free\GymSysyemWpf\bin\Debug\net7.0-windows\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+H:\Free\GymSysyemWpf\obj\Debug\net7.0-windows\GymSysyemWpf.csproj.AssemblyReference.cache
+H:\Free\GymSysyemWpf\obj\Debug\net7.0-windows\AdminWindow.baml
+H:\Free\GymSysyemWpf\obj\Debug\net7.0-windows\Styles\ButtonStyles.baml
+H:\Free\GymSysyemWpf\obj\Debug\net7.0-windows\Styles\UIColors.baml
+H:\Free\GymSysyemWpf\obj\Debug\net7.0-windows\AdminLogin.g.cs
+H:\Free\GymSysyemWpf\obj\Debug\net7.0-windows\AdminWindow.g.cs
+H:\Free\GymSysyemWpf\obj\Debug\net7.0-windows\MainWindow.g.cs
+H:\Free\GymSysyemWpf\obj\Debug\net7.0-windows\ProtienAdd.g.cs
+H:\Free\GymSysyemWpf\obj\Debug\net7.0-windows\ProtienUpdate.g.cs
+H:\Free\GymSysyemWpf\obj\Debug\net7.0-windows\receptionistUpdated.g.cs
+H:\Free\GymSysyemWpf\obj\Debug\net7.0-windows\ReciptionistAdd.g.cs
+H:\Free\GymSysyemWpf\obj\Debug\net7.0-windows\ReciptionistWindow.g.cs
+H:\Free\GymSysyemWpf\obj\Debug\net7.0-windows\TraineeAdd.g.cs
+H:\Free\GymSysyemWpf\obj\Debug\net7.0-windows\TraineeUpdate.g.cs
+H:\Free\GymSysyemWpf\obj\Debug\net7.0-windows\App.g.cs
+H:\Free\GymSysyemWpf\obj\Debug\net7.0-windows\GymSysyemWpf_MarkupCompile.cache
+H:\Free\GymSysyemWpf\obj\Debug\net7.0-windows\GymSysyemWpf_MarkupCompile.lref
+H:\Free\GymSysyemWpf\obj\Debug\net7.0-windows\App.baml
+H:\Free\GymSysyemWpf\obj\Debug\net7.0-windows\AdminLogin.baml
+H:\Free\GymSysyemWpf\obj\Debug\net7.0-windows\MainWindow.baml
+H:\Free\GymSysyemWpf\obj\Debug\net7.0-windows\ProtienAdd.baml
+H:\Free\GymSysyemWpf\obj\Debug\net7.0-windows\ProtienUpdate.baml
+H:\Free\GymSysyemWpf\obj\Debug\net7.0-windows\receptionistUpdated.baml
+H:\Free\GymSysyemWpf\obj\Debug\net7.0-windows\ReciptionistAdd.baml
+H:\Free\GymSysyemWpf\obj\Debug\net7.0-windows\ReciptionistWindow.baml
+H:\Free\GymSysyemWpf\obj\Debug\net7.0-windows\TraineeAdd.baml
+H:\Free\GymSysyemWpf\obj\Debug\net7.0-windows\TraineeUpdate.baml
+H:\Free\GymSysyemWpf\obj\Debug\net7.0-windows\GymSysyemWpf.g.resources
+H:\Free\GymSysyemWpf\obj\Debug\net7.0-windows\GymSysyemWpf.GeneratedMSBuildEditorConfig.editorconfig
+H:\Free\GymSysyemWpf\obj\Debug\net7.0-windows\GymSysyemWpf.AssemblyInfoInputs.cache
+H:\Free\GymSysyemWpf\obj\Debug\net7.0-windows\GymSysyemWpf.AssemblyInfo.cs
+H:\Free\GymSysyemWpf\obj\Debug\net7.0-windows\GymSysyemWpf.csproj.CoreCompileInputs.cache
+H:\Free\GymSysyemWpf\obj\Debug\net7.0-windows\GymSysyemWpf.csproj.CopyComplete
+H:\Free\GymSysyemWpf\obj\Debug\net7.0-windows\GymSysyemWpf.dll
+H:\Free\GymSysyemWpf\obj\Debug\net7.0-windows\refint\GymSysyemWpf.dll
+H:\Free\GymSysyemWpf\obj\Debug\net7.0-windows\GymSysyemWpf.pdb
+H:\Free\GymSysyemWpf\obj\Debug\net7.0-windows\GymSysyemWpf.genruntimeconfig.cache
+H:\Free\GymSysyemWpf\obj\Debug\net7.0-windows\ref\GymSysyemWpf.dll
+E:\Job\FreeLance\GymSysyemWpf\bin\Debug\net7.0-windows\GymSysyemWpf.exe
+E:\Job\FreeLance\GymSysyemWpf\bin\Debug\net7.0-windows\GymSysyemWpf.deps.json
+E:\Job\FreeLance\GymSysyemWpf\bin\Debug\net7.0-windows\GymSysyemWpf.runtimeconfig.json
+E:\Job\FreeLance\GymSysyemWpf\bin\Debug\net7.0-windows\GymSysyemWpf.dll
+E:\Job\FreeLance\GymSysyemWpf\bin\Debug\net7.0-windows\GymSysyemWpf.pdb
+E:\Job\FreeLance\GymSysyemWpf\bin\Debug\net7.0-windows\Azure.Core.dll
+E:\Job\FreeLance\GymSysyemWpf\bin\Debug\net7.0-windows\Azure.Identity.dll
+E:\Job\FreeLance\GymSysyemWpf\bin\Debug\net7.0-windows\Humanizer.dll
+E:\Job\FreeLance\GymSysyemWpf\bin\Debug\net7.0-windows\LiveCharts.dll
+E:\Job\FreeLance\GymSysyemWpf\bin\Debug\net7.0-windows\LiveCharts.Wpf.dll
+E:\Job\FreeLance\GymSysyemWpf\bin\Debug\net7.0-windows\MahApps.Metro.IconPacks.Core.dll
+E:\Job\FreeLance\GymSysyemWpf\bin\Debug\net7.0-windows\MahApps.Metro.IconPacks.Material.dll
+E:\Job\FreeLance\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.Bcl.AsyncInterfaces.dll
+E:\Job\FreeLance\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.Data.SqlClient.dll
+E:\Job\FreeLance\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.EntityFrameworkCore.dll
+E:\Job\FreeLance\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.EntityFrameworkCore.Abstractions.dll
+E:\Job\FreeLance\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.EntityFrameworkCore.Design.dll
+E:\Job\FreeLance\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.EntityFrameworkCore.Relational.dll
+E:\Job\FreeLance\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.EntityFrameworkCore.SqlServer.dll
+E:\Job\FreeLance\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.Extensions.Caching.Abstractions.dll
+E:\Job\FreeLance\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.Extensions.Caching.Memory.dll
+E:\Job\FreeLance\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.Extensions.Configuration.Abstractions.dll
+E:\Job\FreeLance\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.Extensions.DependencyInjection.dll
+E:\Job\FreeLance\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+E:\Job\FreeLance\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.Extensions.DependencyModel.dll
+E:\Job\FreeLance\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.Extensions.Logging.dll
+E:\Job\FreeLance\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+E:\Job\FreeLance\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.Extensions.Options.dll
+E:\Job\FreeLance\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.Extensions.Primitives.dll
+E:\Job\FreeLance\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.Identity.Client.dll
+E:\Job\FreeLance\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.Identity.Client.Extensions.Msal.dll
+E:\Job\FreeLance\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.IdentityModel.Abstractions.dll
+E:\Job\FreeLance\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.IdentityModel.JsonWebTokens.dll
+E:\Job\FreeLance\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.IdentityModel.Logging.dll
+E:\Job\FreeLance\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.IdentityModel.Protocols.dll
+E:\Job\FreeLance\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+E:\Job\FreeLance\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.IdentityModel.Tokens.dll
+E:\Job\FreeLance\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.SqlServer.Server.dll
+E:\Job\FreeLance\GymSysyemWpf\bin\Debug\net7.0-windows\Mono.TextTemplating.dll
+E:\Job\FreeLance\GymSysyemWpf\bin\Debug\net7.0-windows\System.IdentityModel.Tokens.Jwt.dll
+E:\Job\FreeLance\GymSysyemWpf\bin\Debug\net7.0-windows\System.Memory.Data.dll
+E:\Job\FreeLance\GymSysyemWpf\bin\Debug\net7.0-windows\System.Runtime.Caching.dll
+E:\Job\FreeLance\GymSysyemWpf\bin\Debug\net7.0-windows\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+E:\Job\FreeLance\GymSysyemWpf\bin\Debug\net7.0-windows\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+E:\Job\FreeLance\GymSysyemWpf\bin\Debug\net7.0-windows\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+E:\Job\FreeLance\GymSysyemWpf\bin\Debug\net7.0-windows\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+E:\Job\FreeLance\GymSysyemWpf\bin\Debug\net7.0-windows\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+E:\Job\FreeLance\GymSysyemWpf\bin\Debug\net7.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+E:\Job\FreeLance\GymSysyemWpf\bin\Debug\net7.0-windows\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+E:\Job\FreeLance\GymSysyemWpf\obj\Debug\net7.0-windows\GymSysyemWpf.csproj.AssemblyReference.cache
+E:\Job\FreeLance\GymSysyemWpf\obj\Debug\net7.0-windows\AdminWindow.baml
+E:\Job\FreeLance\GymSysyemWpf\obj\Debug\net7.0-windows\Styles\ButtonStyles.baml
+E:\Job\FreeLance\GymSysyemWpf\obj\Debug\net7.0-windows\Styles\UIColors.baml
+E:\Job\FreeLance\GymSysyemWpf\obj\Debug\net7.0-windows\AdminWindow.g.cs
+E:\Job\FreeLance\GymSysyemWpf\obj\Debug\net7.0-windows\MainWindow.g.cs
+E:\Job\FreeLance\GymSysyemWpf\obj\Debug\net7.0-windows\ProtienAdd.g.cs
+E:\Job\FreeLance\GymSysyemWpf\obj\Debug\net7.0-windows\ProtienUpdate.g.cs
+E:\Job\FreeLance\GymSysyemWpf\obj\Debug\net7.0-windows\TraineeAdd.g.cs
+E:\Job\FreeLance\GymSysyemWpf\obj\Debug\net7.0-windows\TraineeUpdate.g.cs
+E:\Job\FreeLance\GymSysyemWpf\obj\Debug\net7.0-windows\App.g.cs
+E:\Job\FreeLance\GymSysyemWpf\obj\Debug\net7.0-windows\GymSysyemWpf_MarkupCompile.cache
+E:\Job\FreeLance\GymSysyemWpf\obj\Debug\net7.0-windows\GymSysyemWpf_MarkupCompile.lref
+E:\Job\FreeLance\GymSysyemWpf\obj\Debug\net7.0-windows\App.baml
+E:\Job\FreeLance\GymSysyemWpf\obj\Debug\net7.0-windows\MainWindow.baml
+E:\Job\FreeLance\GymSysyemWpf\obj\Debug\net7.0-windows\ProtienAdd.baml
+E:\Job\FreeLance\GymSysyemWpf\obj\Debug\net7.0-windows\ProtienUpdate.baml
+E:\Job\FreeLance\GymSysyemWpf\obj\Debug\net7.0-windows\TraineeAdd.baml
+E:\Job\FreeLance\GymSysyemWpf\obj\Debug\net7.0-windows\TraineeUpdate.baml
+E:\Job\FreeLance\GymSysyemWpf\obj\Debug\net7.0-windows\GymSysyemWpf.g.resources
+E:\Job\FreeLance\GymSysyemWpf\obj\Debug\net7.0-windows\GymSysyemWpf.GeneratedMSBuildEditorConfig.editorconfig
+E:\Job\FreeLance\GymSysyemWpf\obj\Debug\net7.0-windows\GymSysyemWpf.AssemblyInfoInputs.cache
+E:\Job\FreeLance\GymSysyemWpf\obj\Debug\net7.0-windows\GymSysyemWpf.AssemblyInfo.cs
+E:\Job\FreeLance\GymSysyemWpf\obj\Debug\net7.0-windows\GymSysyemWpf.csproj.CoreCompileInputs.cache
+E:\Job\FreeLance\GymSysyemWpf\obj\Debug\net7.0-windows\GymSysyemWpf.csproj.CopyComplete
+E:\Job\FreeLance\GymSysyemWpf\obj\Debug\net7.0-windows\GymSysyemWpf.dll
+E:\Job\FreeLance\GymSysyemWpf\obj\Debug\net7.0-windows\refint\GymSysyemWpf.dll
+E:\Job\FreeLance\GymSysyemWpf\obj\Debug\net7.0-windows\GymSysyemWpf.pdb
+E:\Job\FreeLance\GymSysyemWpf\obj\Debug\net7.0-windows\GymSysyemWpf.genruntimeconfig.cache
+E:\Job\FreeLance\GymSysyemWpf\obj\Debug\net7.0-windows\ref\GymSysyemWpf.dll
+E:\Job\FreeLance\GymSysyemWpf\obj\Debug\net7.0-windows\SubscriptionAdd.g.cs
+E:\Job\FreeLance\GymSysyemWpf\obj\Debug\net7.0-windows\SubscriptionAdd.baml
+E:\Job\FreeLance\GymSysyemWpf\obj\Debug\net7.0-windows\SubscriptionUpdate.g.cs
+E:\Job\FreeLance\GymSysyemWpf\obj\Debug\net7.0-windows\SubscriptionUpdate.baml
+D:\ITI_9\Work\GymSysyemWpf\bin\Debug\net7.0-windows\GymSysyemWpf.exe
+D:\ITI_9\Work\GymSysyemWpf\bin\Debug\net7.0-windows\GymSysyemWpf.deps.json
+D:\ITI_9\Work\GymSysyemWpf\bin\Debug\net7.0-windows\GymSysyemWpf.runtimeconfig.json
+D:\ITI_9\Work\GymSysyemWpf\bin\Debug\net7.0-windows\GymSysyemWpf.dll
+D:\ITI_9\Work\GymSysyemWpf\bin\Debug\net7.0-windows\GymSysyemWpf.pdb
+D:\ITI_9\Work\GymSysyemWpf\bin\Debug\net7.0-windows\Azure.Core.dll
+D:\ITI_9\Work\GymSysyemWpf\bin\Debug\net7.0-windows\Azure.Identity.dll
+D:\ITI_9\Work\GymSysyemWpf\bin\Debug\net7.0-windows\Humanizer.dll
+D:\ITI_9\Work\GymSysyemWpf\bin\Debug\net7.0-windows\LiveCharts.dll
+D:\ITI_9\Work\GymSysyemWpf\bin\Debug\net7.0-windows\LiveCharts.Wpf.dll
+D:\ITI_9\Work\GymSysyemWpf\bin\Debug\net7.0-windows\MahApps.Metro.IconPacks.Core.dll
+D:\ITI_9\Work\GymSysyemWpf\bin\Debug\net7.0-windows\MahApps.Metro.IconPacks.Material.dll
+D:\ITI_9\Work\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.Bcl.AsyncInterfaces.dll
+D:\ITI_9\Work\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.Data.SqlClient.dll
+D:\ITI_9\Work\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.EntityFrameworkCore.dll
+D:\ITI_9\Work\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\ITI_9\Work\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.EntityFrameworkCore.Design.dll
+D:\ITI_9\Work\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.EntityFrameworkCore.Relational.dll
+D:\ITI_9\Work\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\ITI_9\Work\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.Extensions.Caching.Abstractions.dll
+D:\ITI_9\Work\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.Extensions.Caching.Memory.dll
+D:\ITI_9\Work\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\ITI_9\Work\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.Extensions.DependencyInjection.dll
+D:\ITI_9\Work\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\ITI_9\Work\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.Extensions.DependencyModel.dll
+D:\ITI_9\Work\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.Extensions.Logging.dll
+D:\ITI_9\Work\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+D:\ITI_9\Work\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.Extensions.Options.dll
+D:\ITI_9\Work\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.Extensions.Primitives.dll
+D:\ITI_9\Work\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.Identity.Client.dll
+D:\ITI_9\Work\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\ITI_9\Work\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.IdentityModel.Abstractions.dll
+D:\ITI_9\Work\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\ITI_9\Work\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.IdentityModel.Logging.dll
+D:\ITI_9\Work\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.IdentityModel.Protocols.dll
+D:\ITI_9\Work\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\ITI_9\Work\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.IdentityModel.Tokens.dll
+D:\ITI_9\Work\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.SqlServer.Server.dll
+D:\ITI_9\Work\GymSysyemWpf\bin\Debug\net7.0-windows\Mono.TextTemplating.dll
+D:\ITI_9\Work\GymSysyemWpf\bin\Debug\net7.0-windows\System.IdentityModel.Tokens.Jwt.dll
+D:\ITI_9\Work\GymSysyemWpf\bin\Debug\net7.0-windows\System.Memory.Data.dll
+D:\ITI_9\Work\GymSysyemWpf\bin\Debug\net7.0-windows\System.Runtime.Caching.dll
+D:\ITI_9\Work\GymSysyemWpf\bin\Debug\net7.0-windows\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\ITI_9\Work\GymSysyemWpf\bin\Debug\net7.0-windows\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\ITI_9\Work\GymSysyemWpf\bin\Debug\net7.0-windows\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\ITI_9\Work\GymSysyemWpf\bin\Debug\net7.0-windows\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\ITI_9\Work\GymSysyemWpf\bin\Debug\net7.0-windows\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\ITI_9\Work\GymSysyemWpf\bin\Debug\net7.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\ITI_9\Work\GymSysyemWpf\bin\Debug\net7.0-windows\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+D:\ITI_9\Work\GymSysyemWpf\obj\Debug\net7.0-windows\GymSysyemWpf.csproj.AssemblyReference.cache
+D:\ITI_9\Work\GymSysyemWpf\obj\Debug\net7.0-windows\AdminWindow.baml
+D:\ITI_9\Work\GymSysyemWpf\obj\Debug\net7.0-windows\Styles\ButtonStyles.baml
+D:\ITI_9\Work\GymSysyemWpf\obj\Debug\net7.0-windows\Styles\UIColors.baml
+D:\ITI_9\Work\GymSysyemWpf\obj\Debug\net7.0-windows\AdminWindow.g.cs
+D:\ITI_9\Work\GymSysyemWpf\obj\Debug\net7.0-windows\MainWindow.g.cs
+D:\ITI_9\Work\GymSysyemWpf\obj\Debug\net7.0-windows\ProtienAdd.g.cs
+D:\ITI_9\Work\GymSysyemWpf\obj\Debug\net7.0-windows\ProtienUpdate.g.cs
+D:\ITI_9\Work\GymSysyemWpf\obj\Debug\net7.0-windows\SubscriptionAdd.g.cs
+D:\ITI_9\Work\GymSysyemWpf\obj\Debug\net7.0-windows\SubscriptionUpdate.g.cs
+D:\ITI_9\Work\GymSysyemWpf\obj\Debug\net7.0-windows\TraineeAdd.g.cs
+D:\ITI_9\Work\GymSysyemWpf\obj\Debug\net7.0-windows\TraineeUpdate.g.cs
+D:\ITI_9\Work\GymSysyemWpf\obj\Debug\net7.0-windows\App.g.cs
+D:\ITI_9\Work\GymSysyemWpf\obj\Debug\net7.0-windows\GymSysyemWpf_MarkupCompile.cache
+D:\ITI_9\Work\GymSysyemWpf\obj\Debug\net7.0-windows\GymSysyemWpf_MarkupCompile.lref
+D:\ITI_9\Work\GymSysyemWpf\obj\Debug\net7.0-windows\App.baml
+D:\ITI_9\Work\GymSysyemWpf\obj\Debug\net7.0-windows\MainWindow.baml
+D:\ITI_9\Work\GymSysyemWpf\obj\Debug\net7.0-windows\ProtienAdd.baml
+D:\ITI_9\Work\GymSysyemWpf\obj\Debug\net7.0-windows\ProtienUpdate.baml
+D:\ITI_9\Work\GymSysyemWpf\obj\Debug\net7.0-windows\SubscriptionAdd.baml
+D:\ITI_9\Work\GymSysyemWpf\obj\Debug\net7.0-windows\SubscriptionUpdate.baml
+D:\ITI_9\Work\GymSysyemWpf\obj\Debug\net7.0-windows\TraineeAdd.baml
+D:\ITI_9\Work\GymSysyemWpf\obj\Debug\net7.0-windows\TraineeUpdate.baml
+D:\ITI_9\Work\GymSysyemWpf\obj\Debug\net7.0-windows\GymSysyemWpf.g.resources
+D:\ITI_9\Work\GymSysyemWpf\obj\Debug\net7.0-windows\GymSysyemWpf.GeneratedMSBuildEditorConfig.editorconfig
+D:\ITI_9\Work\GymSysyemWpf\obj\Debug\net7.0-windows\GymSysyemWpf.AssemblyInfoInputs.cache
+D:\ITI_9\Work\GymSysyemWpf\obj\Debug\net7.0-windows\GymSysyemWpf.AssemblyInfo.cs
+D:\ITI_9\Work\GymSysyemWpf\obj\Debug\net7.0-windows\GymSysyemWpf.csproj.CoreCompileInputs.cache
+D:\ITI_9\Work\GymSysyemWpf\obj\Debug\net7.0-windows\GymSysyemWpf.csproj.CopyComplete
+D:\ITI_9\Work\GymSysyemWpf\obj\Debug\net7.0-windows\GymSysyemWpf.dll
+D:\ITI_9\Work\GymSysyemWpf\obj\Debug\net7.0-windows\refint\GymSysyemWpf.dll
+D:\ITI_9\Work\GymSysyemWpf\obj\Debug\net7.0-windows\GymSysyemWpf.pdb
+D:\ITI_9\Work\GymSysyemWpf\obj\Debug\net7.0-windows\GymSysyemWpf.genruntimeconfig.cache
+D:\ITI_9\Work\GymSysyemWpf\obj\Debug\net7.0-windows\ref\GymSysyemWpf.dll
+E:\GymSysyemWpf\bin\Debug\net7.0-windows\GymSysyemWpf.exe
+E:\GymSysyemWpf\bin\Debug\net7.0-windows\GymSysyemWpf.deps.json
+E:\GymSysyemWpf\bin\Debug\net7.0-windows\GymSysyemWpf.runtimeconfig.json
+E:\GymSysyemWpf\bin\Debug\net7.0-windows\GymSysyemWpf.dll
+E:\GymSysyemWpf\bin\Debug\net7.0-windows\GymSysyemWpf.pdb
+E:\GymSysyemWpf\bin\Debug\net7.0-windows\Azure.Core.dll
+E:\GymSysyemWpf\bin\Debug\net7.0-windows\Azure.Identity.dll
+E:\GymSysyemWpf\bin\Debug\net7.0-windows\Humanizer.dll
+E:\GymSysyemWpf\bin\Debug\net7.0-windows\LiveCharts.dll
+E:\GymSysyemWpf\bin\Debug\net7.0-windows\LiveCharts.Wpf.dll
+E:\GymSysyemWpf\bin\Debug\net7.0-windows\MahApps.Metro.IconPacks.Core.dll
+E:\GymSysyemWpf\bin\Debug\net7.0-windows\MahApps.Metro.IconPacks.Material.dll
+E:\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.Bcl.AsyncInterfaces.dll
+E:\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.Data.SqlClient.dll
+E:\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.EntityFrameworkCore.dll
+E:\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.EntityFrameworkCore.Abstractions.dll
+E:\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.EntityFrameworkCore.Design.dll
+E:\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.EntityFrameworkCore.Relational.dll
+E:\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.EntityFrameworkCore.SqlServer.dll
+E:\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.Extensions.Caching.Abstractions.dll
+E:\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.Extensions.Caching.Memory.dll
+E:\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.Extensions.Configuration.Abstractions.dll
+E:\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.Extensions.DependencyInjection.dll
+E:\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+E:\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.Extensions.DependencyModel.dll
+E:\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.Extensions.Logging.dll
+E:\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+E:\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.Extensions.Options.dll
+E:\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.Extensions.Primitives.dll
+E:\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.Identity.Client.dll
+E:\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.Identity.Client.Extensions.Msal.dll
+E:\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.IdentityModel.Abstractions.dll
+E:\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.IdentityModel.JsonWebTokens.dll
+E:\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.IdentityModel.Logging.dll
+E:\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.IdentityModel.Protocols.dll
+E:\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+E:\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.IdentityModel.Tokens.dll
+E:\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.SqlServer.Server.dll
+E:\GymSysyemWpf\bin\Debug\net7.0-windows\Mono.TextTemplating.dll
+E:\GymSysyemWpf\bin\Debug\net7.0-windows\System.IdentityModel.Tokens.Jwt.dll
+E:\GymSysyemWpf\bin\Debug\net7.0-windows\System.Memory.Data.dll
+E:\GymSysyemWpf\bin\Debug\net7.0-windows\System.Runtime.Caching.dll
+E:\GymSysyemWpf\bin\Debug\net7.0-windows\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+E:\GymSysyemWpf\bin\Debug\net7.0-windows\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+E:\GymSysyemWpf\bin\Debug\net7.0-windows\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+E:\GymSysyemWpf\bin\Debug\net7.0-windows\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+E:\GymSysyemWpf\bin\Debug\net7.0-windows\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+E:\GymSysyemWpf\bin\Debug\net7.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+E:\GymSysyemWpf\bin\Debug\net7.0-windows\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+E:\GymSysyemWpf\obj\Debug\net7.0-windows\GymSysyemWpf.csproj.AssemblyReference.cache
+E:\GymSysyemWpf\obj\Debug\net7.0-windows\AdminWindow.baml
+E:\GymSysyemWpf\obj\Debug\net7.0-windows\Styles\ButtonStyles.baml
+E:\GymSysyemWpf\obj\Debug\net7.0-windows\Styles\UIColors.baml
+E:\GymSysyemWpf\obj\Debug\net7.0-windows\UserControls\Product.baml
+E:\GymSysyemWpf\obj\Debug\net7.0-windows\AdminWindow.g.cs
+E:\GymSysyemWpf\obj\Debug\net7.0-windows\BuyProteinAdd.g.cs
+E:\GymSysyemWpf\obj\Debug\net7.0-windows\MainWindow.g.cs
+E:\GymSysyemWpf\obj\Debug\net7.0-windows\ProtienAdd.g.cs
+E:\GymSysyemWpf\obj\Debug\net7.0-windows\ProtienUpdate.g.cs
+E:\GymSysyemWpf\obj\Debug\net7.0-windows\SubscriptionAdd.g.cs
+E:\GymSysyemWpf\obj\Debug\net7.0-windows\SubscriptionUpdate.g.cs
+E:\GymSysyemWpf\obj\Debug\net7.0-windows\TraineeAdd.g.cs
+E:\GymSysyemWpf\obj\Debug\net7.0-windows\TraineeUpdate.g.cs
+E:\GymSysyemWpf\obj\Debug\net7.0-windows\UserControls\Product.g.cs
+E:\GymSysyemWpf\obj\Debug\net7.0-windows\App.g.cs
+E:\GymSysyemWpf\obj\Debug\net7.0-windows\GymSysyemWpf_MarkupCompile.cache
+E:\GymSysyemWpf\obj\Debug\net7.0-windows\GymSysyemWpf_MarkupCompile.lref
+E:\GymSysyemWpf\obj\Debug\net7.0-windows\App.baml
+E:\GymSysyemWpf\obj\Debug\net7.0-windows\BuyProteinAdd.baml
+E:\GymSysyemWpf\obj\Debug\net7.0-windows\MainWindow.baml
+E:\GymSysyemWpf\obj\Debug\net7.0-windows\ProtienAdd.baml
+E:\GymSysyemWpf\obj\Debug\net7.0-windows\ProtienUpdate.baml
+E:\GymSysyemWpf\obj\Debug\net7.0-windows\SubscriptionAdd.baml
+E:\GymSysyemWpf\obj\Debug\net7.0-windows\SubscriptionUpdate.baml
+E:\GymSysyemWpf\obj\Debug\net7.0-windows\TraineeAdd.baml
+E:\GymSysyemWpf\obj\Debug\net7.0-windows\TraineeUpdate.baml
+E:\GymSysyemWpf\obj\Debug\net7.0-windows\GymSysyemWpf.g.resources
+E:\GymSysyemWpf\obj\Debug\net7.0-windows\GymSysyemWpf.GeneratedMSBuildEditorConfig.editorconfig
+E:\GymSysyemWpf\obj\Debug\net7.0-windows\GymSysyemWpf.AssemblyInfoInputs.cache
+E:\GymSysyemWpf\obj\Debug\net7.0-windows\GymSysyemWpf.AssemblyInfo.cs
+E:\GymSysyemWpf\obj\Debug\net7.0-windows\GymSysyemWpf.csproj.CoreCompileInputs.cache
+E:\GymSysyemWpf\obj\Debug\net7.0-windows\GymSysyemWpf.csproj.CopyComplete
+E:\GymSysyemWpf\obj\Debug\net7.0-windows\GymSysyemWpf.dll
+E:\GymSysyemWpf\obj\Debug\net7.0-windows\refint\GymSysyemWpf.dll
+E:\GymSysyemWpf\obj\Debug\net7.0-windows\GymSysyemWpf.pdb
+E:\GymSysyemWpf\obj\Debug\net7.0-windows\GymSysyemWpf.genruntimeconfig.cache
+E:\GymSysyemWpf\obj\Debug\net7.0-windows\ref\GymSysyemWpf.dll
+E:\GymSysyemWpf\bin\Debug\net7.0-windows\QRCoder.dll
+C:\Users\menat\Downloads\GymSysyemWpf\bin\Debug\net7.0-windows\GymSysyemWpf.exe
+C:\Users\menat\Downloads\GymSysyemWpf\bin\Debug\net7.0-windows\GymSysyemWpf.deps.json
+C:\Users\menat\Downloads\GymSysyemWpf\bin\Debug\net7.0-windows\GymSysyemWpf.runtimeconfig.json
+C:\Users\menat\Downloads\GymSysyemWpf\bin\Debug\net7.0-windows\GymSysyemWpf.dll
+C:\Users\menat\Downloads\GymSysyemWpf\bin\Debug\net7.0-windows\GymSysyemWpf.pdb
+C:\Users\menat\Downloads\GymSysyemWpf\bin\Debug\net7.0-windows\Azure.Core.dll
+C:\Users\menat\Downloads\GymSysyemWpf\bin\Debug\net7.0-windows\Azure.Identity.dll
+C:\Users\menat\Downloads\GymSysyemWpf\bin\Debug\net7.0-windows\Humanizer.dll
+C:\Users\menat\Downloads\GymSysyemWpf\bin\Debug\net7.0-windows\LiveCharts.dll
+C:\Users\menat\Downloads\GymSysyemWpf\bin\Debug\net7.0-windows\LiveCharts.Wpf.dll
+C:\Users\menat\Downloads\GymSysyemWpf\bin\Debug\net7.0-windows\MahApps.Metro.IconPacks.Core.dll
+C:\Users\menat\Downloads\GymSysyemWpf\bin\Debug\net7.0-windows\MahApps.Metro.IconPacks.Material.dll
+C:\Users\menat\Downloads\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\menat\Downloads\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.Data.SqlClient.dll
+C:\Users\menat\Downloads\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.EntityFrameworkCore.dll
+C:\Users\menat\Downloads\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\menat\Downloads\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\menat\Downloads\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\menat\Downloads\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\menat\Downloads\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\menat\Downloads\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\menat\Downloads\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\menat\Downloads\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\menat\Downloads\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\menat\Downloads\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.Extensions.DependencyModel.dll
+C:\Users\menat\Downloads\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.Extensions.Logging.dll
+C:\Users\menat\Downloads\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\menat\Downloads\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.Extensions.Options.dll
+C:\Users\menat\Downloads\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.Extensions.Primitives.dll
+C:\Users\menat\Downloads\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.Identity.Client.dll
+C:\Users\menat\Downloads\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\menat\Downloads\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\menat\Downloads\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\menat\Downloads\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.IdentityModel.Logging.dll
+C:\Users\menat\Downloads\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.IdentityModel.Protocols.dll
+C:\Users\menat\Downloads\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\menat\Downloads\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.IdentityModel.Tokens.dll
+C:\Users\menat\Downloads\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.SqlServer.Server.dll
+C:\Users\menat\Downloads\GymSysyemWpf\bin\Debug\net7.0-windows\Mono.TextTemplating.dll
+C:\Users\menat\Downloads\GymSysyemWpf\bin\Debug\net7.0-windows\QRCoder.dll
+C:\Users\menat\Downloads\GymSysyemWpf\bin\Debug\net7.0-windows\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\menat\Downloads\GymSysyemWpf\bin\Debug\net7.0-windows\System.Memory.Data.dll
+C:\Users\menat\Downloads\GymSysyemWpf\bin\Debug\net7.0-windows\System.Runtime.Caching.dll
+C:\Users\menat\Downloads\GymSysyemWpf\bin\Debug\net7.0-windows\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\menat\Downloads\GymSysyemWpf\bin\Debug\net7.0-windows\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\menat\Downloads\GymSysyemWpf\bin\Debug\net7.0-windows\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\menat\Downloads\GymSysyemWpf\bin\Debug\net7.0-windows\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\menat\Downloads\GymSysyemWpf\bin\Debug\net7.0-windows\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\menat\Downloads\GymSysyemWpf\bin\Debug\net7.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\menat\Downloads\GymSysyemWpf\bin\Debug\net7.0-windows\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\menat\Downloads\GymSysyemWpf\obj\Debug\net7.0-windows\GymSysyemWpf.csproj.AssemblyReference.cache
+C:\Users\menat\Downloads\GymSysyemWpf\obj\Debug\net7.0-windows\AdminWindow.baml
+C:\Users\menat\Downloads\GymSysyemWpf\obj\Debug\net7.0-windows\Styles\ButtonStyles.baml
+C:\Users\menat\Downloads\GymSysyemWpf\obj\Debug\net7.0-windows\Styles\UIColors.baml
+C:\Users\menat\Downloads\GymSysyemWpf\obj\Debug\net7.0-windows\UserControls\Product.baml
+C:\Users\menat\Downloads\GymSysyemWpf\obj\Debug\net7.0-windows\AdminWindow.g.cs
+C:\Users\menat\Downloads\GymSysyemWpf\obj\Debug\net7.0-windows\BuyProteinAdd.g.cs
+C:\Users\menat\Downloads\GymSysyemWpf\obj\Debug\net7.0-windows\MainWindow.g.cs
+C:\Users\menat\Downloads\GymSysyemWpf\obj\Debug\net7.0-windows\ProtienAdd.g.cs
+C:\Users\menat\Downloads\GymSysyemWpf\obj\Debug\net7.0-windows\ProtienUpdate.g.cs
+C:\Users\menat\Downloads\GymSysyemWpf\obj\Debug\net7.0-windows\SubscriptionAdd.g.cs
+C:\Users\menat\Downloads\GymSysyemWpf\obj\Debug\net7.0-windows\SubscriptionUpdate.g.cs
+C:\Users\menat\Downloads\GymSysyemWpf\obj\Debug\net7.0-windows\TraineeAdd.g.cs
+C:\Users\menat\Downloads\GymSysyemWpf\obj\Debug\net7.0-windows\TraineeUpdate.g.cs
+C:\Users\menat\Downloads\GymSysyemWpf\obj\Debug\net7.0-windows\UserControls\Product.g.cs
+C:\Users\menat\Downloads\GymSysyemWpf\obj\Debug\net7.0-windows\App.g.cs
+C:\Users\menat\Downloads\GymSysyemWpf\obj\Debug\net7.0-windows\GymSysyemWpf_MarkupCompile.cache
+C:\Users\menat\Downloads\GymSysyemWpf\obj\Debug\net7.0-windows\GymSysyemWpf_MarkupCompile.lref
+C:\Users\menat\Downloads\GymSysyemWpf\obj\Debug\net7.0-windows\App.baml
+C:\Users\menat\Downloads\GymSysyemWpf\obj\Debug\net7.0-windows\BuyProteinAdd.baml
+C:\Users\menat\Downloads\GymSysyemWpf\obj\Debug\net7.0-windows\MainWindow.baml
+C:\Users\menat\Downloads\GymSysyemWpf\obj\Debug\net7.0-windows\ProtienAdd.baml
+C:\Users\menat\Downloads\GymSysyemWpf\obj\Debug\net7.0-windows\ProtienUpdate.baml
+C:\Users\menat\Downloads\GymSysyemWpf\obj\Debug\net7.0-windows\SubscriptionAdd.baml
+C:\Users\menat\Downloads\GymSysyemWpf\obj\Debug\net7.0-windows\SubscriptionUpdate.baml
+C:\Users\menat\Downloads\GymSysyemWpf\obj\Debug\net7.0-windows\TraineeAdd.baml
+C:\Users\menat\Downloads\GymSysyemWpf\obj\Debug\net7.0-windows\TraineeUpdate.baml
+C:\Users\menat\Downloads\GymSysyemWpf\obj\Debug\net7.0-windows\GymSysyemWpf.g.resources
+C:\Users\menat\Downloads\GymSysyemWpf\obj\Debug\net7.0-windows\GymSysyemWpf.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\menat\Downloads\GymSysyemWpf\obj\Debug\net7.0-windows\GymSysyemWpf.AssemblyInfoInputs.cache
+C:\Users\menat\Downloads\GymSysyemWpf\obj\Debug\net7.0-windows\GymSysyemWpf.AssemblyInfo.cs
+C:\Users\menat\Downloads\GymSysyemWpf\obj\Debug\net7.0-windows\GymSysyemWpf.csproj.CoreCompileInputs.cache
+C:\Users\menat\Downloads\GymSysyemWpf\obj\Debug\net7.0-windows\GymSysyemWpf.csproj.CopyComplete
+C:\Users\menat\Downloads\GymSysyemWpf\obj\Debug\net7.0-windows\GymSysyemWpf.dll
+C:\Users\menat\Downloads\GymSysyemWpf\obj\Debug\net7.0-windows\refint\GymSysyemWpf.dll
+C:\Users\menat\Downloads\GymSysyemWpf\obj\Debug\net7.0-windows\GymSysyemWpf.pdb
+C:\Users\menat\Downloads\GymSysyemWpf\obj\Debug\net7.0-windows\GymSysyemWpf.genruntimeconfig.cache
+C:\Users\menat\Downloads\GymSysyemWpf\obj\Debug\net7.0-windows\ref\GymSysyemWpf.dll
+E:\GymSysyemWpf\obj\Debug\net7.0-windows\GeneratedInternalTypeHelper.g.cs
+C:\Users\noure\Downloads\GymSysyemWpf\obj\Debug\net7.0-windows\GymSysyemWpf.csproj.AssemblyReference.cache
+C:\Users\noure\Downloads\GymSysyemWpf\obj\Debug\net7.0-windows\AdminWindow.baml
+C:\Users\noure\Downloads\GymSysyemWpf\obj\Debug\net7.0-windows\Styles\ButtonStyles.baml
+C:\Users\noure\Downloads\GymSysyemWpf\obj\Debug\net7.0-windows\Styles\UIColors.baml
+C:\Users\noure\Downloads\GymSysyemWpf\obj\Debug\net7.0-windows\UserControls\Product.baml
+C:\Users\noure\Downloads\GymSysyemWpf\obj\Debug\net7.0-windows\AdminWindow.g.cs
+C:\Users\noure\Downloads\GymSysyemWpf\obj\Debug\net7.0-windows\BuyProteinAdd.g.cs
+C:\Users\noure\Downloads\GymSysyemWpf\obj\Debug\net7.0-windows\MainWindow.g.cs
+C:\Users\noure\Downloads\GymSysyemWpf\obj\Debug\net7.0-windows\ProtienAdd.g.cs
+C:\Users\noure\Downloads\GymSysyemWpf\obj\Debug\net7.0-windows\ProtienUpdate.g.cs
+C:\Users\noure\Downloads\GymSysyemWpf\obj\Debug\net7.0-windows\SubscriptionAdd.g.cs
+C:\Users\noure\Downloads\GymSysyemWpf\obj\Debug\net7.0-windows\SubscriptionUpdate.g.cs
+C:\Users\noure\Downloads\GymSysyemWpf\obj\Debug\net7.0-windows\TraineeAdd.g.cs
+C:\Users\noure\Downloads\GymSysyemWpf\obj\Debug\net7.0-windows\TraineeUpdate.g.cs
+C:\Users\noure\Downloads\GymSysyemWpf\obj\Debug\net7.0-windows\UserControls\Product.g.cs
+C:\Users\noure\Downloads\GymSysyemWpf\obj\Debug\net7.0-windows\App.g.cs
+C:\Users\noure\Downloads\GymSysyemWpf\obj\Debug\net7.0-windows\GymSysyemWpf_MarkupCompile.cache
+C:\Users\noure\Downloads\GymSysyemWpf\obj\Debug\net7.0-windows\GymSysyemWpf_MarkupCompile.lref
+C:\Users\noure\Downloads\GymSysyemWpf\obj\Debug\net7.0-windows\GymSysyemWpf.dll
+C:\Users\noure\Downloads\GymSysyemWpf\obj\Debug\net7.0-windows\refint\GymSysyemWpf.dll
+C:\Users\noure\Downloads\GymSysyemWpf\obj\Debug\net7.0-windows\GymSysyemWpf.pdb
+C:\Users\noure\Downloads\GymSysyemWpf\bin\Debug\net7.0-windows\GymSysyemWpf.exe
+C:\Users\noure\Downloads\GymSysyemWpf\bin\Debug\net7.0-windows\GymSysyemWpf.deps.json
+C:\Users\noure\Downloads\GymSysyemWpf\bin\Debug\net7.0-windows\GymSysyemWpf.runtimeconfig.json
+C:\Users\noure\Downloads\GymSysyemWpf\bin\Debug\net7.0-windows\GymSysyemWpf.dll
+C:\Users\noure\Downloads\GymSysyemWpf\bin\Debug\net7.0-windows\GymSysyemWpf.pdb
+C:\Users\noure\Downloads\GymSysyemWpf\bin\Debug\net7.0-windows\Azure.Core.dll
+C:\Users\noure\Downloads\GymSysyemWpf\bin\Debug\net7.0-windows\Azure.Identity.dll
+C:\Users\noure\Downloads\GymSysyemWpf\bin\Debug\net7.0-windows\Humanizer.dll
+C:\Users\noure\Downloads\GymSysyemWpf\bin\Debug\net7.0-windows\LiveCharts.dll
+C:\Users\noure\Downloads\GymSysyemWpf\bin\Debug\net7.0-windows\LiveCharts.Wpf.dll
+C:\Users\noure\Downloads\GymSysyemWpf\bin\Debug\net7.0-windows\MahApps.Metro.IconPacks.Core.dll
+C:\Users\noure\Downloads\GymSysyemWpf\bin\Debug\net7.0-windows\MahApps.Metro.IconPacks.Material.dll
+C:\Users\noure\Downloads\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\noure\Downloads\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.Data.SqlClient.dll
+C:\Users\noure\Downloads\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.EntityFrameworkCore.dll
+C:\Users\noure\Downloads\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\noure\Downloads\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\noure\Downloads\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\noure\Downloads\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\noure\Downloads\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\noure\Downloads\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\noure\Downloads\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\noure\Downloads\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\noure\Downloads\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\noure\Downloads\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.Extensions.DependencyModel.dll
+C:\Users\noure\Downloads\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.Extensions.Logging.dll
+C:\Users\noure\Downloads\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\noure\Downloads\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.Extensions.Options.dll
+C:\Users\noure\Downloads\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.Extensions.Primitives.dll
+C:\Users\noure\Downloads\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.Identity.Client.dll
+C:\Users\noure\Downloads\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\noure\Downloads\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\noure\Downloads\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\noure\Downloads\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.IdentityModel.Logging.dll
+C:\Users\noure\Downloads\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.IdentityModel.Protocols.dll
+C:\Users\noure\Downloads\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\noure\Downloads\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.IdentityModel.Tokens.dll
+C:\Users\noure\Downloads\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.SqlServer.Server.dll
+C:\Users\noure\Downloads\GymSysyemWpf\bin\Debug\net7.0-windows\Mono.TextTemplating.dll
+C:\Users\noure\Downloads\GymSysyemWpf\bin\Debug\net7.0-windows\QRCoder.dll
+C:\Users\noure\Downloads\GymSysyemWpf\bin\Debug\net7.0-windows\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\noure\Downloads\GymSysyemWpf\bin\Debug\net7.0-windows\System.Memory.Data.dll
+C:\Users\noure\Downloads\GymSysyemWpf\bin\Debug\net7.0-windows\System.Runtime.Caching.dll
+C:\Users\noure\Downloads\GymSysyemWpf\bin\Debug\net7.0-windows\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\noure\Downloads\GymSysyemWpf\bin\Debug\net7.0-windows\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\noure\Downloads\GymSysyemWpf\bin\Debug\net7.0-windows\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\noure\Downloads\GymSysyemWpf\bin\Debug\net7.0-windows\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\noure\Downloads\GymSysyemWpf\bin\Debug\net7.0-windows\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\noure\Downloads\GymSysyemWpf\bin\Debug\net7.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\noure\Downloads\GymSysyemWpf\bin\Debug\net7.0-windows\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\noure\Downloads\GymSysyemWpf\obj\Debug\net7.0-windows\App.baml
+C:\Users\noure\Downloads\GymSysyemWpf\obj\Debug\net7.0-windows\BuyProteinAdd.baml
+C:\Users\noure\Downloads\GymSysyemWpf\obj\Debug\net7.0-windows\MainWindow.baml
+C:\Users\noure\Downloads\GymSysyemWpf\obj\Debug\net7.0-windows\ProtienAdd.baml
+C:\Users\noure\Downloads\GymSysyemWpf\obj\Debug\net7.0-windows\ProtienUpdate.baml
+C:\Users\noure\Downloads\GymSysyemWpf\obj\Debug\net7.0-windows\SubscriptionAdd.baml
+C:\Users\noure\Downloads\GymSysyemWpf\obj\Debug\net7.0-windows\SubscriptionUpdate.baml
+C:\Users\noure\Downloads\GymSysyemWpf\obj\Debug\net7.0-windows\TraineeAdd.baml
+C:\Users\noure\Downloads\GymSysyemWpf\obj\Debug\net7.0-windows\TraineeUpdate.baml
+C:\Users\noure\Downloads\GymSysyemWpf\obj\Debug\net7.0-windows\GymSysyemWpf.g.resources
+C:\Users\noure\Downloads\GymSysyemWpf\obj\Debug\net7.0-windows\GymSysyemWpf.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\noure\Downloads\GymSysyemWpf\obj\Debug\net7.0-windows\GymSysyemWpf.AssemblyInfoInputs.cache
+C:\Users\noure\Downloads\GymSysyemWpf\obj\Debug\net7.0-windows\GymSysyemWpf.AssemblyInfo.cs
+C:\Users\noure\Downloads\GymSysyemWpf\obj\Debug\net7.0-windows\GymSysyemWpf.csproj.CoreCompileInputs.cache
+C:\Users\noure\Downloads\GymSysyemWpf\obj\Debug\net7.0-windows\GymSysyemWpf.csproj.CopyComplete
+C:\Users\noure\Downloads\GymSysyemWpf\obj\Debug\net7.0-windows\GymSysyemWpf.genruntimeconfig.cache
+C:\Users\noure\Downloads\GymSysyemWpf\obj\Debug\net7.0-windows\ref\GymSysyemWpf.dll
+C:\Users\menat\Downloads\GymSysyemWpf\obj\Debug\net7.0-windows\ConfirmDeleting.g.cs
+C:\Users\menat\Downloads\GymSysyemWpf\obj\Debug\net7.0-windows\ConfirmDeleting.baml
+E:\GymSysyemWpf\obj\Debug\net7.0-windows\ConfirmDeleting.g.cs
+E:\GymSysyemWpf\obj\Debug\net7.0-windows\ConfirmDeleting.baml
+C:\Users\noure\Downloads\GymSysyemWpf\obj\Debug\net7.0-windows\ConfirmDeleting.g.cs
+C:\Users\noure\Downloads\GymSysyemWpf\obj\Debug\net7.0-windows\ConfirmDeleting.baml
+C:\Users\menat\OneDrive\Desktop\GymSysyemWpf\bin\Debug\net7.0-windows\GymSysyemWpf.exe
+C:\Users\menat\OneDrive\Desktop\GymSysyemWpf\bin\Debug\net7.0-windows\GymSysyemWpf.deps.json
+C:\Users\menat\OneDrive\Desktop\GymSysyemWpf\bin\Debug\net7.0-windows\GymSysyemWpf.runtimeconfig.json
+C:\Users\menat\OneDrive\Desktop\GymSysyemWpf\bin\Debug\net7.0-windows\GymSysyemWpf.dll
+C:\Users\menat\OneDrive\Desktop\GymSysyemWpf\bin\Debug\net7.0-windows\GymSysyemWpf.pdb
+C:\Users\menat\OneDrive\Desktop\GymSysyemWpf\bin\Debug\net7.0-windows\Azure.Core.dll
+C:\Users\menat\OneDrive\Desktop\GymSysyemWpf\bin\Debug\net7.0-windows\Azure.Identity.dll
+C:\Users\menat\OneDrive\Desktop\GymSysyemWpf\bin\Debug\net7.0-windows\Humanizer.dll
+C:\Users\menat\OneDrive\Desktop\GymSysyemWpf\bin\Debug\net7.0-windows\LiveCharts.dll
+C:\Users\menat\OneDrive\Desktop\GymSysyemWpf\bin\Debug\net7.0-windows\LiveCharts.Wpf.dll
+C:\Users\menat\OneDrive\Desktop\GymSysyemWpf\bin\Debug\net7.0-windows\MahApps.Metro.IconPacks.Core.dll
+C:\Users\menat\OneDrive\Desktop\GymSysyemWpf\bin\Debug\net7.0-windows\MahApps.Metro.IconPacks.Material.dll
+C:\Users\menat\OneDrive\Desktop\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\menat\OneDrive\Desktop\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.Data.SqlClient.dll
+C:\Users\menat\OneDrive\Desktop\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.EntityFrameworkCore.dll
+C:\Users\menat\OneDrive\Desktop\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\menat\OneDrive\Desktop\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\menat\OneDrive\Desktop\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\menat\OneDrive\Desktop\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\menat\OneDrive\Desktop\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\menat\OneDrive\Desktop\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\menat\OneDrive\Desktop\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\menat\OneDrive\Desktop\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\menat\OneDrive\Desktop\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\menat\OneDrive\Desktop\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.Extensions.DependencyModel.dll
+C:\Users\menat\OneDrive\Desktop\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.Extensions.Logging.dll
+C:\Users\menat\OneDrive\Desktop\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\menat\OneDrive\Desktop\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.Extensions.Options.dll
+C:\Users\menat\OneDrive\Desktop\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.Extensions.Primitives.dll
+C:\Users\menat\OneDrive\Desktop\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.Identity.Client.dll
+C:\Users\menat\OneDrive\Desktop\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\menat\OneDrive\Desktop\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\menat\OneDrive\Desktop\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\menat\OneDrive\Desktop\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.IdentityModel.Logging.dll
+C:\Users\menat\OneDrive\Desktop\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.IdentityModel.Protocols.dll
+C:\Users\menat\OneDrive\Desktop\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\menat\OneDrive\Desktop\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.IdentityModel.Tokens.dll
+C:\Users\menat\OneDrive\Desktop\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.SqlServer.Server.dll
+C:\Users\menat\OneDrive\Desktop\GymSysyemWpf\bin\Debug\net7.0-windows\Mono.TextTemplating.dll
+C:\Users\menat\OneDrive\Desktop\GymSysyemWpf\bin\Debug\net7.0-windows\QRCoder.dll
+C:\Users\menat\OneDrive\Desktop\GymSysyemWpf\bin\Debug\net7.0-windows\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\menat\OneDrive\Desktop\GymSysyemWpf\bin\Debug\net7.0-windows\System.Memory.Data.dll
+C:\Users\menat\OneDrive\Desktop\GymSysyemWpf\bin\Debug\net7.0-windows\System.Runtime.Caching.dll
+C:\Users\menat\OneDrive\Desktop\GymSysyemWpf\bin\Debug\net7.0-windows\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\menat\OneDrive\Desktop\GymSysyemWpf\bin\Debug\net7.0-windows\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\menat\OneDrive\Desktop\GymSysyemWpf\bin\Debug\net7.0-windows\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\menat\OneDrive\Desktop\GymSysyemWpf\bin\Debug\net7.0-windows\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\menat\OneDrive\Desktop\GymSysyemWpf\bin\Debug\net7.0-windows\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\menat\OneDrive\Desktop\GymSysyemWpf\bin\Debug\net7.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\menat\OneDrive\Desktop\GymSysyemWpf\bin\Debug\net7.0-windows\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\menat\OneDrive\Desktop\GymSysyemWpf\obj\Debug\net7.0-windows\GymSysyemWpf.csproj.AssemblyReference.cache
+C:\Users\menat\OneDrive\Desktop\GymSysyemWpf\obj\Debug\net7.0-windows\AdminWindow.baml
+C:\Users\menat\OneDrive\Desktop\GymSysyemWpf\obj\Debug\net7.0-windows\Styles\ButtonStyles.baml
+C:\Users\menat\OneDrive\Desktop\GymSysyemWpf\obj\Debug\net7.0-windows\Styles\UIColors.baml
+C:\Users\menat\OneDrive\Desktop\GymSysyemWpf\obj\Debug\net7.0-windows\UserControls\Product.baml
+C:\Users\menat\OneDrive\Desktop\GymSysyemWpf\obj\Debug\net7.0-windows\AdminWindow.g.cs
+C:\Users\menat\OneDrive\Desktop\GymSysyemWpf\obj\Debug\net7.0-windows\BuyProteinAdd.g.cs
+C:\Users\menat\OneDrive\Desktop\GymSysyemWpf\obj\Debug\net7.0-windows\ConfirmDeleting.g.cs
+C:\Users\menat\OneDrive\Desktop\GymSysyemWpf\obj\Debug\net7.0-windows\MainWindow.g.cs
+C:\Users\menat\OneDrive\Desktop\GymSysyemWpf\obj\Debug\net7.0-windows\ProtienAdd.g.cs
+C:\Users\menat\OneDrive\Desktop\GymSysyemWpf\obj\Debug\net7.0-windows\ProtienUpdate.g.cs
+C:\Users\menat\OneDrive\Desktop\GymSysyemWpf\obj\Debug\net7.0-windows\SubscriptionAdd.g.cs
+C:\Users\menat\OneDrive\Desktop\GymSysyemWpf\obj\Debug\net7.0-windows\SubscriptionUpdate.g.cs
+C:\Users\menat\OneDrive\Desktop\GymSysyemWpf\obj\Debug\net7.0-windows\TraineeAdd.g.cs
+C:\Users\menat\OneDrive\Desktop\GymSysyemWpf\obj\Debug\net7.0-windows\TraineeUpdate.g.cs
+C:\Users\menat\OneDrive\Desktop\GymSysyemWpf\obj\Debug\net7.0-windows\UserControls\Product.g.cs
+C:\Users\menat\OneDrive\Desktop\GymSysyemWpf\obj\Debug\net7.0-windows\App.g.cs
+C:\Users\menat\OneDrive\Desktop\GymSysyemWpf\obj\Debug\net7.0-windows\GymSysyemWpf_MarkupCompile.cache
+C:\Users\menat\OneDrive\Desktop\GymSysyemWpf\obj\Debug\net7.0-windows\GymSysyemWpf_MarkupCompile.lref
+C:\Users\menat\OneDrive\Desktop\GymSysyemWpf\obj\Debug\net7.0-windows\App.baml
+C:\Users\menat\OneDrive\Desktop\GymSysyemWpf\obj\Debug\net7.0-windows\BuyProteinAdd.baml
+C:\Users\menat\OneDrive\Desktop\GymSysyemWpf\obj\Debug\net7.0-windows\ConfirmDeleting.baml
+C:\Users\menat\OneDrive\Desktop\GymSysyemWpf\obj\Debug\net7.0-windows\MainWindow.baml
+C:\Users\menat\OneDrive\Desktop\GymSysyemWpf\obj\Debug\net7.0-windows\ProtienAdd.baml
+C:\Users\menat\OneDrive\Desktop\GymSysyemWpf\obj\Debug\net7.0-windows\ProtienUpdate.baml
+C:\Users\menat\OneDrive\Desktop\GymSysyemWpf\obj\Debug\net7.0-windows\SubscriptionAdd.baml
+C:\Users\menat\OneDrive\Desktop\GymSysyemWpf\obj\Debug\net7.0-windows\SubscriptionUpdate.baml
+C:\Users\menat\OneDrive\Desktop\GymSysyemWpf\obj\Debug\net7.0-windows\TraineeAdd.baml
+C:\Users\menat\OneDrive\Desktop\GymSysyemWpf\obj\Debug\net7.0-windows\TraineeUpdate.baml
+C:\Users\menat\OneDrive\Desktop\GymSysyemWpf\obj\Debug\net7.0-windows\GymSysyemWpf.g.resources
+C:\Users\menat\OneDrive\Desktop\GymSysyemWpf\obj\Debug\net7.0-windows\GymSysyemWpf.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\menat\OneDrive\Desktop\GymSysyemWpf\obj\Debug\net7.0-windows\GymSysyemWpf.AssemblyInfoInputs.cache
+C:\Users\menat\OneDrive\Desktop\GymSysyemWpf\obj\Debug\net7.0-windows\GymSysyemWpf.AssemblyInfo.cs
+C:\Users\menat\OneDrive\Desktop\GymSysyemWpf\obj\Debug\net7.0-windows\GymSysyemWpf.csproj.CoreCompileInputs.cache
+C:\Users\menat\OneDrive\Desktop\GymSysyemWpf\obj\Debug\net7.0-windows\GymSysyemWpf.csproj.CopyComplete
+C:\Users\menat\OneDrive\Desktop\GymSysyemWpf\obj\Debug\net7.0-windows\GymSysyemWpf.dll
+C:\Users\menat\OneDrive\Desktop\GymSysyemWpf\obj\Debug\net7.0-windows\refint\GymSysyemWpf.dll
+C:\Users\menat\OneDrive\Desktop\GymSysyemWpf\obj\Debug\net7.0-windows\GymSysyemWpf.pdb
+C:\Users\menat\OneDrive\Desktop\GymSysyemWpf\obj\Debug\net7.0-windows\GymSysyemWpf.genruntimeconfig.cache
+C:\Users\menat\OneDrive\Desktop\GymSysyemWpf\obj\Debug\net7.0-windows\ref\GymSysyemWpf.dll
+D:\ITI_9\Work\GymSysyemWpf\bin\Debug\net7.0-windows\QRCoder.dll
+D:\ITI_9\Work\GymSysyemWpf\obj\Debug\net7.0-windows\UserControls\Product.baml
+D:\ITI_9\Work\GymSysyemWpf\obj\Debug\net7.0-windows\BuyProteinAdd.g.cs
+D:\ITI_9\Work\GymSysyemWpf\obj\Debug\net7.0-windows\ConfirmDeleting.g.cs
+D:\ITI_9\Work\GymSysyemWpf\obj\Debug\net7.0-windows\UserControls\Product.g.cs
+D:\ITI_9\Work\GymSysyemWpf\obj\Debug\net7.0-windows\BuyProteinAdd.baml
+D:\ITI_9\Work\GymSysyemWpf\obj\Debug\net7.0-windows\ConfirmDeleting.baml
+E:\ITI\GymSysyemWpf\bin\Debug\net7.0-windows\GymSysyemWpf.exe
+E:\ITI\GymSysyemWpf\bin\Debug\net7.0-windows\GymSysyemWpf.deps.json
+E:\ITI\GymSysyemWpf\bin\Debug\net7.0-windows\GymSysyemWpf.runtimeconfig.json
+E:\ITI\GymSysyemWpf\bin\Debug\net7.0-windows\GymSysyemWpf.dll
+E:\ITI\GymSysyemWpf\bin\Debug\net7.0-windows\GymSysyemWpf.pdb
+E:\ITI\GymSysyemWpf\bin\Debug\net7.0-windows\Azure.Core.dll
+E:\ITI\GymSysyemWpf\bin\Debug\net7.0-windows\Azure.Identity.dll
+E:\ITI\GymSysyemWpf\bin\Debug\net7.0-windows\Humanizer.dll
+E:\ITI\GymSysyemWpf\bin\Debug\net7.0-windows\LiveCharts.dll
+E:\ITI\GymSysyemWpf\bin\Debug\net7.0-windows\LiveCharts.Wpf.dll
+E:\ITI\GymSysyemWpf\bin\Debug\net7.0-windows\MahApps.Metro.IconPacks.Core.dll
+E:\ITI\GymSysyemWpf\bin\Debug\net7.0-windows\MahApps.Metro.IconPacks.Material.dll
+E:\ITI\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.Bcl.AsyncInterfaces.dll
+E:\ITI\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.Data.SqlClient.dll
+E:\ITI\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.EntityFrameworkCore.dll
+E:\ITI\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.EntityFrameworkCore.Abstractions.dll
+E:\ITI\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.EntityFrameworkCore.Design.dll
+E:\ITI\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.EntityFrameworkCore.Relational.dll
+E:\ITI\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.EntityFrameworkCore.SqlServer.dll
+E:\ITI\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.Extensions.Caching.Abstractions.dll
+E:\ITI\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.Extensions.Caching.Memory.dll
+E:\ITI\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.Extensions.Configuration.Abstractions.dll
+E:\ITI\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.Extensions.DependencyInjection.dll
+E:\ITI\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+E:\ITI\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.Extensions.DependencyModel.dll
+E:\ITI\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.Extensions.Logging.dll
+E:\ITI\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+E:\ITI\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.Extensions.Options.dll
+E:\ITI\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.Extensions.Primitives.dll
+E:\ITI\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.Identity.Client.dll
+E:\ITI\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.Identity.Client.Extensions.Msal.dll
+E:\ITI\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.IdentityModel.Abstractions.dll
+E:\ITI\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.IdentityModel.JsonWebTokens.dll
+E:\ITI\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.IdentityModel.Logging.dll
+E:\ITI\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.IdentityModel.Protocols.dll
+E:\ITI\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+E:\ITI\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.IdentityModel.Tokens.dll
+E:\ITI\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.SqlServer.Server.dll
+E:\ITI\GymSysyemWpf\bin\Debug\net7.0-windows\Mono.TextTemplating.dll
+E:\ITI\GymSysyemWpf\bin\Debug\net7.0-windows\QRCoder.dll
+E:\ITI\GymSysyemWpf\bin\Debug\net7.0-windows\System.IdentityModel.Tokens.Jwt.dll
+E:\ITI\GymSysyemWpf\bin\Debug\net7.0-windows\System.Memory.Data.dll
+E:\ITI\GymSysyemWpf\bin\Debug\net7.0-windows\System.Runtime.Caching.dll
+E:\ITI\GymSysyemWpf\bin\Debug\net7.0-windows\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+E:\ITI\GymSysyemWpf\bin\Debug\net7.0-windows\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+E:\ITI\GymSysyemWpf\bin\Debug\net7.0-windows\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+E:\ITI\GymSysyemWpf\bin\Debug\net7.0-windows\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+E:\ITI\GymSysyemWpf\bin\Debug\net7.0-windows\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+E:\ITI\GymSysyemWpf\bin\Debug\net7.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+E:\ITI\GymSysyemWpf\bin\Debug\net7.0-windows\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+E:\ITI\GymSysyemWpf\obj\Debug\net7.0-windows\GymSysyemWpf.csproj.AssemblyReference.cache
+E:\ITI\GymSysyemWpf\obj\Debug\net7.0-windows\AdminWindow.baml
+E:\ITI\GymSysyemWpf\obj\Debug\net7.0-windows\Styles\ButtonStyles.baml
+E:\ITI\GymSysyemWpf\obj\Debug\net7.0-windows\Styles\UIColors.baml
+E:\ITI\GymSysyemWpf\obj\Debug\net7.0-windows\UserControls\Product.baml
+E:\ITI\GymSysyemWpf\obj\Debug\net7.0-windows\AdminWindow.g.cs
+E:\ITI\GymSysyemWpf\obj\Debug\net7.0-windows\ConfirmDeleting.g.cs
+E:\ITI\GymSysyemWpf\obj\Debug\net7.0-windows\MainWindow.g.cs
+E:\ITI\GymSysyemWpf\obj\Debug\net7.0-windows\MonthlyProfit.g.cs
+E:\ITI\GymSysyemWpf\obj\Debug\net7.0-windows\ProtienAdd.g.cs
+E:\ITI\GymSysyemWpf\obj\Debug\net7.0-windows\ProtienUpdate.g.cs
+E:\ITI\GymSysyemWpf\obj\Debug\net7.0-windows\SubscriptionAdd.g.cs
+E:\ITI\GymSysyemWpf\obj\Debug\net7.0-windows\SubscriptionUpdate.g.cs
+E:\ITI\GymSysyemWpf\obj\Debug\net7.0-windows\TraineeAdd.g.cs
+E:\ITI\GymSysyemWpf\obj\Debug\net7.0-windows\TraineeUpdate.g.cs
+E:\ITI\GymSysyemWpf\obj\Debug\net7.0-windows\UserControls\Product.g.cs
+E:\ITI\GymSysyemWpf\obj\Debug\net7.0-windows\App.g.cs
+E:\ITI\GymSysyemWpf\obj\Debug\net7.0-windows\GymSysyemWpf_MarkupCompile.cache
+E:\ITI\GymSysyemWpf\obj\Debug\net7.0-windows\GymSysyemWpf_MarkupCompile.lref
+E:\ITI\GymSysyemWpf\obj\Debug\net7.0-windows\App.baml
+E:\ITI\GymSysyemWpf\obj\Debug\net7.0-windows\ConfirmDeleting.baml
+E:\ITI\GymSysyemWpf\obj\Debug\net7.0-windows\MainWindow.baml
+E:\ITI\GymSysyemWpf\obj\Debug\net7.0-windows\MonthlyProfit.baml
+E:\ITI\GymSysyemWpf\obj\Debug\net7.0-windows\ProtienAdd.baml
+E:\ITI\GymSysyemWpf\obj\Debug\net7.0-windows\ProtienUpdate.baml
+E:\ITI\GymSysyemWpf\obj\Debug\net7.0-windows\SubscriptionAdd.baml
+E:\ITI\GymSysyemWpf\obj\Debug\net7.0-windows\SubscriptionUpdate.baml
+E:\ITI\GymSysyemWpf\obj\Debug\net7.0-windows\TraineeAdd.baml
+E:\ITI\GymSysyemWpf\obj\Debug\net7.0-windows\TraineeUpdate.baml
+E:\ITI\GymSysyemWpf\obj\Debug\net7.0-windows\GymSysyemWpf.g.resources
+E:\ITI\GymSysyemWpf\obj\Debug\net7.0-windows\GymSysyemWpf.GeneratedMSBuildEditorConfig.editorconfig
+E:\ITI\GymSysyemWpf\obj\Debug\net7.0-windows\GymSysyemWpf.AssemblyInfoInputs.cache
+E:\ITI\GymSysyemWpf\obj\Debug\net7.0-windows\GymSysyemWpf.AssemblyInfo.cs
+E:\ITI\GymSysyemWpf\obj\Debug\net7.0-windows\GymSysyemWpf.csproj.CoreCompileInputs.cache
+E:\ITI\GymSysyemWpf\obj\Debug\net7.0-windows\GymSysyemWpf.csproj.CopyComplete
+E:\ITI\GymSysyemWpf\obj\Debug\net7.0-windows\GymSysyemWpf.dll
+E:\ITI\GymSysyemWpf\obj\Debug\net7.0-windows\refint\GymSysyemWpf.dll
+E:\ITI\GymSysyemWpf\obj\Debug\net7.0-windows\GymSysyemWpf.pdb
+E:\ITI\GymSysyemWpf\obj\Debug\net7.0-windows\GymSysyemWpf.genruntimeconfig.cache
+E:\ITI\GymSysyemWpf\obj\Debug\net7.0-windows\ref\GymSysyemWpf.dll
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\bin\Debug\net7.0-windows\GymSysyemWpf.exe
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\bin\Debug\net7.0-windows\GymSysyemWpf.deps.json
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\bin\Debug\net7.0-windows\GymSysyemWpf.runtimeconfig.json
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\bin\Debug\net7.0-windows\GymSysyemWpf.dll
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\bin\Debug\net7.0-windows\GymSysyemWpf.pdb
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\bin\Debug\net7.0-windows\Azure.Core.dll
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\bin\Debug\net7.0-windows\Azure.Identity.dll
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\bin\Debug\net7.0-windows\Humanizer.dll
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\bin\Debug\net7.0-windows\LiveCharts.dll
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\bin\Debug\net7.0-windows\LiveCharts.Wpf.dll
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\bin\Debug\net7.0-windows\MahApps.Metro.IconPacks.Core.dll
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\bin\Debug\net7.0-windows\MahApps.Metro.IconPacks.Material.dll
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.Data.SqlClient.dll
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.EntityFrameworkCore.dll
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.Extensions.DependencyModel.dll
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.Extensions.Logging.dll
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.Extensions.Options.dll
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.Extensions.Primitives.dll
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.Identity.Client.dll
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.IdentityModel.Logging.dll
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.IdentityModel.Protocols.dll
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.IdentityModel.Tokens.dll
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.SqlServer.Server.dll
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\bin\Debug\net7.0-windows\Mono.TextTemplating.dll
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\bin\Debug\net7.0-windows\QRCoder.dll
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\bin\Debug\net7.0-windows\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\bin\Debug\net7.0-windows\System.Memory.Data.dll
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\bin\Debug\net7.0-windows\System.Runtime.Caching.dll
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\bin\Debug\net7.0-windows\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\bin\Debug\net7.0-windows\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\bin\Debug\net7.0-windows\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\bin\Debug\net7.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\obj\Debug\net7.0-windows\GymSysyemWpf.csproj.AssemblyReference.cache
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\obj\Debug\net7.0-windows\AdminWindow.baml
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\obj\Debug\net7.0-windows\Styles\ButtonStyles.baml
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\obj\Debug\net7.0-windows\Styles\UIColors.baml
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\obj\Debug\net7.0-windows\UserControls\Product.baml
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\obj\Debug\net7.0-windows\AdminWindow.g.cs
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\obj\Debug\net7.0-windows\ConfirmDeleting.g.cs
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\obj\Debug\net7.0-windows\MainWindow.g.cs
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\obj\Debug\net7.0-windows\MonthlyProfit.g.cs
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\obj\Debug\net7.0-windows\ProtienAdd.g.cs
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\obj\Debug\net7.0-windows\ProtienUpdate.g.cs
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\obj\Debug\net7.0-windows\SubscriptionAdd.g.cs
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\obj\Debug\net7.0-windows\SubscriptionUpdate.g.cs
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\obj\Debug\net7.0-windows\TraineeAdd.g.cs
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\obj\Debug\net7.0-windows\TraineeUpdate.g.cs
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\obj\Debug\net7.0-windows\UserControls\Product.g.cs
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\obj\Debug\net7.0-windows\App.g.cs
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\obj\Debug\net7.0-windows\GymSysyemWpf_MarkupCompile.cache
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\obj\Debug\net7.0-windows\GymSysyemWpf_MarkupCompile.lref
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\obj\Debug\net7.0-windows\App.baml
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\obj\Debug\net7.0-windows\ConfirmDeleting.baml
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\obj\Debug\net7.0-windows\MainWindow.baml
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\obj\Debug\net7.0-windows\MonthlyProfit.baml
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\obj\Debug\net7.0-windows\ProtienAdd.baml
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\obj\Debug\net7.0-windows\ProtienUpdate.baml
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\obj\Debug\net7.0-windows\SubscriptionAdd.baml
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\obj\Debug\net7.0-windows\SubscriptionUpdate.baml
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\obj\Debug\net7.0-windows\TraineeAdd.baml
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\obj\Debug\net7.0-windows\TraineeUpdate.baml
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\obj\Debug\net7.0-windows\GymSysyemWpf.g.resources
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\obj\Debug\net7.0-windows\GymSysyemWpf.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\obj\Debug\net7.0-windows\GymSysyemWpf.AssemblyInfoInputs.cache
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\obj\Debug\net7.0-windows\GymSysyemWpf.AssemblyInfo.cs
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\obj\Debug\net7.0-windows\GymSysyemWpf.csproj.CoreCompileInputs.cache
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\obj\Debug\net7.0-windows\GymSysyemWpf.csproj.CopyComplete
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\obj\Debug\net7.0-windows\GymSysyemWpf.dll
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\obj\Debug\net7.0-windows\refint\GymSysyemWpf.dll
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\obj\Debug\net7.0-windows\GymSysyemWpf.pdb
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\obj\Debug\net7.0-windows\GymSysyemWpf.genruntimeconfig.cache
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\obj\Debug\net7.0-windows\ref\GymSysyemWpf.dll
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\bin\Debug\net7.0-windows\GlobalLowLevelInputHooks.dll
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\bin\Debug\net7.0-windows\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\bin\Debug\net7.0-windows\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\bin\Debug\net7.0-windows\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\obj\Debug\net7.0-windows\ConfirmFinancial.g.cs
+C:\Users\menat\Downloads\Telegram Desktop\GymSysyemWpf\obj\Debug\net7.0-windows\ConfirmFinancial.baml
+E:\New folder\Telegram Desktop\GymSysyemWpf\bin\Debug\net7.0-windows\GymSysyemWpf.exe
+E:\New folder\Telegram Desktop\GymSysyemWpf\bin\Debug\net7.0-windows\GymSysyemWpf.deps.json
+E:\New folder\Telegram Desktop\GymSysyemWpf\bin\Debug\net7.0-windows\GymSysyemWpf.runtimeconfig.json
+E:\New folder\Telegram Desktop\GymSysyemWpf\bin\Debug\net7.0-windows\GymSysyemWpf.dll
+E:\New folder\Telegram Desktop\GymSysyemWpf\bin\Debug\net7.0-windows\GymSysyemWpf.pdb
+E:\New folder\Telegram Desktop\GymSysyemWpf\bin\Debug\net7.0-windows\Azure.Core.dll
+E:\New folder\Telegram Desktop\GymSysyemWpf\bin\Debug\net7.0-windows\Azure.Identity.dll
+E:\New folder\Telegram Desktop\GymSysyemWpf\bin\Debug\net7.0-windows\GlobalLowLevelInputHooks.dll
+E:\New folder\Telegram Desktop\GymSysyemWpf\bin\Debug\net7.0-windows\Humanizer.dll
+E:\New folder\Telegram Desktop\GymSysyemWpf\bin\Debug\net7.0-windows\LiveCharts.dll
+E:\New folder\Telegram Desktop\GymSysyemWpf\bin\Debug\net7.0-windows\LiveCharts.Wpf.dll
+E:\New folder\Telegram Desktop\GymSysyemWpf\bin\Debug\net7.0-windows\MahApps.Metro.IconPacks.Core.dll
+E:\New folder\Telegram Desktop\GymSysyemWpf\bin\Debug\net7.0-windows\MahApps.Metro.IconPacks.Material.dll
+E:\New folder\Telegram Desktop\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.Bcl.AsyncInterfaces.dll
+E:\New folder\Telegram Desktop\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.Data.SqlClient.dll
+E:\New folder\Telegram Desktop\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.EntityFrameworkCore.dll
+E:\New folder\Telegram Desktop\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.EntityFrameworkCore.Abstractions.dll
+E:\New folder\Telegram Desktop\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.EntityFrameworkCore.Design.dll
+E:\New folder\Telegram Desktop\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.EntityFrameworkCore.Relational.dll
+E:\New folder\Telegram Desktop\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.EntityFrameworkCore.SqlServer.dll
+E:\New folder\Telegram Desktop\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.Extensions.Caching.Abstractions.dll
+E:\New folder\Telegram Desktop\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.Extensions.Caching.Memory.dll
+E:\New folder\Telegram Desktop\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.Extensions.Configuration.Abstractions.dll
+E:\New folder\Telegram Desktop\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.Extensions.DependencyInjection.dll
+E:\New folder\Telegram Desktop\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+E:\New folder\Telegram Desktop\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.Extensions.DependencyModel.dll
+E:\New folder\Telegram Desktop\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.Extensions.Logging.dll
+E:\New folder\Telegram Desktop\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+E:\New folder\Telegram Desktop\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.Extensions.Options.dll
+E:\New folder\Telegram Desktop\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.Extensions.Primitives.dll
+E:\New folder\Telegram Desktop\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.Identity.Client.dll
+E:\New folder\Telegram Desktop\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.Identity.Client.Extensions.Msal.dll
+E:\New folder\Telegram Desktop\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.IdentityModel.Abstractions.dll
+E:\New folder\Telegram Desktop\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.IdentityModel.JsonWebTokens.dll
+E:\New folder\Telegram Desktop\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.IdentityModel.Logging.dll
+E:\New folder\Telegram Desktop\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.IdentityModel.Protocols.dll
+E:\New folder\Telegram Desktop\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+E:\New folder\Telegram Desktop\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.IdentityModel.Tokens.dll
+E:\New folder\Telegram Desktop\GymSysyemWpf\bin\Debug\net7.0-windows\Microsoft.SqlServer.Server.dll
+E:\New folder\Telegram Desktop\GymSysyemWpf\bin\Debug\net7.0-windows\Mono.TextTemplating.dll
+E:\New folder\Telegram Desktop\GymSysyemWpf\bin\Debug\net7.0-windows\QRCoder.dll
+E:\New folder\Telegram Desktop\GymSysyemWpf\bin\Debug\net7.0-windows\System.IdentityModel.Tokens.Jwt.dll
+E:\New folder\Telegram Desktop\GymSysyemWpf\bin\Debug\net7.0-windows\System.Memory.Data.dll
+E:\New folder\Telegram Desktop\GymSysyemWpf\bin\Debug\net7.0-windows\System.Runtime.Caching.dll
+E:\New folder\Telegram Desktop\GymSysyemWpf\bin\Debug\net7.0-windows\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+E:\New folder\Telegram Desktop\GymSysyemWpf\bin\Debug\net7.0-windows\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+E:\New folder\Telegram Desktop\GymSysyemWpf\bin\Debug\net7.0-windows\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+E:\New folder\Telegram Desktop\GymSysyemWpf\bin\Debug\net7.0-windows\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+E:\New folder\Telegram Desktop\GymSysyemWpf\bin\Debug\net7.0-windows\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+E:\New folder\Telegram Desktop\GymSysyemWpf\bin\Debug\net7.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+E:\New folder\Telegram Desktop\GymSysyemWpf\bin\Debug\net7.0-windows\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+E:\New folder\Telegram Desktop\GymSysyemWpf\obj\Debug\net7.0-windows\GymSysyemWpf.csproj.AssemblyReference.cache
+E:\New folder\Telegram Desktop\GymSysyemWpf\obj\Debug\net7.0-windows\AdminWindow.baml
+E:\New folder\Telegram Desktop\GymSysyemWpf\obj\Debug\net7.0-windows\Styles\ButtonStyles.baml
+E:\New folder\Telegram Desktop\GymSysyemWpf\obj\Debug\net7.0-windows\Styles\UIColors.baml
+E:\New folder\Telegram Desktop\GymSysyemWpf\obj\Debug\net7.0-windows\UserControls\Product.baml
+E:\New folder\Telegram Desktop\GymSysyemWpf\obj\Debug\net7.0-windows\AdminWindow.g.cs
+E:\New folder\Telegram Desktop\GymSysyemWpf\obj\Debug\net7.0-windows\Bill.g.cs
+E:\New folder\Telegram Desktop\GymSysyemWpf\obj\Debug\net7.0-windows\ConfirmDeleting.g.cs
+E:\New folder\Telegram Desktop\GymSysyemWpf\obj\Debug\net7.0-windows\ConfirmFinancial.g.cs
+E:\New folder\Telegram Desktop\GymSysyemWpf\obj\Debug\net7.0-windows\MainWindow.g.cs
+E:\New folder\Telegram Desktop\GymSysyemWpf\obj\Debug\net7.0-windows\MonthlyProfit.g.cs
+E:\New folder\Telegram Desktop\GymSysyemWpf\obj\Debug\net7.0-windows\ProtienAdd.g.cs
+E:\New folder\Telegram Desktop\GymSysyemWpf\obj\Debug\net7.0-windows\ProtienUpdate.g.cs
+E:\New folder\Telegram Desktop\GymSysyemWpf\obj\Debug\net7.0-windows\SubscriptionAdd.g.cs
+E:\New folder\Telegram Desktop\GymSysyemWpf\obj\Debug\net7.0-windows\SubscriptionUpdate.g.cs
+E:\New folder\Telegram Desktop\GymSysyemWpf\obj\Debug\net7.0-windows\TraineeAdd.g.cs
+E:\New folder\Telegram Desktop\GymSysyemWpf\obj\Debug\net7.0-windows\TraineeUpdate.g.cs
+E:\New folder\Telegram Desktop\GymSysyemWpf\obj\Debug\net7.0-windows\UserControls\Product.g.cs
+E:\New folder\Telegram Desktop\GymSysyemWpf\obj\Debug\net7.0-windows\App.g.cs
+E:\New folder\Telegram Desktop\GymSysyemWpf\obj\Debug\net7.0-windows\GymSysyemWpf_MarkupCompile.cache
+E:\New folder\Telegram Desktop\GymSysyemWpf\obj\Debug\net7.0-windows\GymSysyemWpf_MarkupCompile.lref
+E:\New folder\Telegram Desktop\GymSysyemWpf\obj\Debug\net7.0-windows\App.baml
+E:\New folder\Telegram Desktop\GymSysyemWpf\obj\Debug\net7.0-windows\Bill.baml
+E:\New folder\Telegram Desktop\GymSysyemWpf\obj\Debug\net7.0-windows\ConfirmDeleting.baml
+E:\New folder\Telegram Desktop\GymSysyemWpf\obj\Debug\net7.0-windows\ConfirmFinancial.baml
+E:\New folder\Telegram Desktop\GymSysyemWpf\obj\Debug\net7.0-windows\MainWindow.baml
+E:\New folder\Telegram Desktop\GymSysyemWpf\obj\Debug\net7.0-windows\MonthlyProfit.baml
+E:\New folder\Telegram Desktop\GymSysyemWpf\obj\Debug\net7.0-windows\ProtienAdd.baml
+E:\New folder\Telegram Desktop\GymSysyemWpf\obj\Debug\net7.0-windows\ProtienUpdate.baml
+E:\New folder\Telegram Desktop\GymSysyemWpf\obj\Debug\net7.0-windows\SubscriptionAdd.baml
+E:\New folder\Telegram Desktop\GymSysyemWpf\obj\Debug\net7.0-windows\SubscriptionUpdate.baml
+E:\New folder\Telegram Desktop\GymSysyemWpf\obj\Debug\net7.0-windows\TraineeAdd.baml
+E:\New folder\Telegram Desktop\GymSysyemWpf\obj\Debug\net7.0-windows\TraineeUpdate.baml
+E:\New folder\Telegram Desktop\GymSysyemWpf\obj\Debug\net7.0-windows\GymSysyemWpf.g.resources
+E:\New folder\Telegram Desktop\GymSysyemWpf\obj\Debug\net7.0-windows\GymSysyemWpf.GeneratedMSBuildEditorConfig.editorconfig
+E:\New folder\Telegram Desktop\GymSysyemWpf\obj\Debug\net7.0-windows\GymSysyemWpf.AssemblyInfoInputs.cache
+E:\New folder\Telegram Desktop\GymSysyemWpf\obj\Debug\net7.0-windows\GymSysyemWpf.AssemblyInfo.cs
+E:\New folder\Telegram Desktop\GymSysyemWpf\obj\Debug\net7.0-windows\GymSysyemWpf.csproj.CoreCompileInputs.cache
+E:\New folder\Telegram Desktop\GymSysyemWpf\obj\Debug\net7.0-windows\GymSysyemWpf.csproj.CopyComplete
+E:\New folder\Telegram Desktop\GymSysyemWpf\obj\Debug\net7.0-windows\GymSysyemWpf.dll
+E:\New folder\Telegram Desktop\GymSysyemWpf\obj\Debug\net7.0-windows\refint\GymSysyemWpf.dll
+E:\New folder\Telegram Desktop\GymSysyemWpf\obj\Debug\net7.0-windows\GymSysyemWpf.pdb
+E:\New folder\Telegram Desktop\GymSysyemWpf\obj\Debug\net7.0-windows\GymSysyemWpf.genruntimeconfig.cache
+E:\New folder\Telegram Desktop\GymSysyemWpf\obj\Debug\net7.0-windows\ref\GymSysyemWpf.dll
